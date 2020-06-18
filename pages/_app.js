@@ -1,170 +1,94 @@
-// REACT
-import React, { Fragment } from 'react';
+/*!
+
+=========================================================
+* NextJS Material Kit v1.1.0 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/nextjs-material-kit
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+//NEXT + REACT LIBRARIES
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "next/app";
+import Router from "next/router";
+
+// Page Changers
+import PageChange from "components/MaterialKit/PageChange/PageChange.js";
+
+// CSS
+import "assets/scss/nextjs-material-kit.scss?v=1.1.0";
 
 // OWN COMPONENTS
-import HeadMeta from '../components/Head';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Head from "components/Head"
 
-//CSS
 
-const _app = ({ Component, pageProps }) => {
-	return (
-		<Fragment>
-			<HeadMeta></HeadMeta>
-			<body>
-				<Navbar></Navbar>
-				<Component {...pageProps}></Component>
-				<Footer></Footer>
-			</body>
-			<GlobalCurrentStyles></GlobalCurrentStyles>
-		</Fragment>
-	);
-};
+// ROUTE TRANSITIONS AND INTERACTIONS
+Router.events.on("routeChangeStart", url => {
+  console.log(`Loading: ${url}`);
+  document.body.classList.add("body-page-transition");
+  ReactDOM.render(
+    <PageChange path={url} />,
+    document.getElementById("page-transition")
+  );
+});
+Router.events.on("routeChangeComplete", () => {
+  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
+  document.body.classList.remove("body-page-transition");
+});
+Router.events.on("routeChangeError", () => {
+  ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
+  document.body.classList.remove("body-page-transition");
+});
 
-const GlobalCurrentStyles = () => {
-	return (
-		<Fragment>
-			<style jsx>{`
-				.container {
-					min-height: 100vh;
-					padding: 0 0.5rem;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
+export default class MyApp extends App {
+  componentDidMount() {
+    let comment = document.createComment(`
 
-				main {
-					padding: 5rem 0;
-					flex: 1;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
+=========================================================
+* NextJS Material Kit v1.1.0 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
+=========================================================
 
-				footer {
-					width: 100%;
-					height: 100px;
-					border-top: 1px solid #eaeaea;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
+* Product Page: https://www.creative-tim.com/product/nextjs-material-kit
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
 
-				footer img {
-					margin-left: 0.5rem;
-				}
+* Coded by Creative Tim
 
-				footer a {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
+=========================================================
 
-				a {
-					color: inherit;
-					text-decoration: none;
-				}
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-				.title a {
-					color: #0070f3;
-					text-decoration: none;
-				}
+`);
+    document.insertBefore(comment, document.documentElement);
+  }
+  static async getInitialProps({ Component, router, ctx }) {
+    let pageProps = {};
 
-				.title a:hover,
-				.title a:focus,
-				.title a:active {
-					text-decoration: underline;
-				}
+    if (Component.getInitialProps) {
+      pageProps = await Component.getInitialProps(ctx);
+    }
 
-				.title {
-					margin: 0;
-					line-height: 1.15;
-					font-size: 4rem;
-				}
+    return { pageProps };
+  }
+  render() {
+    const { Component, pageProps } = this.props;
 
-				.title,
-				.description {
-					text-align: center;
-				}
-
-				.description {
-					line-height: 1.5;
-					font-size: 1.5rem;
-				}
-
-				code {
-					background: #fafafa;
-					border-radius: 5px;
-					padding: 0.75rem;
-					font-size: 1.1rem;
-					font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-				}
-
-				.grid {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					flex-wrap: wrap;
-
-					max-width: 800px;
-					margin-top: 3rem;
-				}
-
-				.card {
-					margin: 1rem;
-					flex-basis: 45%;
-					padding: 1.5rem;
-					text-align: left;
-					color: inherit;
-					text-decoration: none;
-					border: 1px solid #eaeaea;
-					border-radius: 10px;
-					transition: color 0.15s ease, border-color 0.15s ease;
-				}
-
-				.card:hover,
-				.card:focus,
-				.card:active {
-					color: #0070f3;
-					border-color: #0070f3;
-				}
-
-				.card h3 {
-					margin: 0 0 1rem 0;
-					font-size: 1.5rem;
-				}
-
-				.card p {
-					margin: 0;
-					font-size: 1.25rem;
-					line-height: 1.5;
-				}
-
-				@media (max-width: 600px) {
-					.grid {
-						width: 100%;
-						flex-direction: column;
-					}
-				}
-			`}</style>
-
-			<style jsx global>{`
-				html,
-				body {
-					padding: 0;
-					margin: 0;
-					font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-						sans-serif;
-				}
-
-				* {
-					box-sizing: border-box;
-				}
-			`}</style>
-		</Fragment>
-	);
-};
-export default _app;
+    return (
+      <React.Fragment>
+        <Head></Head>
+        Navbar
+        <Component {...pageProps} />
+      </React.Fragment>
+    );
+  }
+}
