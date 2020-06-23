@@ -58,7 +58,7 @@ const Footer = (props) => {
 						</List>
 					</div>
 					<div className={classes.right}>
-						&copy; {1900 + new Date().getYear()} , made by the Living Lab with theme and design by
+						&copy; {1900 + new Date().getYear()} , made by the Living Lab with theme and design by {" "}
 						<a href='https://www.creative-tim.com?ref=njsmk-footer' className={aClasses} target='_blank'>
 							Creative Tim
 						</a>{' '}
