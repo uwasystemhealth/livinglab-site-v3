@@ -39,11 +39,14 @@ export default function Header(props) {
 		const { color, changeColorOnScroll } = props;
 		const windowsScrollTop = window.pageYOffset;
 		if (windowsScrollTop > changeColorOnScroll.height) {
+			// ABOVE
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[color]);
 			document.body.getElementsByTagName('header')[0].classList.add(classes[changeColorOnScroll.color]);
+			document.getElementById('logo').src = 'img/logos/Living-Lab-Logo-WEB-without@UWA.png';
 		} else {
-			document.body.getElementsByTagName('header')[0].classList.add(classes[color]);
+			document.body.getElementsByTagName('header')[0].classList.add(classes[color]); // BELOW SCROLL
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[changeColorOnScroll.color]);
+			document.getElementById('logo').src = 'img/logos/Living-Lab-Logo-WEB-white-without@UWA.png';
 		}
 	};
 	const { color, rightLinks, leftLinks, brand, brandImage, fixed, absolute } = props;
@@ -55,7 +58,7 @@ export default function Header(props) {
 	});
 	const brandComponent = (
 		<Link href='/components' as='/components'>
-			<Button className={classes.title}>{brandImage ? brandImage: brand}</Button>
+			<Button className={classes.title}>{brandImage ? brandImage : brand}</Button>
 		</Link>
 	);
 	return (

@@ -25,73 +25,73 @@ const Navbar = () => {
 	return (
 		<Fragment>
 			<Contact></Contact>
-		<Header
-			color='transparent'
-			brandImage={<img src='img/logo.png' alt='logo' className={classes.logo} />}
-			fixed
-			changeColorOnScroll={{
-				height: 400,
-				color: 'white',
-			}}
-			rightLinks={
-				<List className={classes.list}>
-					<ListItem className={classes.listItem}>
-						<Button href='' className={classes.navLink} onClick={(e) => e.preventDefault()} color='transparent'>
-							Home
-						</Button>
-					</ListItem>
-					<ListItem className={classes.listItem}>
-						<CustomDropdown
-							noLiPadding
-							navDropdown
-							buttonText='Learn More'
-							buttonProps={{
-								className: classes.navLink,
-								color: 'transparent',
-							}}
-							dropdownList={[
-								<Link href='/components'>
-									<a className={classes.dropdownLink}>About Us</a>
-								</Link>,
-								<Link href='/components'>
-									<a className={classes.dropdownLink}>Available Testing</a>
-								</Link>,
-								<CustomDropdown
-									noLiPadding
-									navDropdown
-									buttonText='Roadmap'
-									buttonProps={{
-										className: classes.navLink,
-										color: 'transparent',
-									}}
-									dropdownList={[
-										<Link href='/components'>
-											<a className={classes.dropdownLink}>Accelerated Life Testing</a>
-										</Link>,
-										<Link href='/components'>
-											<a className={classes.dropdownLink}>Site Testing</a>
-										</Link>,
-										<Link href='/components'>
-											<a className={classes.dropdownLink}>More Details About Roadmaps</a>
-										</Link>,
-									]}
-								/>,
-							]}
-						/>
-					</ListItem>
-					<ListItem className={classes.listItem}>
+			<Header
+				color='transparent'
+				brandImage={<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />}
+				fixed
+				changeColorOnScroll={{
+					height: 400,
+					color: 'white',
+				}}
+				rightLinks={
+					<List className={classes.list}>
+						<ListItem className={classes.listItem}>
+							<Button href='' className={classes.navLink} onClick={(e) => e.preventDefault()} color='transparent'>
+								Home
+							</Button>
+						</ListItem>
+						<ListItem className={classes.listItem}>
+							<CustomDropdown
+								noLiPadding
+								navDropdown
+								buttonText='Learn More'
+								buttonProps={{
+									className: classes.navLink,
+									color: 'transparent',
+								}}
+								dropdownList={[
+									<Link href='/components'>
+										<a className={classes.dropdownLink}>About Us</a>
+									</Link>,
+									<Link href='/components'>
+										<a className={classes.dropdownLink}>Available Testing</a>
+									</Link>,
+									<CustomDropdown
+										noLiPadding
+										navDropdown
+										buttonText='Roadmap'
+										buttonProps={{
+											className: classes.navLink,
+											color: 'transparent',
+										}}
+										dropdownList={[
+											<Link href='/components'>
+												<a className={classes.dropdownLink}>Accelerated Life Testing</a>
+											</Link>,
+											<Link href='/components'>
+												<a className={classes.dropdownLink}>Site Testing</a>
+											</Link>,
+											<Link href='/components'>
+												<a className={classes.dropdownLink}>More Details About Roadmaps</a>
+											</Link>,
+										]}
+									/>,
+								]}
+							/>
+						</ListItem>
+						<ListItem className={classes.listItem}>
 							<Button href='' className={classes.navLink} onClick={openContactFormModal} color='transparent'>
-							Express Interest
-						</Button>
-					</ListItem>
-					<ListItem className={classes.listItem}>
-						<Button href='' className={classes.registerNavLink} onClick={(e) => e.preventDefault()} color='rose' round>
-							Login
-						</Button>
-					</ListItem>
-				</List>
-			}
-		/>
+								Express Interest
+							</Button>
+						</ListItem>
+						<ListItem className={classes.listItem}>
+							<Button href='' className={classes.registerNavLink} onClick={(e) => e.preventDefault()} color='rose' round>
+								Login
+							</Button>
+						</ListItem>
+					</List>
+				}
+			/>
 		</Fragment>
 	);
 };
