@@ -1,4 +1,5 @@
 // REACT+NEXT
+import React, { Fragment, useContext } from 'react';
 import Link from 'next/link';
 
 // @material-ui/core components
@@ -13,10 +14,17 @@ import CustomDropdown from 'components/MaterialKit/CustomDropdown/CustomDropdown
 
 import styles from 'assets/jss/nextjs-material-kit/pages/componentsSections/navbarsStyle.js';
 
+//OWN COMPONENTS
+import Contact from 'components/Layout/Contact';
+import Context from 'components/Context/index';
+
 const useStyles = makeStyles(styles);
 const Navbar = () => {
+	const { openContactFormModal } = useContext(Context);
 	const classes = useStyles();
 	return (
+		<Fragment>
+			<Contact></Contact>
 		<Header
 			color='transparent'
 			brandImage={<img src='img/logo.png' alt='logo' className={classes.logo} />}
@@ -72,7 +80,7 @@ const Navbar = () => {
 						/>
 					</ListItem>
 					<ListItem className={classes.listItem}>
-						<Button href='' className={classes.navLink} onClick={(e) => e.preventDefault()} color='transparent'>
+							<Button href='' className={classes.navLink} onClick={openContactFormModal} color='transparent'>
 							Express Interest
 						</Button>
 					</ListItem>
@@ -84,6 +92,7 @@ const Navbar = () => {
 				</List>
 			}
 		/>
+		</Fragment>
 	);
 };
 

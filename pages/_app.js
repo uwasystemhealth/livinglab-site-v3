@@ -33,6 +33,8 @@ import Head from 'components/Layout/Head';
 import Navbar from 'components/Layout/Navbar';
 import Footer from 'components/Layout/Footer';
 
+import {AppProvider} from 'components/Context/index';
+
 // ROUTE TRANSITIONS AND INTERACTIONS
 Router.events.on('routeChangeStart', (url) => {
 	console.log(`Loading: ${url}`);
@@ -82,12 +84,12 @@ export default class MyApp extends App {
 		const { Component, pageProps } = this.props;
 
 		return (
-			<React.Fragment>
-				<Head></Head>
-				<Navbar></Navbar>
-				<Component {...pageProps} />
-				<Footer></Footer>
-			</React.Fragment>
+				<AppProvider>
+					<Head></Head>
+					<Navbar></Navbar>
+					<Component {...pageProps} />
+					<Footer></Footer>
+				</AppProvider>
 		);
 	}
 }
