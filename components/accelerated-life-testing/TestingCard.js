@@ -6,17 +6,26 @@ import Card from 'components/MaterialKit/Card/Card.js';
 
 import imagesStyles from 'assets/jss/nextjs-material-kit/imagesStyles.js';
 
-import { cardTitle, cardSubtitle } from 'assets/jss/nextjs-material-kit.js';
+import { cardTitle } from 'assets/jss/nextjs-material-kit.js';
 
 const styles = {
 	...imagesStyles,
-	cardTitle,
-	cardSubtitle,
+	cardTitle: {
+		...cardTitle,
+		color: '#FFFFFF',
+	},
+	imgCardOverlay: {
+		...imagesStyles.imgCardOverlay,
+		'&,&:hover,&:focus': {
+			color: '#FFFFFF',
+		},
+		backgroundColor: 'rgba(0, 0, 0, .5)',
+	},
 };
 
 const useStyles = makeStyles(styles);
 
-const TestingCard = ({ title = 'Card title', description = 'Insert Description here', img = 'img/feature-bg.jpg' }) => {
+const TestingCard = ({ title = 'Card title', description = 'Insert Description here', img = '/img/feature-bg.jpg' }) => {
 	const classes = useStyles();
 	return (
 		<Card>
