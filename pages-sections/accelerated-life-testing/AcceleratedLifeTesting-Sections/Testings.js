@@ -20,7 +20,6 @@ const useStyles = makeStyles(styles);
 
 const Testings = () => {
 	const classes = useStyles();
-	console.log(TestingData);
 	return (
 		<div className={classes.section}>
 			<GridContainer>
