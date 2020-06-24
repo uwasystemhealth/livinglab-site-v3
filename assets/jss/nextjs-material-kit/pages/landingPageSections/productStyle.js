@@ -3,7 +3,7 @@ import { title } from 'assets/jss/nextjs-material-kit.js';
 const productStyle = {
 	section: {
 		padding: '70px 0',
-		textAlign: 'center',
+		textAlign: 'left',
 	},
 	title: {
 		...title,
