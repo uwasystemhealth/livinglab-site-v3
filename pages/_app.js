@@ -33,7 +33,7 @@ import Head from 'components/Layout/Head';
 import Navbar from 'components/Layout/Navbar';
 import Footer from 'components/Layout/Footer';
 
-import {AppProvider} from 'components/Context/index';
+import { AppProvider } from 'components/Context/index';
 
 // ROUTE TRANSITIONS AND INTERACTIONS
 Router.events.on('routeChangeStart', (url) => {
@@ -84,12 +84,12 @@ export default class MyApp extends App {
 		const { Component, pageProps } = this.props;
 
 		return (
-				<AppProvider>
-					<Head></Head>
-					<Navbar></Navbar>
-					<Component {...pageProps} />
-					<Footer></Footer>
-				</AppProvider>
+			<AppProvider>
+				<Head></Head>
+				<Navbar></Navbar>
+				<Component {...pageProps} />
+				<Footer></Footer>
+			</AppProvider>
 		);
 	}
 }

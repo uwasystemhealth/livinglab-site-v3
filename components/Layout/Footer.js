@@ -59,23 +59,23 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/'>
 											<a className={aClasses}>Home</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about'>
 										<a className={aClasses}>About Us</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about#WhatIsTheLab'>
 										<a className={aClasses}>What is the Lab</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about#MeetTheTeam'>
 										<a className={aClasses}>Meet The Team</a>
 									</Link>
 								</ListItem>
