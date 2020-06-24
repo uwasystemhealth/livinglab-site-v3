@@ -35,7 +35,7 @@ const index = () => {
 								Accelerated Life Testing
 							</Button>
 							<Button color='primary' size='lg'>
-								Site Testing
+								Derisking Site Trials
 							</Button>
 						</GridItem>
 					</GridContainer>
