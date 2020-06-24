@@ -29,7 +29,7 @@ const About = () => {
 						step to a mine site trial. The trials will be managed by students working in the SHL providing invaluable project management and
 						technical experience.
 					</h5>
-					<Button color='primary' size='md' href='/about'>
+					<Button color='primary' href='/about'>
 						<Book></Book>
 						More
 					</Button>

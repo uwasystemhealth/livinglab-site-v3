@@ -5,7 +5,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 
 // material-ui core components
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
@@ -46,6 +46,7 @@ const Footer = (props) => {
 							</div>
 						</GridItem>
 						<GridItem md={3} sm={12}>
+							<Divider></Divider>
 							<List>
 								<ListItem>
 									<p>
@@ -64,6 +65,7 @@ const Footer = (props) => {
 										</Link>
 									</strong>
 								</ListItem>
+
 								<ListItem>
 									<Link href='/about'>
 										<a className={aClasses}>About Us</a>
@@ -80,38 +82,47 @@ const Footer = (props) => {
 									</Link>
 								</ListItem>
 							</List>
+							<Divider></Divider>
+							<List>
+								<ListItem>
+									<Link href='/privacy-policy'>
+										<a className={aClasses}>Privacy Policy</a>
+									</Link>
+								</ListItem>
+								<ListItem></ListItem>
+							</List>
 						</GridItem>
 						<GridItem md={3} sm={12}>
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/accelerated-life-testing'>
 											<a className={aClasses}>Accelerated Life Testing</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/accelerated-bearing-failure-testing'>
 										<a className={aClasses}>Accelerated Bearing Failure Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/ultraviolet-radiation-testing'>
 										<a className={aClasses}>Ultraviolet Radiation Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/vibration'>
 										<a className={aClasses}>Vibration</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/ip-testing'>
 										<a className={aClasses}>IP Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/emf-testing'>
 										<a className={aClasses}>EMF Testing</a>
 									</Link>
 								</ListItem>
@@ -121,19 +132,19 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/roadmap'>
 											<a className={aClasses}>Roadmap</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/roadmap/accelerated-life-testing'>
 										<a className={aClasses}>Accelerated Life Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>Derising Site Trials</a>
+									<Link href='/roadmap/derisking-site-trials'>
+										<a className={aClasses}>Derisking Site Trials</a>
 									</Link>
 								</ListItem>
 							</List>

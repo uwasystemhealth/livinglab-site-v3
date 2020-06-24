@@ -35,7 +35,7 @@ const CallToAction = (props) => {
 						Be Seen Over Here Some Text That Can Be Seen Over Here
 					</p>
 					<br />
-					<Button color='primary' size='md' onClick={openContactFormModal}>
+					<Button color='primary' onClick={openContactFormModal}>
 						Get Involved
 					</Button>
 				</div>
