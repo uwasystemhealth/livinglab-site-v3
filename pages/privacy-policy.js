@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-<Content></Content>
+					<Content></Content>
 				</div>
 			</div>
 		</Fragment>
