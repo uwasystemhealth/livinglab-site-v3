@@ -7,6 +7,10 @@ import classNames from 'classnames';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
+// @material -ui/icon components
+import Timer from '@material-ui/icons/Timer';
+import Assessment from '@material-ui/icons/Assessment';
+
 // CORE COMPONENTS
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
@@ -32,9 +36,11 @@ const index = () => {
 							<h3>We are a team of Engineers Ready To Help</h3>
 							<br />
 							<Button color='primary' size='lg'>
+								<Timer></Timer>
 								Accelerated Life Testing
 							</Button>
 							<Button color='primary' size='lg'>
+								<Assessment></Assessment>
 								Derisking Site Trials
 							</Button>
 						</GridItem>
