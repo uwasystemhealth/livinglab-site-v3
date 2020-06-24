@@ -2,14 +2,12 @@ import React from 'react';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-// @material-ui/icons
-import Chat from '@material-ui/icons/Chat';
-import VerifiedUser from '@material-ui/icons/VerifiedUser';
-import Fingerprint from '@material-ui/icons/Fingerprint';
+// @material-ui/icons components
+import Book from '@material-ui/icons/Book';
+
 // core components
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
-import InfoArea from 'components/MaterialKit/InfoArea/InfoArea.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
@@ -32,6 +30,7 @@ const About = () => {
 						technical experience.
 					</h5>
 					<Button color='primary' size='sm' href='/about'>
+						<Book></Book>
 						More
 					</Button>
 				</GridItem>
