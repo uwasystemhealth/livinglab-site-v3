@@ -5,7 +5,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 
 // material-ui core components
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
@@ -46,6 +46,7 @@ const Footer = (props) => {
 							</div>
 						</GridItem>
 						<GridItem md={3} sm={12}>
+							<Divider></Divider>
 							<List>
 								<ListItem>
 									<p>
@@ -64,6 +65,7 @@ const Footer = (props) => {
 										</Link>
 									</strong>
 								</ListItem>
+
 								<ListItem>
 									<Link href='/about'>
 										<a className={aClasses}>About Us</a>
@@ -79,6 +81,15 @@ const Footer = (props) => {
 										<a className={aClasses}>Meet The Team</a>
 									</Link>
 								</ListItem>
+							</List>
+							<Divider></Divider>
+							<List>
+								<ListItem>
+									<Link href=''>
+										<a className={aClasses}>Privacy Policy</a>
+									</Link>
+								</ListItem>
+								<ListItem></ListItem>
 							</List>
 						</GridItem>
 						<GridItem md={3} sm={12}>
@@ -133,7 +144,7 @@ const Footer = (props) => {
 								</ListItem>
 								<ListItem>
 									<Link href=''>
-										<a className={aClasses}>Derising Site Trials</a>
+										<a className={aClasses}>Derisking Site Trials</a>
 									</Link>
 								</ListItem>
 							</List>
