@@ -16,7 +16,7 @@ import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/pro
 
 const useStyles = makeStyles(styles);
 
-export default function About() {
+const About = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.section}>
@@ -31,7 +31,7 @@ export default function About() {
 						step to a mine site trial. The trials will be managed by students working in the SHL providing invaluable project management and
 						technical experience.
 					</h5>
-					<Button color='primary' size='sm'>
+					<Button color='primary' size='sm' href='/about'>
 						More
 					</Button>
 				</GridItem>
@@ -41,4 +41,6 @@ export default function About() {
 			</GridContainer>
 		</div>
 	);
-}
+};
+
+export default About;
