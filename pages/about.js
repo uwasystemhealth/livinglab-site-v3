@@ -14,36 +14,29 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import About from 'pages-sections/HomePage-Sections/About.js';
+import AboutLivingLab from 'pages-sections/AboutPage-Sections/AboutLivingLab.js';
+import MeetTheTeam from 'pages-sections/AboutPage-Sections/MeetTheTeam.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
-
 const useStyles = makeStyles(styles);
 
 const About = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<Parallax filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6}>
-							<h1 className={classes.title}>Living Lab</h1>
-							<h3>We are a team of Engineers Ready To Help</h3>
-							<br />
-							<Button color='primary' size='lg'>
-								Accelerated Life Testing
-							</Button>
-							<Button color='primary' size='lg'>
-								Derisking Site Trials
-							</Button>
+							<h1 className={classes.title}>About</h1>
 						</GridItem>
 					</GridContainer>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<About></About>
+					<AboutLivingLab></AboutLivingLab>
+					<MeetTheTeam></MeetTheTeam>
 				</div>
 			</div>
 		</Fragment>
