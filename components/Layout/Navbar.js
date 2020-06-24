@@ -36,7 +36,7 @@ const Navbar = () => {
 				rightLinks={
 					<List className={classes.list}>
 						<ListItem className={classes.listItem}>
-							<Button href='' className={classes.navLink} onClick={(e) => e.preventDefault()} color='transparent'>
+							<Button href='/' className={classes.navLink} color='transparent'>
 								Home
 							</Button>
 						</ListItem>
@@ -50,7 +50,7 @@ const Navbar = () => {
 									color: 'transparent',
 								}}
 								dropdownList={[
-									<Link href='/components'>
+									<Link href='/about'>
 										<a className={classes.dropdownLink}>About Us</a>
 									</Link>,
 									<Link href='/components'>

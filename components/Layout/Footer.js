@@ -59,13 +59,13 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/'>
 											<a className={aClasses}>Home</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about'>
 										<a className={aClasses}>About Us</a>
 									</Link>
 								</ListItem>
