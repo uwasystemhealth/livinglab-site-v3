@@ -24,7 +24,7 @@ const Testings = () => {
 		<div className={classes.section}>
 			<GridContainer>
 				{TestingData.map(({ title, backgroundImage, whatIsIt }) => (
-					<GridItem sm={12} md={6}>
+					<GridItem sm={12} md={6} key={title}>
 						<TestingCard title={title} img={backgroundImage} description={whatIsIt}></TestingCard>
 					</GridItem>
 				))}

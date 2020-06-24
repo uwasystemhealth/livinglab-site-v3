@@ -106,7 +106,7 @@ const Footer = (props) => {
 								</ListItem>
 								{/* DYNAMIC FOOTER CREATION */}
 								{TestingData.map(({ title }) => (
-									<ListItem>
+									<ListItem key={title}>
 										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
 											<a className={aClasses}>{title}</a>
 										</Link>
