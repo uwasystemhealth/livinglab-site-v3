@@ -1,6 +1,5 @@
 // NEXT + REACT
 import React, { Component, Fragment } from 'react';
-import { useRouter } from 'next/router';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -14,23 +13,13 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
-// CONTENT
-import TestingData from 'data/AcceleratedLifeTestingContent.json';
-
 import landingStyles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 
 const useStylesLanding = makeStyles(landingStyles);
 const useStylesProduct = makeStyles(productStyles);
 
-const getTestObject = (router) => {
-	const { testingName } = router.query;
-	// REPLACE TITLE SPACES WITH - THEN COMPARE
-	return TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
-};
-
-const About = () => {
-	const router = useRouter();
+const About = (props) => {
 	const {
 		title,
 		backgroundImage,
@@ -41,7 +30,7 @@ const About = () => {
 		methodologyImage,
 		limitations,
 		limitationsImage,
-	} = getTestObject(router);
+	} = props;
 	const landingClasses = useStylesLanding();
 	const productClasses = useStylesProduct();
 	return (
