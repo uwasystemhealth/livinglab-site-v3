@@ -33,7 +33,7 @@ const MeetTheTeam = () => {
 					</h5>
 				</GridItem>
 				<GridItem xs={12}>
-					<img src='img/team.jpg' alt='' className={classes.img} />
+					<img src='/img/team.jpg' alt='' className={classes.img} />
 				</GridItem>
 			</GridContainer>
 		</div>

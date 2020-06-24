@@ -42,7 +42,7 @@ const Footer = (props) => {
 					<GridContainer>
 						<GridItem md={12} sm={12}>
 							<div className={classes.left}>
-								<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
+								<img id='logo' src='/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
 							</div>
 						</GridItem>
 						<GridItem md={3} sm={12}>

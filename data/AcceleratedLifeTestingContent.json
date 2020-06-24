@@ -1,56 +1,56 @@
 [{
         "title": "Accelerated Bearing Failure Testing",
-        "backgroundImage": "img/feature-bg.jpg",
+        "backgroundImage": "/img/feature-bg.jpg",
         "whatIsIt": "We have capacity to conduct accelerated bearing failure testing on an industrial pump to track the signal degradation of different sensors.",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
         "methodology": "",
-        "methodologyImage": "img/feature-bg.jpg",
+        "methodologyImage": "/img/feature-bg.jpg",
         "limitations": "",
-        "limitationsImage": "img/feature-bg.jpg"
+        "limitationsImage": "/img/feature-bg.jpg"
     },
     {
         "title": "Ultraviolet Radiation Testing",
-        "backgroundImage": "img/feature-bg.jpg",
+        "backgroundImage": "/img/feature-bg.jpg",
         "whatIsIt": "",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
         "methodology": "",
-        "methodologyImage": "img/feature-bg.jpg",
+        "methodologyImage": "/img/feature-bg.jpg",
         "limitations": "",
-        "limitationsImage": "img/feature-bg.jpg"
+        "limitationsImage": "/img/feature-bg.jpg"
     },
     {
         "title": "Vibration",
-        "backgroundImage": "img/feature-bg.jpg",
+        "backgroundImage": "/img/feature-bg.jpg",
         "whatIsIt": "",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
         "methodology": "",
-        "methodologyImage": "img/feature-bg.jpg",
+        "methodologyImage": "/img/feature-bg.jpg",
         "limitations": "",
-        "limitationsImage": "img/feature-bg.jpg"
+        "limitationsImage": "/img/feature-bg.jpg"
     },
     {
         "title": "IP Testing",
-        "backgroundImage": "img/feature-bg.jpg",
+        "backgroundImage": "/img/feature-bg.jpg",
         "whatIsIt": "",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
         "methodology": "",
-        "methodologyImage": "img/feature-bg.jpg",
+        "methodologyImage": "/img/feature-bg.jpg",
         "limitations": "",
-        "limitationsImage": "img/feature-bg.jpg"
+        "limitationsImage": "/img/feature-bg.jpg"
     },
     {
         "title": "EMF Testing",
-        "backgroundImage": "img/feature-bg.jpg",
+        "backgroundImage": "/img/feature-bg.jpg",
         "whatIsIt": "",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
         "methodology": "",
-        "methodologyImage": "img/feature-bg.jpg",
+        "methodologyImage": "/img/feature-bg.jpg",
         "limitations": "",
-        "limitationsImage": "img/feature-bg.jpg"
+        "limitationsImage": "/img/feature-bg.jpg"
     }
 ]
