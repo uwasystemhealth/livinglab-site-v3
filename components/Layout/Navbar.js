@@ -80,7 +80,7 @@ const Navbar = () => {
 							/>
 						</ListItem>
 						<ListItem className={classes.listItem}>
-							<Button href='' className={classes.navLink} onClick={openContactFormModal} color='transparent'>
+							<Button className={classes.navLink} onClick={openContactFormModal} color='transparent'>
 								Express Interest
 							</Button>
 						</ListItem>
