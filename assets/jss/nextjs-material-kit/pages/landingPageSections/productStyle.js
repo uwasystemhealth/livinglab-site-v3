@@ -1,6 +1,7 @@
-import { title } from 'assets/jss/nextjs-material-kit.js';
+import { title,anchor } from 'assets/jss/nextjs-material-kit.js';
 
 const productStyle = {
+	anchor,
 	section: {
 		padding: '70px 0',
 		textAlign: 'left',
