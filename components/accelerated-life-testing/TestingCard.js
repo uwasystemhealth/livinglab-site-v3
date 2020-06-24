@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 // material-ui components
 import { makeStyles } from '@material-ui/core/styles';
 // core components
@@ -27,6 +28,7 @@ const useStyles = makeStyles(styles);
 
 const TestingCard = ({ title = 'Card title', description = 'Insert Description here', img = '/img/feature-bg.jpg' }) => {
 	const classes = useStyles();
+	const testingName = title.toLowerCase().replace(/ /g, '-');
 	return (
 		<Card>
 			<img className={classes.imgCard} src={img} alt='Card-img' />
@@ -35,9 +37,13 @@ const TestingCard = ({ title = 'Card title', description = 'Insert Description h
 				<p>{description}</p>
 
 				<strong>
-					<a href='' className={classes.cardLink} onClick={(e) => e.preventDefault()}>
-						More
-					</a>
+					<Link
+						href={`/accelerated-life-testing/?testingName=${testingName}`}
+						as={`/accelerated-life-testing/${testingName}`}
+						replace
+					>
+						<a className={classes.cardLink}>More</a>
+					</Link>
 				</strong>
 			</div>
 		</Card>

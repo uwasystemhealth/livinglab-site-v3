@@ -1,7 +1,6 @@
 import React from 'react';
 import Router, { useRouter } from 'next/router';
 
-
 // OWN COMPONENT
 import TestingPageContent from 'components/accelerated-life-testing/TestingPageContent.js';
 
@@ -14,8 +13,9 @@ const getTestObject = (router) => {
 	const object = TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
 	if (object) {
 		return object;
-	} else {
-		Router.push('/');
+	} else if (typeof window !== 'undefined') {
+		// SERVER SIDE ONLY
+		router.push('/');
 	}
 };
 

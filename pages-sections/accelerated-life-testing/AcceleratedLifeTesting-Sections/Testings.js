@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
+import { useRouter } from 'next/router';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -11,6 +12,7 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
 // OWN COMPONENTS
 import TestingCard from 'components/accelerated-life-testing/TestingCard.js';
+import TestingModal from 'components/accelerated-life-testing/TestingModal.js';
 
 // CONTENT
 import TestingData from 'data/AcceleratedLifeTestingContent.json';
@@ -18,18 +20,43 @@ import TestingData from 'data/AcceleratedLifeTestingContent.json';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 const useStyles = makeStyles(styles);
 
+const getTestObject = (router) => {
+	const { testingName } = router.query;
+	// REPLACE TITLE SPACES WITH - THEN COMPARE
+	const object = TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
+	if (object) {
+		return object;
+	} else if (typeof window !== 'undefined') {
+		// SERVER SIDE ONLY
+		console.log('SERVER REDIRECT');
+		router.push('/');
+	}
+};
+
 const Testings = () => {
+	const router = useRouter();
+	console.log(router.query.testingName);
+	const testObject = !!router.query.testingName ? getTestObject(router) : null;
+	console.log(testObject);
+
+	const closeTestModal = () => {
+		router.push('/accelerated-life-testing');
+	};
+
 	const classes = useStyles();
 	return (
-		<div className={classes.section}>
-			<GridContainer>
-				{TestingData.map(({ title, backgroundImage, whatIsIt }) => (
-					<GridItem sm={12} md={6} key={title}>
-						<TestingCard title={title} img={backgroundImage} description={whatIsIt}></TestingCard>
-					</GridItem>
-				))}
-			</GridContainer>
-		</div>
+		<Fragment>
+			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal}></TestingModal>
+			<div className={classes.section}>
+				<GridContainer>
+					{TestingData.map(({ title, backgroundImage, whatIsIt }) => (
+						<GridItem sm={12} md={6} key={title}>
+							<TestingCard title={title} img={backgroundImage} description={whatIsIt}></TestingCard>
+						</GridItem>
+					))}
+				</GridContainer>
+			</div>
+		</Fragment>
 	);
 };
 
