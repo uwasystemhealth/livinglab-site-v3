@@ -85,7 +85,7 @@ const Footer = (props) => {
 							<Divider></Divider>
 							<List>
 								<ListItem>
-									<Link href=''>
+									<Link href='/privacy-policy'>
 										<a className={aClasses}>Privacy Policy</a>
 									</Link>
 								</ListItem>
@@ -96,33 +96,33 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/accelerated-life-testing'>
 											<a className={aClasses}>Accelerated Life Testing</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/accelerated-bearing-failure-testing'>
 										<a className={aClasses}>Accelerated Bearing Failure Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/ultraviolet-radiation-testing'>
 										<a className={aClasses}>Ultraviolet Radiation Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/vibration'>
 										<a className={aClasses}>Vibration</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/ip-testing'>
 										<a className={aClasses}>IP Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/accelerated-life-testing/emf-testing'>
 										<a className={aClasses}>EMF Testing</a>
 									</Link>
 								</ListItem>
@@ -132,18 +132,18 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/roadmap'>
 											<a className={aClasses}>Roadmap</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/roadmap/accelerated-life-testing'>
 										<a className={aClasses}>Accelerated Life Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/roadmap/derisking-site-trials'>
 										<a className={aClasses}>Derisking Site Trials</a>
 									</Link>
 								</ListItem>
