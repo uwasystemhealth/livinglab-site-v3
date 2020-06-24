@@ -21,7 +21,7 @@ export default function About() {
 	return (
 		<div className={classes.section}>
 			<h2 className={classes.title}>About Us</h2>
-			<GridContainer >
+			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
 						This project is a collaboration between the University of Western Australia, CORE Innovation Hub and METS Ignited In 2018 the
@@ -36,7 +36,7 @@ export default function About() {
 					</Button>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
-					<img src='https://picsum.photos/400/400' alt='' />
+					<img src='https://picsum.photos/400/400' alt='' className={classes.img} />
 				</GridItem>
 			</GridContainer>
 		</div>
