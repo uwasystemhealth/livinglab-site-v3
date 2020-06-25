@@ -35,11 +35,11 @@ const index = () => {
 							<h1 className={classes.title}>Living Lab</h1>
 							<h3>We are a team of Engineers Ready To Help</h3>
 							<br />
-							<Button color='primary' size='lg'>
+							<Button href='/roadmap/accelerate-life-testing' color='primary' size='lg'>
 								<Timer></Timer>
 								Accelerated Life Testing
 							</Button>
-							<Button color='primary' size='lg'>
+							<Button href='/roadmap/derisking-site-trials' color='primary' size='lg'>
 								<Assessment></Assessment>
 								Derisking Site Trials
 							</Button>
