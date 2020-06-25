@@ -37,11 +37,7 @@ const TestingCard = ({ title = 'Card title', description = 'Insert Description h
 				<p>{description}</p>
 
 				<strong>
-					<Link
-						href={`/accelerated-life-testing/?testingName=${testingName}`}
-						as={`/accelerated-life-testing/${testingName}`}
-						replace
-					>
+					<Link href={`/accelerated-life-testing/?testingName=${testingName}`} as={`/accelerated-life-testing/${testingName}`} scroll={false}>
 						<a className={classes.cardLink}>More</a>
 					</Link>
 				</strong>
