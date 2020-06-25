@@ -49,10 +49,12 @@ const About = (props) => {
 	return (
 		<Fragment>
 			<Parallax small responsive filter image={backgroundImage}>
-				<IconButton className={modalClasses.modalCloseButton} key='close' aria-label='Close' color='inherit' onClick={closeModal}>
-					<Close className={modalClasses.modalClose} />
-				</IconButton>
 				<div className={landingClasses.container}>
+					{closeModal && (
+						<IconButton className={modalClasses.modalCloseButton} key='close' aria-label='Close' color='inherit' onClick={closeModal}>
+							<Close className={modalClasses.modalClose} />
+						</IconButton>
+					)}
 					<h1 className={landingClasses.title}>{title}</h1>
 				</div>
 			</Parallax>
