@@ -27,7 +27,7 @@ const Navbar = () => {
 			<Contact></Contact>
 			<Header
 				color='transparent'
-				brandImage={<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />}
+				brandImage={<img id='logo' src='/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />}
 				fixed
 				changeColorOnScroll={{
 					height: 400,

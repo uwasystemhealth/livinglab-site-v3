@@ -20,6 +20,9 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 // OWN COMPONENTS
 import CallToAction from './CallToAction';
 
+// CONTENT
+import TestingData from 'data/AcceleratedLifeTestingContent.json';
+
 const useStyles = makeStyles(styles);
 
 const Footer = (props) => {
@@ -42,7 +45,7 @@ const Footer = (props) => {
 					<GridContainer>
 						<GridItem md={12} sm={12}>
 							<div className={classes.left}>
-								<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
+								<img id='logo' src='/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
 							</div>
 						</GridItem>
 						<GridItem md={3} sm={12}>
@@ -101,31 +104,14 @@ const Footer = (props) => {
 										</Link>
 									</strong>
 								</ListItem>
-								<ListItem>
-									<Link href='/accelerated-life-testing/accelerated-bearing-failure-testing'>
-										<a className={aClasses}>Accelerated Bearing Failure Testing</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href='/accelerated-life-testing/ultraviolet-radiation-testing'>
-										<a className={aClasses}>Ultraviolet Radiation Testing</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href='/accelerated-life-testing/vibration'>
-										<a className={aClasses}>Vibration</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href='/accelerated-life-testing/ip-testing'>
-										<a className={aClasses}>IP Testing</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href='/accelerated-life-testing/emf-testing'>
-										<a className={aClasses}>EMF Testing</a>
-									</Link>
-								</ListItem>
+								{/* DYNAMIC FOOTER CREATION */}
+								{TestingData.map(({ title }) => (
+									<ListItem key={title}>
+										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
+											<a className={aClasses}>{title}</a>
+										</Link>
+									</ListItem>
+								))}
 							</List>
 						</GridItem>
 						<GridItem md={3} sm={12}>

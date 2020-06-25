@@ -55,7 +55,7 @@ const AboutLivingLab = () => {
 					</ul>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
-					<img src='img/wrapper-img.png' alt='' className={classes.img} />
+					<img src='/img/wrapper-img.png' alt='' className={classes.img} />
 				</GridItem>
 			</GridContainer>
 		</div>
