@@ -11,14 +11,14 @@
     },
     {
         "title": "Ultraviolet Radiation Testing",
-        "backgroundImage": "/img/feature-bg.jpg",
+        "backgroundImage": "/img/accelerated-life-testing/uv-testing/cover.jpg",
         "whatIsIt": "",
         "whatEquipmentsAreInvolved": "",
-        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/accelerated-life-testing/uv-testing/equipment.jpg",
         "methodology": "",
-        "methodologyImage": "/img/feature-bg.jpg",
+        "methodologyImage": "/img/accelerated-life-testing/uv-testing/methodology.png",
         "limitations": "",
-        "limitationsImage": "/img/feature-bg.jpg"
+        "limitationsImage": "/img/accelerated-life-testing/uv-testing/limitations.jpg"
     },
     {
         "title": "Vibration",
