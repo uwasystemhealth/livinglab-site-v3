@@ -203,6 +203,12 @@ const defaultBoxShadow = {
   transition: "all 150ms ease 0s"
 };
 
+const anchor = {
+  	display:" block",
+	position: "relative",
+	top:"-140px",
+	visibility: "hidden"
+}
 const title = {
   color: "#3C4858",
   margin: "1.75rem 0 0.875rem",
@@ -259,6 +265,7 @@ export {
   cardActions,
   cardHeader,
   defaultBoxShadow,
+  anchor,
   title,
   cardTitle,
   cardLink,

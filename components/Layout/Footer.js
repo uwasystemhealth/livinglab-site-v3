@@ -5,7 +5,7 @@ import Link from 'next/link';
 import classNames from 'classnames';
 
 // material-ui core components
-import { List, ListItem, ListItemText } from '@material-ui/core';
+import { List, ListItem, ListItemText, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
@@ -19,6 +19,9 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 
 // OWN COMPONENTS
 import CallToAction from './CallToAction';
+
+// CONTENT
+import TestingData from 'data/AcceleratedLifeTestingContent.json';
 
 const useStyles = makeStyles(styles);
 
@@ -42,10 +45,11 @@ const Footer = (props) => {
 					<GridContainer>
 						<GridItem md={12} sm={12}>
 							<div className={classes.left}>
-								<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
+								<img id='logo' src='/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />
 							</div>
 						</GridItem>
 						<GridItem md={3} sm={12}>
+							<Divider></Divider>
 							<List>
 								<ListItem>
 									<p>
@@ -59,81 +63,74 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/'>
 											<a className={aClasses}>Home</a>
 										</Link>
 									</strong>
 								</ListItem>
+
 								<ListItem>
-									<Link href=''>
+									<Link href='/about'>
 										<a className={aClasses}>About Us</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about#WhatIsTheLab'>
 										<a className={aClasses}>What is the Lab</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/about#MeetTheTeam'>
 										<a className={aClasses}>Meet The Team</a>
 									</Link>
 								</ListItem>
 							</List>
-						</GridItem>
-						<GridItem md={3} sm={12}>
+							<Divider></Divider>
 							<List>
 								<ListItem>
-									<strong>
-										<Link href=''>
-											<a className={aClasses}>Accelerated Life Testing</a>
-										</Link>
-									</strong>
-								</ListItem>
-								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>Accelerated Bearing Failure Testing</a>
+									<Link href='/privacy-policy'>
+										<a className={aClasses}>Privacy Policy</a>
 									</Link>
 								</ListItem>
-								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>Ultraviolet Radiation Testing</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>Vibration</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>IP Testing</a>
-									</Link>
-								</ListItem>
-								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>EMF Testing</a>
-									</Link>
-								</ListItem>
+								<ListItem></ListItem>
 							</List>
 						</GridItem>
 						<GridItem md={3} sm={12}>
 							<List>
 								<ListItem>
 									<strong>
-										<Link href=''>
+										<Link href='/accelerated-life-testing'>
+											<a className={aClasses}>Accelerated Life Testing</a>
+										</Link>
+									</strong>
+								</ListItem>
+								{/* DYNAMIC FOOTER CREATION */}
+								{TestingData.map(({ title }) => (
+									<ListItem key={title}>
+										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
+											<a className={aClasses}>{title}</a>
+										</Link>
+									</ListItem>
+								))}
+							</List>
+						</GridItem>
+						<GridItem md={3} sm={12}>
+							<List>
+								<ListItem>
+									<strong>
+										<Link href='/roadmap'>
 											<a className={aClasses}>Roadmap</a>
 										</Link>
 									</strong>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
+									<Link href='/roadmap/accelerated-life-testing'>
 										<a className={aClasses}>Accelerated Life Testing</a>
 									</Link>
 								</ListItem>
 								<ListItem>
-									<Link href=''>
-										<a className={aClasses}>Derising Site Trials</a>
+									<Link href='/roadmap/derisking-site-trials'>
+										<a className={aClasses}>Derisking Site Trials</a>
 									</Link>
 								</ListItem>
 							</List>

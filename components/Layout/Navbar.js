@@ -27,7 +27,7 @@ const Navbar = () => {
 			<Contact></Contact>
 			<Header
 				color='transparent'
-				brandImage={<img id='logo' src='img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />}
+				brandImage={<img id='logo' src='/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png' alt='logo' className={classes.img} />}
 				fixed
 				changeColorOnScroll={{
 					height: 400,
@@ -36,7 +36,7 @@ const Navbar = () => {
 				rightLinks={
 					<List className={classes.list}>
 						<ListItem className={classes.listItem}>
-							<Button href='' className={classes.navLink} onClick={(e) => e.preventDefault()} color='transparent'>
+							<Button href='/' className={classes.navLink} color='transparent'>
 								Home
 							</Button>
 						</ListItem>
@@ -50,7 +50,7 @@ const Navbar = () => {
 									color: 'transparent',
 								}}
 								dropdownList={[
-									<Link href='/components'>
+									<Link href='/about'>
 										<a className={classes.dropdownLink}>About Us</a>
 									</Link>,
 									<Link href='/components'>
@@ -80,7 +80,7 @@ const Navbar = () => {
 							/>
 						</ListItem>
 						<ListItem className={classes.listItem}>
-							<Button href='' className={classes.navLink} onClick={openContactFormModal} color='transparent'>
+							<Button className={classes.navLink} onClick={openContactFormModal} color='transparent'>
 								Express Interest
 							</Button>
 						</ListItem>

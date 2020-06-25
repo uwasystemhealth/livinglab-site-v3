@@ -42,11 +42,11 @@ export default function Header(props) {
 			// ABOVE
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[color]);
 			document.body.getElementsByTagName('header')[0].classList.add(classes[changeColorOnScroll.color]);
-			document.getElementById('logo').src = 'img/logos/Living-Lab-Logo-WEB-without@UWA.png';
+			document.getElementById('logo').src = '/img/logos/Living-Lab-Logo-WEB-without@UWA.png';
 		} else {
 			document.body.getElementsByTagName('header')[0].classList.add(classes[color]); // BELOW SCROLL
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[changeColorOnScroll.color]);
-			document.getElementById('logo').src = 'img/logos/Living-Lab-Logo-WEB-white-without@UWA.png';
+			document.getElementById('logo').src = '/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png';
 		}
 	};
 	const { color, rightLinks, leftLinks, brand, brandImage, fixed, absolute } = props;
@@ -57,7 +57,7 @@ export default function Header(props) {
 		[classes.fixed]: fixed,
 	});
 	const brandComponent = (
-		<Link href='/components' as='/components'>
+		<Link href='/' as='/'>
 			<Button className={classes.title}>{brandImage ? brandImage : brand}</Button>
 		</Link>
 	);
