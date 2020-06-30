@@ -53,8 +53,8 @@ const Navbar = () => {
 									<Link href='/about'>
 										<a className={classes.dropdownLink}>About Us</a>
 									</Link>,
-									<Link href='/components'>
-										<a className={classes.dropdownLink}>Available Testing</a>
+									<Link href='/accelerated-life-testing'>
+										<a className={classes.dropdownLink}>Accelerated Life Testing Equipment</a>
 									</Link>,
 									<CustomDropdown
 										hover
@@ -66,13 +66,13 @@ const Navbar = () => {
 											color: 'transparent',
 										}}
 										dropdownList={[
-											<Link href='/components'>
+											<Link href='/roadmap/accelerated-life-testing'>
 												<a className={classes.dropdownLink}>Accelerated Life Testing</a>
 											</Link>,
-											<Link href='/components'>
+											<Link href='/roadmap/derisking-site-trials'>
 												<a className={classes.dropdownLink}>Site Testing</a>
 											</Link>,
-											<Link href='/components'>
+											<Link href='/roadmap'>
 												<a className={classes.dropdownLink}>More Details About Roadmaps</a>
 											</Link>,
 										]}
