@@ -138,7 +138,15 @@ const Footer = (props) => {
 					</GridContainer>
 					<br />
 					<div className={classes.left}>
-						&copy; {1900 + new Date().getYear()} , made by the Living Lab with design by{' '}
+						&copy; {1900 + new Date().getYear()} , Made By{' '}
+						<a href='https://frinzelapuz.now.sh/' className={aClasses} target='_blank'>
+							Frinze Lapuz
+						</a>{' '}
+						on Behalf of The Living Lab and The{' '}
+						<a href='https://systemhealthlab.com/' className={aClasses} target='_blank'>
+							System Health Lab
+						</a>{' '}
+						with design by{' '}
 						<a href='https://www.creative-tim.com?ref=njsmk-footer' className={aClasses} target='_blank'>
 							Creative Tim
 						</a>{' '}

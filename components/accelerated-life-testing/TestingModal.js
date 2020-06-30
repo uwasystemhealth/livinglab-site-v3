@@ -54,6 +54,7 @@ const TestingModal = (props) => {
 			keepMounted
 			disableBackdropClick
 			fullWidth
+			fullScreen={fullScreenMobile}
 			onClose={closeModal}
 			aria-labelledby='modal-slide-title'
 			aria-describedby='modal-slide-description'
