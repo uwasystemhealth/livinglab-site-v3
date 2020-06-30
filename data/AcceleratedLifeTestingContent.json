@@ -1,13 +1,13 @@
 [{
         "title": "Accelerated Bearing Failure Testing",
-        "backgroundImage": "/img/feature-bg.jpg",
+        "backgroundImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/cover.jpg",
         "whatIsIt": "We have capacity to conduct accelerated bearing failure testing on an industrial pump to track the signal degradation of different sensors.",
         "whatEquipmentsAreInvolved": "UWA has a Goulds 3196MTX pump in a simple loop system that generates around 10m of head at full flow. The pump is fitted with a 1500W motor, which rotates the shaft at 1432 RPM. The pump has two bearings installed on the driving shaft, a 6309 radial bearing and 5309 thrust bearing. Both of these bearings measure 100mm in diameter (outer). \n The pump is located in a workshop, with capacity for drainage and ease in disassembling the pump.The installation of new bearings on the pump can be done exclusively at the UWA campus, requiring a technician or fitter to do the bearing installation.",
-        "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
+        "whatEquipmentsAreInvolvedImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/equipment.jpg",
         "methodology": "Two different tests have been created for this pump based on the most common failure causes of pumps, failure through lubrication contamination. This was achieved by packing two different greases into the same bearing (Test 1) and mixing dirt sourced from the Pilbara (<70 micrometers) with grease. Both of these tests have proven results of creating failure profiles on the bearing, validated using temperature probes and piezoelectric accelerometers.\nThere is scope to perform the following tests:<ul><li>shaft misalignment</li><li>dirt / metal / quarts contamination</li><li>seeded defects in bearing</li><li>mixing greases</li></ul>",
-        "methodologyImage": "/img/feature-bg.jpg",
+        "methodologyImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/methodology.jpg",
         "limitations": "The bearing changeout process can take some time due to needing an external contractor to strip the pump and replace the bearings.\nThe pump is located in a shared workspace, and cannot be left unsupervised during testing.\nUsing a pump for bearing replacements can take more time due to seal breakages and needing to order replacement parts.",
-        "limitationsImage": "/img/feature-bg.jpg"
+        "limitationsImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/limitations.png"
     },
     {
         "title": "Ultraviolet Radiation Testing",
@@ -43,14 +43,14 @@
         "limitationsImage": "/img/feature-bg.jpg"
     },
     {
-        "title": "EMF Testing",
+        "title": "Electro-Magnetic Compatibility Testing",
         "backgroundImage": "/img/feature-bg.jpg",
-        "whatIsIt": "",
+        "whatIsIt": "Electro-Magnetic Compatibility testing (EMC) tests if a device is emitting large amounts of electro-magnetic radiation which can be potentially harmful to other equipment and tests if the device is susceptible to electromagnetic radiation emitted nearby.",
         "whatEquipmentsAreInvolved": "",
         "whatEquipmentsAreInvolvedImage": "/img/feature-bg.jpg",
-        "methodology": "",
+        "methodology": "<strong>Test 1: Radiation test</strong><ul><li>Choose the appropriate probe from the tekbox probe set.</li><li>Connect the probe to the amplifier and connect the amplifier to the spectrum analyser.</li><li>Configure the spectrum analyser to show the frequency range of interest or alternately show the entire frequency range of the analyser.</li><li>Place the probes near the device without touching any electrical components (The probes are electrically insulated, however if this insulation becomes damaged there can be a risk of electrical shock)</li><li>Read radiation detected from the spectrum analyser</li></ul><strong>Test 2: Immunity test</strong>\nFor this test you plug the probes into an RF generator to produce a RF field. The probes are then placed near the device. Changes to the operation of the device must then be monitored. Changes such as the device switching off, changing states, loss of memory, etc. If none of these occur, then the device passes. Failing one or more of these does not mean the device automatically fails. Depending on the standard used as long as the device has no permanent damage or loss of data then the device will normally pass with just a lower grade\nWarning: Some frequencies are illegal to be emitted. Before completing this test please check if the frequency being used is allowed. If not, then the test must be performed in an electrically shielded room.",
         "methodologyImage": "/img/feature-bg.jpg",
-        "limitations": "",
+        "limitations": "The standards for EMC testing are all defined in the far-field. The probes we have are near-field probes and hence we cannot measure the far field radiation. Additionally, there is no way to convert between far field and near field. The test we do will indicate which components are emitting large amounts of radiation, but we will not be able to determine if a device complies with a specific standard or not.",
         "limitationsImage": "/img/feature-bg.jpg"
     }
 ]
