@@ -12,6 +12,8 @@ import IconButton from '@material-ui/core/IconButton';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Divider from '@material-ui/core/Divider';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
 
 // @material-ui/icons
 import { makeStyles } from '@material-ui/core';
@@ -37,6 +39,8 @@ const useStyles = makeStyles(modalStyle);
 
 const TestingModal = (props) => {
 	const { isModalOpen, closeModal, ...rest } = props;
+	const theme = useTheme();
+	const fullScreenMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const classes = useStyles();
 
 	return (
@@ -50,20 +54,14 @@ const TestingModal = (props) => {
 			keepMounted
 			disableBackdropClick
 			fullWidth
+			fullScreen={fullScreenMobile}
 			onClose={closeModal}
 			aria-labelledby='modal-slide-title'
 			aria-describedby='modal-slide-description'
-			maxWidth='md'
+			maxWidth='lg'
+			scroll='body'
 		>
-			<DialogTitle id='classic-modal-slide-title' disableTypography className={classes.modalHeader}>
-				<IconButton className={classes.modalCloseButton} key='close' aria-label='Close' color='inherit' onClick={closeModal}>
-					<Close className={classes.modalClose} />
-				</IconButton>
-				<h4 className={classes.modalTitle}>Contact Us</h4>
-			</DialogTitle>
-			<DialogContent id='modal-slide-description' className={classes.modalBody}>
-				<TestingPageContent {...rest}></TestingPageContent>
-			</DialogContent>
+			<TestingPageContent {...rest} closeModal={closeModal}></TestingPageContent>
 		</Dialog>
 	);
 };

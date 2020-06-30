@@ -1,96 +1,49 @@
-# [NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit?ref=njsmk-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit%2Fcomponents&text=NextJS%20Material%20Kit&via=Creative%20Tim&hashtags=nextjs%20%23creativetim%20%23materialdesign)
-
-
- ![version](https://img.shields.io/badge/version-1.1.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-material-kit.svg?maxAge=2592000)](https://github.com/creativetimofficial/nextjs-material-kit/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
-
-
-![Product Presentation Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/nextjs-material-kit.jpg)
-
-**[NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)** is a Free Material-UI Kit with a fresh, new design inspired by Google's material design and is was developed using [NextJS](https://nextjs.org/?ref=creativetim), starting from [this starter project](https://github.com/mui-org/material-ui/tree/master/examples/nextjs) by [Material-UI](https://material-ui.com/?ref=creativetim) and [Material Kit React](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme) by Creative Tim. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your NextJS project.
-
-**[NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)** makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
-
-This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. NextJS Material Kit is a great tool if you are looking to create a web presence for your web application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
-
-**[NextJS Material Kit](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)** was built with the help of [nextjs](https://nextjs.org/?ref=creativetim) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/?ref=creativetim)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+# Living Lab Website
+This is the Living Lab Website version 2. This has been created by [Frinze Lapuz](https://github.com/frinzekt) for the Living Lab project. 
 
 
 ## Table of Contents
-
-* [Versions](#versions)
-* [Demo](#demo)
 * [Quick Start](#quick-start)
-* [Documentation](#documentation)
+* [Technologies](#technology-stack)
+    - [Why Did I Use This Technology Stack?](why-did-i-use-this-technology-stack?)
 * [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+* [Template Licensing](#template-licensing)
 
+## Technology Stack
+This website has been created using the following technologies:
+- React - a UI library in JavaScript that utilizes the power of Client-Side Rendering for Single Page Application
+- Next - a library of React that handles initial Server-Side Rendering, and also allows caching of the Static HTML and CSS generated readily to be served including the pages in the dynamic routes
+- MaterialKit + MaterialUI - a CSS library created by Creative Tim that provides easy and ready to use components to create website layout very fast
 
-## Versions
+### Why Did I Use This Technology Stack?
+I used this technology stack for multiple reasons that I will list in the order of importance:
+1. **Custom Reusable Components = Faster Development and Better Maintainability** - in this project, there are a lot of repetitions of layout in multiple pages such as header and footer. Moreover, some pages such as the "Accelerated Life Testing" pages content are repeated layout with the difference only the content. Hence, I needed a way in order to create reusable components so that I will not have to recreate or copy paste code that I have already written. This also means that one change of code, will change all the related pages. This is the power of React.
+2. **Template Components = Faster Development and Responsive Design** - I needed a way to create responsive website that will look good regardless of whether the website is being viewed in a desktop, laptop, tablet or mobile phones. Furthermore, developing own components with good styling and also responsive takes too much time. Hence, the use of CSS library is important for this project. This is satisfied with MaterialKit + MaterialUI
+3. **Static Site With Client-Side Rendering= Website Speed Perfomance and Security** - I needed a way to create a website that is fast and secure. The original website is a simple HTML and CSS website, and only contained 3 pages which is good especially for its simplicity for speed and security. In my side, I had to add approximately 18 pages which means that I needed a way to reduce the loading speed without compromising the original security it had. I used Next in order to cache the static HTML and CSS for server-side rendering while still maintaining the client-side rendering for the speed. Since the entire site is static, there is no dynamicness or backend services that can be hacked to change the content of the website without going through the source code. 
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nextjs_logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/figma-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=njsmk-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/wordpress-logo.jpg?raw=true" width="60" height="60" />](https://themeisle.com/themes/hestia/?ref=creativetim)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/photoshop)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/sketch)
-
-
-
-| React Native | Figma | WordPress | NextJS |
-| ---  | --- | --- | --- |
-| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmk-readme) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=njsmk-readme) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim)  | [![NextJS Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/nextjs-material-kit.jpg?raw=true)](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme)
-
-
-| HTML | React | Vue |
-| --- | --- | --- |
-| [![Material Kit  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit?ref=njsmk-readme)  | [![Material Kit React](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/material-kit-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit-react?ref=njsmk-readme)  | [![Vue Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-kit/vue-material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-kit?ref=njsmk-readme)
-
-## Demo
-
-| Buttons | Inputs | Navbars  |
-| --- | --- | ---  |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/buttons.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/inputs.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/navbars.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)  
-
-| Login Page | Landing Page | Profile Page  |
-| --- | --- | ---  |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit/login-page.png)](https://demos.creative-tim.com/nextjs-material-kit/login?ref=njsmk-readme)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/landing?ref=njsmk-readme)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/nextjs-material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/nextjs-material-kit/profile?ref=njsmk-readme)  
-
-[View More](https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme)
-
+If this reasoning of mine does not satisfy you, feel free to contact me and have a discussion about this.
 
 ## Quick start
-
-- [Download from Github](https://github.com/creativetimofficial/nextjs-material-kit/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme).
-- Clone the repo: `git clone https://github.com/creativetimofficial/nextjs-material-kit.git`.
-- `npm i nextjs-material-kit`
-- Install with [Bower](https://bower.io/?ref=creativetim): ```bower install nextjs-material-kit```.
-
-
-## Documentation
-The documentation for the NextJS Material Kit is hosted at our [website](https://demos.creative-tim.com/nextjs-material-kit/documentation/tutorial?ref=njsmk-readme).
-
+- Clone the repo: `git clone https://github.com/uwasystemhealth/livinlab-site-v2.git`.
+- Install the dependencies: `npm install` or `yarn install`
 
 ## File Structure
-Within the download you'll find the following directories and files:
-
+This is what you will see in the directories. *Note: there will be comments for VERY VERY IMPORTANT FILES*
 ```
-nextjs-material-kit
+livinlab-site-v2
 .
 ├── CHANGELOG.md
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
-├── next.config.js
-├── package.json
-├── Documentation
-│   ├── assets
-│   └── tutorial-components.html
-├── assets
+├── next.config.js //CONTAINS CONFIGURATIONS FOR RUNNING SUCH AS FOR WEBPACK
+├── package.json //CONTAINS THE DEPENDENCIES OF THIS PROJECT
+├── assets //MATERIAL KIT ASSETS
 │   ├── css
 │   ├── img
 │   │   ├── examples
 │   │   └── faces
-│   ├── jss
+│   ├── jss // CONTAINS PROPERTIES OF THE STYLED COMPONENTS
 │   │   ├── nextjs-material-kit
 │   │   │   ├── components
 │   │   │   └── pages
@@ -103,16 +56,16 @@ nextjs-material-kit
 │       │   └── variables
 │       ├── plugins
 │       └── nextjs-material-kit.scss
-├── pages
-│   ├── _app.js
-│   ├── _document.js
-│   ├── _error.js
+├── pages  // ACCESSIBLE ROUTES
+│   ├── _app.js  // CONTAINS THE BASIC LAYOUT OF ANY PAGE SERVED IN /pages
+│   ├── _document.js  // CONTAINS ANY META TAGS OF ANY PAGE SERVED IN /pages
+│   ├── _error.js   // CONTAINS WHAT HAPPENS ON ERROR OR 404
 │   ├── components.js
 │   ├── index.js
 │   ├── landingpage.js
 │   ├── loginpage.js
 │   └── profilepage.js
-├── components
+├── components //REUSABLE COMPONENTS
 │   ├── Badge
 │   │   └── Badge.js
 │   ├── Card
@@ -161,85 +114,30 @@ nextjs-material-kit
 │       ├── Small.js
 │       ├── Success.js
 │       └── Warning.js
-└── pages-sections
-    ├── Components-Sections
-    │   ├── SectionBasics.js
-    │   ├── SectionCarousel.js
-    │   ├── SectionCompletedExamples.js
-    │   ├── SectionDownload.js
-    │   ├── SectionExamples.js
-    │   ├── SectionJavascript.js
-    │   ├── SectionLogin.js
-    │   ├── SectionNavbars.js
-    │   ├── SectionNotifications.js
-    │   ├── SectionPills.js
-    │   ├── SectionTabs.js
-    │   └── SectionTypography.js
-    └── LandingPage-Sections
-        ├── ProductSection.js
-        ├── TeamSection.js
-        └── WorkSection.js
+├── pages-sections  // SECTIONS OF PAGES - NAMED AFTER PAGES AND ROUTES OF PAGES
+│   ├── Components-Sections
+│   │   ├── SectionBasics.js
+│   │   ├── SectionCarousel.js
+│   │   ├── SectionCompletedExamples.js
+│   │   ├── SectionDownload.js
+│   │   ├── SectionExamples.js
+│   │   ├── SectionJavascript.js
+│   │   ├── SectionLogin.js
+│   │   ├── SectionNavbars.js
+│   │   ├── SectionNotifications.js
+│   │   ├── SectionPills.js
+│   │   ├── SectionTabs.js
+│   │   └── SectionTypography.js
+│   └── LandingPage-Sections
+│       ├── ProductSection.js
+│       ├── TeamSection.js
+│       └── WorkSection.js
+│
+├── public  // ASSETS SPECIFIC TO THE LIVING LAB
 ```
 
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
-
-
-
-## Resources
-- Demo: <https://demos.creative-tim.com/nextjs-material-kit/?ref=njsmk-readme>
-- Download Page: <https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-readme>
-- Documentation: <https://demos.creative-tim.com/nextjs-material-kit/documentation/tutorial?ref=njsmk-readme>
-- License Agreement: <https://www.creative-tim.com/license?ref=njsmk-readme>
-- Support: <https://www.creative-tim.com/contact-us?ref=njsmk-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/nextjs-material-kit/issues)
-- **Dashboards:**
-
-| HTML | React | Vue  | Angular |
-| --- | --- | ---  | ---  |
-| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard?ref=njsmk-readme) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react?ref=njsmk-readme) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard?ref=njsmk-readme)  | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2?ref=njsmk-readme)
-
-| HTML Dark | Laravel | Vuetify |
-| --- | --- | --- |
-| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark?ref=njsmk-readme) |[![Material Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-laravel/material-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel?ref=njsmk-readme)| [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard?ref=njsmk-readme)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the NextJS Material Kit. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=njsmk-readme).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Licensing
+## Template Licensing
 
 - Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/master/LICENSE.md)
-
-## Useful Links
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=njsmk-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=njsmk-readme)
-- [Free Products](https://www.creative-tim.com/templates/free?direction=desc&sort=created_at&ref=njsmk-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/templates/premium?direction=desc&sort=created_at&ref=njsmk-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/templates/react?direction=desc&sort=created_at&ref=njsmk-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/templates/angular?direction=desc&sort=created_at&ref=njsmk-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/templates/vuejs?direction=desc&sort=created_atref=njsmk-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/templates?ref=njsmk-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=njsmk-readme)
-
-### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
