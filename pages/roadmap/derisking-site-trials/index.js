@@ -35,24 +35,6 @@ import stepperStyles from 'assets/jss/custom/stepper.js';
 
 const useStyles = makeStyles(styles);
 const useStepperStyles = makeStyles(stepperStyles);
-const ColorlibConnector = withStyles({
-	active: {
-		'& $lineVertical': {
-			backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
-		},
-	},
-	completed: {
-		'& $lineVertical': {
-			backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
-		},
-	},
-	lineVertical: {
-		height: 1,
-		border: 0,
-		backgroundColor: '#eaeaf0',
-		borderRadius: 1,
-	},
-})(StepConnector);
 
 const AcceleratedLifeTesting = () => {
 	const classes = useStyles();
