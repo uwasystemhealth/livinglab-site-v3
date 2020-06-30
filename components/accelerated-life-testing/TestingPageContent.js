@@ -70,19 +70,22 @@ const About = (props) => {
 							key={title}
 							spacing={0}
 							direction={index % 2 ? 'row-reverse' : 'row'}
-							className={productClasses.gridContainerNoSpacing}
+							justify='center'
+							alignItems='center'
+							className={productClasses.section}
 						>
-							<GridItem md={6}>
+							<GridItem className={productClasses.gridItemPadded} md={6}>
 								<div className={productClasses.descriptionContainer}>
 									<h2 className={productClasses.title}>{title}</h2>
-									<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/><br/>') }}>
-										{}
-									</h5>
+									<h5
+										className={productClasses.description}
+										dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/><br/>') }}
+									></h5>
 								</div>
 							</GridItem>
-							<GridItem md={6}>
+							<GridItem className={productClasses.gridItemPadded} md={6} style={{ display: 'flex', justifyContent: 'center' }}>
 								{/* REFACTOR THE CSS STYLING */}
-								<img src={image} alt='' className={productClasses.img} />
+								<img src={image} alt='' className={productClasses.imgALT} />
 							</GridItem>
 						</GridContainer>
 					))}

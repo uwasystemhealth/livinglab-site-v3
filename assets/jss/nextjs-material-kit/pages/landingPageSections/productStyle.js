@@ -16,6 +16,7 @@ const productStyle = {
 		marginTop: '30px',
 		minHeight: '32px',
 		textDecoration: 'none',
+		textAlign: 'center',
 	},
 	description: {
 		color: '#999',
@@ -24,9 +25,13 @@ const productStyle = {
 		maxHeight: '100%',
 		maxWidth: '100%',
 	},
-	gridContainerNoSpacing: {
-		padding:"0px"
-	}
+	imgALT: {
+		maxHeight: '300px',
+		maxWidth: '100%',
+	},
+	gridItemPadded: {
+		padding: '10px',
+	},
 };
 
 export default productStyle;

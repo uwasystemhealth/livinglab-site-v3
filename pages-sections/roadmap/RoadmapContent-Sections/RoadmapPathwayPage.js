@@ -13,7 +13,6 @@ import StepContent from '@material-ui/core/StepContent';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 
-
 //ICONS
 import PartnerIcon from '@material-ui/icons/SupervisorAccount';
 import SafetyIcon from '@material-ui/icons/LocalHospital';
@@ -45,7 +44,7 @@ import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 // DATA Import
 import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
 
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink,nextLink }) => {
+const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink }) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -59,7 +58,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
 					<GridContainer>
-						<GridItem xs={12} sm={12} md={6}>
+						<GridItem>
 							<h1 className={classes.title}>{title}</h1>
 						</GridItem>
 						<GridItem>
@@ -86,22 +85,24 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 							</GridContainer>
 							<GridContainer id='card-actions' direction='row' justify='space-between' alignItems='center'>
 								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>
-								{previousLink &&
-								(<Button color='primary' simple  href={previousLink}>
-										<NavigateBeforeIcon></NavigateBeforeIcon>{(isMobile) ? "" : "Previous"}
-									</Button>)
-								}
+									{previousLink && (
+										<Button color='primary' simple href={previousLink}>
+											<NavigateBeforeIcon></NavigateBeforeIcon>
+											{isMobile ? '' : 'Previous'}
+										</Button>
+									)}
 								</GridItem>
 								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>
 									<Button color='success' simple>
-										{(isMobile) ? "" : "Download PDF"} <DownloadIcon></DownloadIcon>
+										{isMobile ? '' : 'Download PDF'} <DownloadIcon></DownloadIcon>
 									</Button>
 								</GridItem>
 								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>
-									{nextLink && <Button color='primary' simple href={nextLink}>
-										{(isMobile) ? "" : "Next"} <NavigateNextIcon></NavigateNextIcon>
-									</Button> }
-									
+									{nextLink && (
+										<Button color='primary' simple href={nextLink}>
+											{isMobile ? '' : 'Next'} <NavigateNextIcon></NavigateNextIcon>
+										</Button>
+									)}
 								</GridItem>
 							</GridContainer>
 						</CardBody>
