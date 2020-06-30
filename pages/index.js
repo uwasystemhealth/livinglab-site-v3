@@ -35,7 +35,7 @@ const index = () => {
 							<h1 className={classes.title}>Living Lab</h1>
 							<h3>We Are A Team Of Engineers Ready To Help</h3>
 							<br />
-							<Button href='/roadmap/accelerate-life-testing' color='primary' size='lg'>
+							<Button href='/roadmap/accelerated-life-testing' color='primary' size='lg'>
 								<Timer></Timer>
 								Accelerated Life Testing
 							</Button>
