@@ -12,12 +12,12 @@
     {
         "title": "Ultraviolet Radiation Testing",
         "backgroundImage": "/img/accelerated-life-testing/uv-testing/cover.jpg",
-        "whatIsIt": "",
-        "whatEquipmentsAreInvolved": "",
+        "whatIsIt": "The Living Lab has the capacity to perform accelerated UV degradation testing. UV degradation is a major challenge to the reliability of equipment in a variety of environments, from the harsh Australian outback to the perpetual daylight of the polar regions, and affects all materials. ",
+        "whatEquipmentsAreInvolved": "The Living Lab has access to a xenon arc lamp Atlas Suntest CPS+ accelerated weathering unit with daylight filters capable of producing UV radiation with a frequency between 300-800nm and a maximum intensity of 765W/㎡. The unit is located in a lab on UWA campus and can be set up to perform tests over long periods to expose equipment to sustained, elevated levels of UV radiation.",
         "whatEquipmentsAreInvolvedImage": "/img/accelerated-life-testing/uv-testing/equipment.jpg",
-        "methodology": "",
+        "methodology": "The typical process for accelerated UV weathering testing employed by the Living Lab is as follows:<ul><li>Pre-test functional test and visual inspection of one unit</li><li>Expose the unit for a given time period at an agreed radiation level.  Rotate the unit by 180° halfway through the agreed testing period.</li><li>Functional test and visual inspection halfway through testing period.</li><li>Post-test functional test and visual inspection.</li><li>Assessment, if necessary, repetition of the test.</li></ul>",
         "methodologyImage": "/img/accelerated-life-testing/uv-testing/methodology.png",
-        "limitations": "",
+        "limitations": "When designing the UV exposure testing scheme the Living Lab team consulted ISO 4892-1 Plastics — Methods of exposure to laboratory light sources — Part 1: General guidance and ISO 4892-2 Plastics — Methods of exposure to laboratory light sources — Part 2: Xenon-arc lamps. \nISO 4892-1 4.2.3 describes an important limitation of accelerated UV testing that “Even though it is very tempting, it is invalid to assign to all materials a “general acceleration factor” relating “x” hours or megajoules of radiant exposure in an artificial accelerated weathering or artificial accelerated irradiation exposure to “y” months or years of actual exposure”.\nThere will be differences in relative spectral irradiance between the Atlas light source and solar radiation, in the temperature and irradiance levels experienced by the test unit and those deployed in the field. However, the testing scheme devised by the Living Lab provides a good first indicator of whether or not a piece of equipment is ready for further testing and/or site trials. ",
         "limitationsImage": "/img/accelerated-life-testing/uv-testing/limitations.jpg"
     },
     {
