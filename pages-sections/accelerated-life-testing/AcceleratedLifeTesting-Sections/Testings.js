@@ -28,16 +28,13 @@ const getTestObject = (router) => {
 		return object;
 	} else if (typeof window !== 'undefined') {
 		// SERVER SIDE ONLY
-		console.log('SERVER REDIRECT');
 		router.push('/');
 	}
 };
 
 const Testings = () => {
 	const router = useRouter();
-	console.log(router.query.testingName);
 	const testObject = !!router.query.testingName ? getTestObject(router) : null;
-	console.log(testObject);
 
 	const closeTestModal = () => {
 		router.push('/accelerated-life-testing');
