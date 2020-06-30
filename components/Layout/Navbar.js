@@ -57,6 +57,7 @@ const Navbar = () => {
 										<a className={classes.dropdownLink}>Available Testing</a>
 									</Link>,
 									<CustomDropdown
+										hover
 										noLiPadding
 										navDropdown
 										buttonText='Roadmap'

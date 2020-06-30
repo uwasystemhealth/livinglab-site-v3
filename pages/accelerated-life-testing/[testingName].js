@@ -7,22 +7,31 @@ import TestingPageContent from 'components/accelerated-life-testing/TestingPageC
 // CONTENT
 import TestingData from 'data/AcceleratedLifeTestingContent.json';
 
-const getTestObject = (router) => {
-	const { testingName } = router.query;
+const getTestObject = (testingName) => {
 	// REPLACE TITLE SPACES WITH - THEN COMPARE
 	const object = TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
-	if (object) {
-		return object;
-	} else if (typeof window !== 'undefined') {
-		// SERVER SIDE ONLY
-		router.push('/');
-	}
+	return object;
 };
 
-const TestingEquipmentPage = () => {
-	const router = useRouter();
-	const testObject = getTestObject(router);
+const TestingEquipmentPage = ({ testObject }) => {
 	return <TestingPageContent {...testObject}></TestingPageContent>;
 };
+
+export async function getStaticProps(context) {
+	const { testingName } = context.params;
+	const testObject = getTestObject(testingName);
+	return {
+		props: {
+			testObject,
+		},
+	};
+}
+
+export async function getStaticPaths() {
+	return {
+		paths: TestingData.map(({ title }) => ({ params: { testingName: title.toLowerCase().replace(/ /g, '-') } })),
+		fallback: false,
+	};
+}
 
 export default TestingEquipmentPage;

@@ -71,11 +71,11 @@ export default class MyApp extends App {
 `);
 		document.insertBefore(comment, document.documentElement);
 	}
-	static async getInitialProps({ Component, router, ctx }) {
+	static async getStaticProps({ Component, router, ctx }) {
 		let pageProps = {};
 
 		if (Component.getInitialProps) {
-			pageProps = await Component.getInitialProps(ctx);
+			pageProps = await Component.getStaticProps(ctx);
 		}
 
 		return { pageProps };
