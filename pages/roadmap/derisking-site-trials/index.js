@@ -31,20 +31,10 @@ import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTes
 import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
+import stepperStyles from 'assets/jss/custom/stepper.js';
+
 const useStyles = makeStyles(styles);
-const useStepperStyles = makeStyles({
-	root: {
-		backgroundColor: '#eaeaf0',
-		zIndex: 1,
-		color: '#fff',
-		width: 50,
-		height: 50,
-		display: 'flex',
-		borderRadius: '50%',
-		justifyContent: 'center',
-		alignItems: 'center',
-	},
-});
+const useStepperStyles = makeStyles(stepperStyles);
 const ColorlibConnector = withStyles({
 	active: {
 		'& $lineVertical': {
@@ -85,11 +75,25 @@ const AcceleratedLifeTesting = () => {
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<ALTDescription></ALTDescription>
-					<Stepper orientation='vertical' connector={<ColorlibConnector />}>
+					<Stepper orientation='vertical'>
 						{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
 							<Step key={title} active={true}>
 								<StepLabel StepIconComponent={stepIcon}>{title}</StepLabel>
-								<StepContent>{description}</StepContent>
+								<StepContent>
+									<div>{description}</div> <br />
+									<GridContainer justify='flex-end'>
+										<GridItem xs={9} md={3}>
+											<Button
+												color='primary'
+												href={`derisking-site-trials/${title.toLowerCase().replace(/ /g, '-')}`}
+												style={{ width: '100%' }}
+											>
+												More About <br />
+												{title}
+											</Button>
+										</GridItem>
+									</GridContainer>
+								</StepContent>
 							</Step>
 						))}
 					</Stepper>
