@@ -54,9 +54,9 @@ export default function Parallax(props) {
     <div
       className={parallaxClasses}
       style={{
-        ...style,
         backgroundImage: "url(" + image + ")",
-        transform: transform
+        transform: transform,
+        ...style,
       }}
     >
       {children}

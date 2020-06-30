@@ -48,7 +48,7 @@ const About = (props) => {
 	];
 	return (
 		<Fragment>
-			<Parallax small responsive filter image={backgroundImage}>
+			<Parallax small responsive filter image={backgroundImage} style={closeModal ? { transform: 'translate3d(0,0px,0)' } : null}>
 				<div className={landingClasses.container}>
 					{closeModal && (
 						<IconButton className={modalClasses.modalCloseButton} key='close' aria-label='Close' color='inherit' onClick={closeModal}>
