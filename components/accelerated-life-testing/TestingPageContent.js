@@ -77,9 +77,10 @@ const About = (props) => {
 							<GridItem className={productClasses.gridItemPadded} md={6}>
 								<div className={productClasses.descriptionContainer}>
 									<h2 className={productClasses.title}>{title}</h2>
-									<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/><br/>') }}>
-										{}
-									</h5>
+									<h5
+										className={productClasses.description}
+										dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/><br/>') }}
+									></h5>
 								</div>
 							</GridItem>
 							<GridItem className={productClasses.gridItemPadded} md={6} style={{ display: 'flex', justifyContent: 'center' }}>
