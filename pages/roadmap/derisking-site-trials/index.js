@@ -24,20 +24,22 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import ALTDescription from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Description.js';
-import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
+import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/Description';
 
 // DATA Import
 import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
 
+import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 import stepperStyles from 'assets/jss/custom/stepper.js';
 
 const useStyles = makeStyles(styles);
 const useStepperStyles = makeStyles(stepperStyles);
+const useStylesProduct = makeStyles(productStyles);
 
 const AcceleratedLifeTesting = () => {
 	const classes = useStyles();
+	const productClasses = useStylesProduct();
 	const stepperClasses = useStepperStyles();
 	const stepIcon = (props) => {
 		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
@@ -47,22 +49,20 @@ const AcceleratedLifeTesting = () => {
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-					<GridContainer>
-						<GridItem xs={12} sm={12} md={6}>
-							<h1 className={classes.title}>Derisking Site Trials</h1>
-						</GridItem>
-					</GridContainer>
+					<h1 className={classes.title}>Derisking Site Trials</h1>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<ALTDescription></ALTDescription>
+					<Description></Description>
 					<Stepper orientation='vertical'>
 						{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
 							<Step key={title} active={true}>
-								<StepLabel StepIconComponent={stepIcon}>{title}</StepLabel>
+								<StepLabel StepIconComponent={stepIcon}>
+									<h3 className={productClasses.title}>{title}</h3>
+								</StepLabel>
 								<StepContent>
-									<div>{description}</div> <br />
+									<h5 className={productClasses.description}>{description}</h5> <br />
 									<GridContainer justify='flex-end'>
 										<GridItem xs={9} md={3}>
 											<Button
