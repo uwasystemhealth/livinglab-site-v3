@@ -17,7 +17,7 @@ const getPathwayObject = (pathwayName) => {
 };
 
 const RoadmapPathwayPageRoute = ({ pathwayObject }) => {
-	return <RoadmapPathwayPage {...pathwayObject} pathway={PATHWAY}></RoadmapPathwayPage>;
+	return <RoadmapPathwayPage {...pathwayObject} pathway={PATHWAY} pathwayName="Accelerated Life Testing"></RoadmapPathwayPage>;
 };
 
 export async function getStaticProps(context) {

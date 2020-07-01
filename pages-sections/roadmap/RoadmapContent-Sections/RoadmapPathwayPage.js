@@ -5,7 +5,7 @@ import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
 
 // @material-ui/core components
-import { makeStyles, styled } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -41,17 +41,10 @@ const useStepperStyles = makeStyles(stepperStyle);
 //SECTIONS
 import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 
-// DATA Import
-import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
+//OWN COMPONENT
+import StepperPathway from 'components/roadmaps/StepperPathway.js';
 
-// WORKAROUND CHANGE COLOR OF STEP LABEL
-const StyledStepLabel = styled(StepLabel)({
-	'& .MuiStepLabel-active': {
-		color: '#FFFF',
-	},
-});
-
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway }) => {
+const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway,pathwayName }) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -71,15 +64,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 							<h1 className={classes.title}>{title}</h1>
 						</GridItem>
 						<GridItem>
-							<Stepper alternativeLabel nonLinear className={stepperClasses.stepper}>
-								{pathway.map(({ title }) => (
-									<Step key={title} active={true} connector={<StepperConnector />}>
-										<StyledStepLabel StepIconComponent={StepIcon} className={stepperClasses.alternativeLabel}>
-											{title}
-										</StyledStepLabel>
-									</Step>
-								))}
-							</Stepper>
+							<StepperPathway pathway={pathway} StepIcon={StepIcon} roadmapTitle={pathwayName} whiteFont></StepperPathway>
 						</GridItem>
 					</GridContainer>
 				</div>
