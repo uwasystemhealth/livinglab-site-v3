@@ -6,7 +6,7 @@ const callToActionStyle = {
 		'&,&:hover,&:focus': {
 			color: '#FFFFFF',
 		},
-		backgroundColor: '#696969',
+		backgroundColor: '#707A7F',
 	},
 };
 
