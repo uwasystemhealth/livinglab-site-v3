@@ -6,7 +6,7 @@ const stepperStyle = {
 		backgroundColor: 'transparent',
 	},
 	root: {
-		backgroundColor: 'yellow',
+		backgroundColor: '#FEBF00',
 		zIndex: 1,
 		color: '#FFFFFF',
 		width: 50,
@@ -27,12 +27,12 @@ export const StepperConnector = withStyles({
 	},
 	active: {
 		'& $line': {
-			backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+			backgroundImage: 'linear-gradient( 95deg,#F26923 0%,#01B5AF 50%,#83C562 100%)',
 		},
 	},
 	completed: {
 		'& $line': {
-			backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+			backgroundImage: 'linear-gradient( 95deg,#F26923 0%,#01B5AF 50%,#83C562 100%)',
 		},
 	},
 	line: {

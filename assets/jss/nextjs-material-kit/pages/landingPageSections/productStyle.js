@@ -19,7 +19,7 @@ const productStyle = {
 		textAlign: 'center',
 	},
 	description: {
-		color: '#999',
+		color: '#000',
 	},
 	img: {
 		maxHeight: '100%',

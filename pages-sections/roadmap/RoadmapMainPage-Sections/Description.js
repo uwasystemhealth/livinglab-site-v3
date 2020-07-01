@@ -15,14 +15,11 @@ const ALTDescription = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.section}>
-			<h2 className={classes.title}>Testing In The Living Lab</h2>
+			<h2 className={classes.title}>Roadmap</h2>
 			<h5 className={classes.description}>
 				Some Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome
 				Text HereSome Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text HereSome Text HereSome Text Here
 			</h5>
-			<Button color='primary' href=''>
-				More About Pathway
-			</Button>
 		</div>
 	);
 };
