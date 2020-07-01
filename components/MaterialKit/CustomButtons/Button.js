@@ -18,7 +18,7 @@ const makeComponentStyles = makeStyles(() => ({
 }));
 
 const RegularButton = React.forwardRef((props, ref) => {
-	const { href, color, round, children, fullWidth, disabled, simple, size, block, link, justIcon, className, ...rest } = props;
+	const { href, color, round, children, fullWidth, disabled, simple, size, block, link, justIcon, className, external, ...rest } = props;
 
 	const classes = makeComponentStyles();
 
@@ -37,14 +37,14 @@ const RegularButton = React.forwardRef((props, ref) => {
 	});
 	return (
 		<Fragment>
-			{href ? (
+			{href && !external ? (
 				<Link href={href}>
 					<Button {...rest} ref={ref} classes={{ root: btnClasses }}>
 						{children}
 					</Button>
 				</Link>
 			) : (
-				<Button {...rest} ref={ref} classes={{ root: btnClasses }}>
+				<Button href={href} {...rest} ref={ref} classes={{ root: btnClasses }}>
 					{children}
 				</Button>
 			)}
