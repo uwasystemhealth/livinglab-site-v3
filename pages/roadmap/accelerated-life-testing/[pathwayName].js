@@ -11,13 +11,13 @@ const getPathwayObject = (pathwayName) => {
 	const objectIndex = PATHWAY.findIndex(({ title }) => pathwayName === title.toLowerCase().replace(/ /g, '-'));
 	const object = PATHWAY[objectIndex];
 	object.index = objectIndex; // ATTACHES THE INDEX TO THE OBJECT
-	object.previousLink = (objectIndex-1 >= 0 ) ? PATHWAY[objectIndex-1].title.toLowerCase().replace(/ /g, '-') : null
-	object.nextLink = (objectIndex+1 < PATHWAY.length ) ? PATHWAY[objectIndex+1].title.toLowerCase().replace(/ /g, '-') : null
+	object.previousLink = objectIndex - 1 >= 0 ? PATHWAY[objectIndex - 1].title.toLowerCase().replace(/ /g, '-') : null;
+	object.nextLink = objectIndex + 1 < PATHWAY.length ? PATHWAY[objectIndex + 1].title.toLowerCase().replace(/ /g, '-') : null;
 	return object;
 };
 
 const RoadmapPathwayPageRoute = ({ pathwayObject }) => {
-	return <RoadmapPathwayPage {...pathwayObject}></RoadmapPathwayPage>;
+	return <RoadmapPathwayPage {...pathwayObject} pathway={PATHWAY}></RoadmapPathwayPage>;
 };
 
 export async function getStaticProps(context) {
