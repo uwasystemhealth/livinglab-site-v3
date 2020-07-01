@@ -66,8 +66,8 @@ const ALTDescription = () => {
 								DescrtiptionSome DescrtiptionSome DescrtiptionSome Descrtiption
 							</div>
 							<br />
-							<StepperPathway pathway={pathway} StepIcon={StepIcon} roadmapTitle={title}></StepperPathway>
 						</CardBody>
+						<StepperPathway pathway={pathway} StepIcon={StepIcon} roadmapTitle={title}></StepperPathway>
 					</Card>
 				</GridItem>
 			))}
