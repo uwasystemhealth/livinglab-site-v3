@@ -37,10 +37,6 @@ const useStepperStyles = makeStyles(stepperStyle);
 const ALTDescription = () => {
 	const classes = useStyles();
 	const stepperClasses = useStepperStyles();
-	const StepIcon = (props) => {
-		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
 
 	return (
 		<GridContainer>
@@ -61,13 +57,20 @@ const ALTDescription = () => {
 							</GridContainer>
 						</CardHeader>
 						<CardBody>
-							<div>
+							<div className={classes.description}>
 								Some Descrtiption Some DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome
 								DescrtiptionSome DescrtiptionSome DescrtiptionSome Descrtiption
 							</div>
 							<br />
 						</CardBody>
-						<StepperPathway pathway={pathway} StepIcon={StepIcon} roadmapTitle={title}></StepperPathway>
+						<StepperPathway pathway={pathway} roadmapTitle={title}></StepperPathway>
+						<CardBody>
+							<GridContainer justify='center'>
+								<Button round color='primary'>
+									More About {title}
+								</Button>
+							</GridContainer>
+						</CardBody>
 					</Card>
 				</GridItem>
 			))}

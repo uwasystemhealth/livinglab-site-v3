@@ -14,9 +14,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 
 //ICONS
-import PartnerIcon from '@material-ui/icons/SupervisorAccount';
-import SafetyIcon from '@material-ui/icons/LocalHospital';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import DownloadIcon from '@material-ui/icons/GetApp';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
@@ -49,10 +46,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const stepperClasses = useStepperStyles();
-	const StepIcon = (props) => {
-		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
+
 	return (
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
@@ -62,7 +56,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 							<h1 className={classes.title}>{title}</h1>
 						</GridItem>
 						<GridItem>
-							<StepperPathway pathway={pathway} StepIcon={StepIcon} roadmapTitle={pathwayName} whiteFont></StepperPathway>
+							<StepperPathway pathway={pathway} roadmapTitle={pathwayName} whiteFont></StepperPathway>
 						</GridItem>
 					</GridContainer>
 				</div>
