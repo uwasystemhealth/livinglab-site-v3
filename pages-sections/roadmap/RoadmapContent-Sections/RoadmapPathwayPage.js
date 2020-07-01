@@ -14,9 +14,6 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 
 //ICONS
-import PartnerIcon from '@material-ui/icons/SupervisorAccount';
-import SafetyIcon from '@material-ui/icons/LocalHospital';
-import DraftsIcon from '@material-ui/icons/Drafts';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import DownloadIcon from '@material-ui/icons/GetApp';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
@@ -41,18 +38,15 @@ const useStepperStyles = makeStyles(stepperStyle);
 //SECTIONS
 import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 
-// DATA Import
-import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
+//OWN COMPONENT
+import StepperPathway, { StepIcon } from 'components/roadmaps/StepperPathway.js';
 
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink }) => {
+const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway, pathwayName }) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const stepperClasses = useStepperStyles();
-	const StepIcon = (props) => {
-		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
+
 	return (
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
@@ -62,15 +56,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 							<h1 className={classes.title}>{title}</h1>
 						</GridItem>
 						<GridItem>
-							<Stepper alternativeLabel nonLinear className={stepperClasses.stepper}>
-								{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
-									<Step key={title} active={true} connector={<StepperConnector />}>
-										<StepLabel StepIconComponent={StepIcon} className={stepperClasses.alternativeLabel}>
-											{title}
-										</StepLabel>
-									</Step>
-								))}
-							</Stepper>
+							<StepperPathway pathway={pathway} roadmapTitle={pathwayName} whiteFont></StepperPathway>
 						</GridItem>
 					</GridContainer>
 				</div>
@@ -80,7 +66,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 					<Card>
 						<CardBody>
 							<GridContainer id='descriptionBox' direction='row' justify='center' alignItems='center'>
-								<StepIcon icon={index + 1}></StepIcon>
+								<StepIcon icon={index + 1} roadmapTitle={pathwayName}></StepIcon>
 								<h5 className={classes.description}>{description}</h5>
 							</GridContainer>
 							<GridContainer id='card-actions' direction='row' justify='space-between' alignItems='center'>

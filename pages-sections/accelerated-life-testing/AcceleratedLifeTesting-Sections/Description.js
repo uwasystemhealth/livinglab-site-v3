@@ -20,7 +20,7 @@ const ALTDescription = () => {
 				Some Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome
 				Text HereSome Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text HereSome Text HereSome Text Here
 			</h5>
-			<Button color='primary' href='/roadmap/accelerated-life-testing'>
+			<Button color='success' href='/roadmap/accelerated-life-testing'>
 				More About Pathway
 			</Button>
 		</div>

@@ -64,7 +64,7 @@ const AcceleratedLifeTesting = () => {
 								</StepLabel>
 								<StepContent>
 									<h5 className={productClasses.description}>{description}</h5> <br />
-									<GridContainer justify='flex-end'>
+									<GridContainer justify='center'>
 										<GridItem xs={9} md={3}>
 											<Button
 												color='primary'

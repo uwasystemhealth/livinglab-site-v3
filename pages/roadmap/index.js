@@ -14,8 +14,8 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import ALTDescription from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Description.js';
-import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
+import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/Description.js';
+import RoadmapsCard from 'pages-sections/roadmap/RoadmapMainPage-Sections/RoadmapsCard.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 const useStyles = makeStyles(styles);
@@ -35,9 +35,9 @@ const AcceleratedLifeTesting = () => {
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<ALTDescription></ALTDescription>
-					<Testings></Testings>
+					<Description></Description>
 				</div>
+				<RoadmapsCard></RoadmapsCard>
 			</div>
 		</Fragment>
 	);
