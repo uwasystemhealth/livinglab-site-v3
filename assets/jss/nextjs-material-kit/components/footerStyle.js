@@ -41,7 +41,7 @@ const footerStyle = {
 		'&,&:hover,&:focus': {
 			color: '#FFFFFF',
 		},
-		backgroundColor: 'black',
+		backgroundColor: '#2F3C41',
 	},
 	container,
 	list: {
