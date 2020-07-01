@@ -39,7 +39,7 @@ const index = () => {
 								<Timer></Timer>
 								Accelerated Life Testing
 							</Button>
-							<Button href='/roadmap/derisking-site-trials' color='primary' size='lg'>
+							<Button href='/roadmap/derisking-site-trials' color='success' size='lg'>
 								<Assessment></Assessment>
 								Derisking Site Trials
 							</Button>

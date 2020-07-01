@@ -25,12 +25,11 @@ const ALTDescription = ({ requirements }) => {
 					<GridItem key={title} md={index == requirements.length - 1 && requirements.length % 2 ? 12 : 6}>
 						{/* RULE FOR LAST ELEMENT TO EXPAND IF ODD NUMBER OF ITEMS */}
 						<Card>
-							<CardHeader color='success'>
-							{/* <Icon>add_circle</Icon> */}
+							<CardHeader color='danger'>
+								{/* <Icon>add_circle</Icon> */}
 								<h4>{title}</h4>
 							</CardHeader>
 							<CardBody>
-							
 								<h5 className={classes.description} dangerouslySetInnerHTML={{ __html: content.replace(/\n/g, '<br/><br/>') }}></h5>
 							</CardBody>
 						</Card>
