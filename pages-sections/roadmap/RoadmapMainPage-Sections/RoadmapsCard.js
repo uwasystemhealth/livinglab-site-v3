@@ -48,25 +48,21 @@ const ALTDescription = () => {
 					<Card>
 						<CardHeader color='success'>
 							<GridContainer direction='row' justify='center' alignItems='center'>
-								<GridItem>
-									<Icon />
-								</GridItem>
-								<GridItem>
-									<h3>{title}</h3>
-								</GridItem>
+								<Icon />
+								<h3>{title}</h3>
 							</GridContainer>
 						</CardHeader>
 						<CardBody>
-							<div className={classes.description}>
+							<h5 className={classes.description}>
 								Some Descrtiption Some DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome DescrtiptionSome
 								DescrtiptionSome DescrtiptionSome DescrtiptionSome Descrtiption
-							</div>
+							</h5>
 							<br />
 						</CardBody>
 						<StepperPathway pathway={pathway} roadmapTitle={title}></StepperPathway>
 						<CardBody>
 							<GridContainer justify='center'>
-								<Button round color='primary'>
+								<Button round color='primary' href={`/roadmap/${title.toLowerCase().replace(/ /g, '-')}`}>
 									More About {title}
 								</Button>
 							</GridContainer>
