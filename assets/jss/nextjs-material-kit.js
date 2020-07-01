@@ -85,7 +85,7 @@ const card = {
 };
 
 const defaultFont = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: '"Arial", "Helvetica", "Arial", sans-serif',
   fontWeight: "300",
   lineHeight: "1.5em"
 };
@@ -156,29 +156,29 @@ const warningCardHeader = {
   ...warningBoxShadow
 };
 const successCardHeader = {
-  color: "#fff",
-  background: "linear-gradient(60deg, #66bb6a, #43a047)",
-  ...successBoxShadow
+	color: '#fff',
+	background: 'linear-gradient(60deg, #B3D99F, #83C562)',
+	...successBoxShadow,
 };
 const dangerCardHeader = {
-  color: "#fff",
-  background: "linear-gradient(60deg, #ef5350, #e53935)",
-  ...dangerBoxShadow
+	color: '#fff',
+	background: 'linear-gradient(60deg, #F9A06E, #F26923)',
+	...dangerBoxShadow,
 };
 const infoCardHeader = {
-  color: "#fff",
-  background: "linear-gradient(60deg, #26c6da, #00acc1)",
-  ...infoBoxShadow
+	color: '#fff',
+	background: 'linear-gradient(60deg, #707A7F, #2F3C41)',
+	...infoBoxShadow,
 };
 const primaryCardHeader = {
-  color: "#fff",
-  background: "linear-gradient(60deg, #ab47bc, #8e24aa)",
-  ...primaryBoxShadow
+	color: '#fff',
+	background: 'linear-gradient(60deg, #7ECDCB, #01B5AF)',
+	...primaryBoxShadow,
 };
 const roseCardHeader = {
-  color: "#fff",
-  background: "linear-gradient(60deg, #ec407a, #d81b60)",
-  ...roseBoxShadow
+	color: '#fff',
+	background: 'linear-gradient(60deg, #F9A06E, #F26923)',
+	...roseBoxShadow,
 };
 const cardActions = {
   margin: "0 20px 10px",
