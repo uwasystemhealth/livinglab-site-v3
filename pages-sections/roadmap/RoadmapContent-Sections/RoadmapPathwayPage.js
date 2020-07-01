@@ -49,8 +49,6 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const stepperClasses = useStepperStyles();
-	console.log(pathway);
-	console.log(title);
 	const StepIcon = (props) => {
 		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
 		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
