@@ -5,7 +5,7 @@ import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
 
 // @material-ui/core components
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, styled } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -44,11 +44,20 @@ import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 // DATA Import
 import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
 
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink }) => {
+// WORKAROUND CHANGE COLOR OF STEP LABEL
+const StyledStepLabel = styled(StepLabel)({
+	'& .MuiStepLabel-active': {
+		color: '#FFFF',
+	},
+});
+
+const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway }) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 	const stepperClasses = useStepperStyles();
+	console.log(pathway);
+	console.log(title);
 	const StepIcon = (props) => {
 		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
 		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
@@ -63,11 +72,11 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 						</GridItem>
 						<GridItem>
 							<Stepper alternativeLabel nonLinear className={stepperClasses.stepper}>
-								{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
+								{pathway.map(({ title }) => (
 									<Step key={title} active={true} connector={<StepperConnector />}>
-										<StepLabel StepIconComponent={StepIcon} className={stepperClasses.alternativeLabel}>
+										<StyledStepLabel StepIconComponent={StepIcon} className={stepperClasses.alternativeLabel}>
 											{title}
-										</StepLabel>
+										</StyledStepLabel>
 									</Step>
 								))}
 							</Stepper>
