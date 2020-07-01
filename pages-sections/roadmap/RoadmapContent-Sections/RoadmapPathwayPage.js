@@ -39,9 +39,9 @@ const useStepperStyles = makeStyles(stepperStyle);
 import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 
 //OWN COMPONENT
-import StepperPathway from 'components/roadmaps/StepperPathway.js';
+import StepperPathway, { StepIcon } from 'components/roadmaps/StepperPathway.js';
 
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway,pathwayName }) => {
+const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway, pathwayName }) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -66,7 +66,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 					<Card>
 						<CardBody>
 							<GridContainer id='descriptionBox' direction='row' justify='center' alignItems='center'>
-								<StepIcon icon={index + 1}></StepIcon>
+								<StepIcon icon={index + 1} roadmapTitle={pathwayName}></StepIcon>
 								<h5 className={classes.description}>{description}</h5>
 							</GridContainer>
 							<GridContainer id='card-actions' direction='row' justify='space-between' alignItems='center'>

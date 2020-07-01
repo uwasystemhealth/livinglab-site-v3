@@ -31,15 +31,16 @@ const StyledStepButton = styled(StepButton)({
 	},
 });
 
-const StepperPathway = ({ pathway, roadmapTitle, whiteFont }) => {
-	const StepIcon = (props) => {
-		const icons =
-			roadmapTitle == 'Accelerated Life Testing'
-				? [<PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <TimerIcon></TimerIcon>, <DraftsIcon></DraftsIcon>]
-				: [<PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <RoomIcon></RoomIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
+export const StepIcon = (props) => {
+	const stepperClasses = useStepperStyles();
+	const icons =
+		props.roadmapTitle == 'Accelerated Life Testing'
+			? [<PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <TimerIcon></TimerIcon>, <DraftsIcon></DraftsIcon>]
+			: [<PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <RoomIcon></RoomIcon>, <DraftsIcon></DraftsIcon>];
+	return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
+};
 
+const StepperPathway = ({ pathway, roadmapTitle, whiteFont }) => {
 	const stepperClasses = useStepperStyles();
 	const StepButtonCustom = whiteFont ? StyledStepButton : StepButton; // OVERWRITE BY WHITEFONT
 	return (
@@ -47,7 +48,7 @@ const StepperPathway = ({ pathway, roadmapTitle, whiteFont }) => {
 			{pathway.map(({ title }, index) => (
 				<Step key={title} active={true} connector={<StepperConnector />}>
 					<StepButtonCustom
-						icon={StepIcon({ icon: index + 1 })}
+						icon={StepIcon({ icon: index + 1, roadmapTitle })}
 						onClick={() => Router.push(`/roadmap/${stringToLink(roadmapTitle)}/${stringToLink(title)}`)}
 					>
 						{title}
