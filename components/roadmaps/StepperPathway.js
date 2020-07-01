@@ -26,17 +26,17 @@ const StyledStepButton = styled(StepButton)({
 
 const StepperPathway = ({ pathway, StepIcon, roadmapTitle, whiteFont }) => {
 	const stepperClasses = useStepperStyles();
-	const StepButton = whiteFont ? StyledStepButton : StepButton; // OVERWRITE BY WHITEFONT
+	const StepButtonCustom = whiteFont ? StyledStepButton : StepButton; // OVERWRITE BY WHITEFONT
 	return (
 		<Stepper alternativeLabel nonLinear className={stepperClasses.stepper}>
 			{pathway.map(({ title }, index) => (
 				<Step key={title} active={true} connector={<StepperConnector />}>
-					<StepButton
+					<StepButtonCustom
 						icon={StepIcon({ icon: index + 1 })}
 						onClick={() => Router.push(`/roadmap/${stringToLink(roadmapTitle)}/${stringToLink(title)}`)}
 					>
 						{title}
-					</StepButton>
+					</StepButtonCustom>
 				</Step>
 			))}
 		</Stepper>
