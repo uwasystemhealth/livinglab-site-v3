@@ -22,12 +22,15 @@ const About = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						This project is a collaboration between the University of Western Australia, CORE Innovation Hub and METS Ignited In 2018 the
-						System Health Lab (SHL) received a $100K grant from the Australian Government’s METS Ignited Collaborative Project Fund for the
-						LivingLab@UWA program. This is a collaboration between CORE Innovation Hub, the UWA Facilities Management group, and the SHL
-						with support from the BHP Strategy and Innovation group to support startups to conduct product site trials at UWA as a critical
-						step to a mine site trial. The trials will be managed by students working in the SHL providing invaluable project management and
-						technical experience.
+						The Living Lab program is run by a team of engineers, coders and project managers employed by the UWA System Health Lab (SHL),
+						CORE Innovation Hub and UWA Facilities Management. The design, execution and evaluation of the test work is done by students in
+						collaboration with the client and supported by academic and professional staff. Participation in the program delivers real life
+						engineering experience to the students involved.
+					</h5>
+					<h5 className={classes.description}>
+						In 2018 the Living Lab program received a $100K grant from the Australian Government’s METS Ignited Collaborative Project Fund
+						and another $100k from the BHP Fellowship for Engineering for Remote Operations. Our aim is to accelerate the path to market for
+						IOT related products by providing accelerated life tests and real-life trials.
 					</h5>
 					<Button color='rose' href='/about'>
 						<Book></Book>
