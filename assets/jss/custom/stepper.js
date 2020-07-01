@@ -4,6 +4,7 @@ import StepConnector from '@material-ui/core/StepConnector';
 const stepperStyle = {
 	stepper: {
 		backgroundColor: 'transparent',
+		padding: '0px',
 	},
 	root: {
 		backgroundColor: '#FEBF00',
