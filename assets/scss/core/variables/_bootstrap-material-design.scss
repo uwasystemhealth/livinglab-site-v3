@@ -24,9 +24,12 @@ $bmd-bmd-label-static-size-ratio: 75 / 100 !default;
 $bmd-help-size-ratio: 75 / 100 !default;
 
 $bmd-form-control-bg-repeat-y: no-repeat !default;
-$bmd-form-control-bg-position: center bottom, center calc(100% - 1px) !default;
-$bmd-form-control-bg-size: 0 100%, 100% 100% !default;
-$bmd-form-control-bg-size-active: 100% 100%, 100% 100% !default;
+$bmd-form-control-bg-position: center bottom,
+center calc(100% - 1px) !default;
+$bmd-form-control-bg-size: 0 100%,
+100% 100% !default;
+$bmd-form-control-bg-size-active: 100% 100%,
+100% 100% !default;
 
 // expandable
 $input-text-button-size: 32px !default;
@@ -69,12 +72,12 @@ $pale-bg: #f9f7f3 !default;
 $font-color: #66615b !default;
 
 $brand-default: #cecece !default;
-$brand-primary: $purple !default;
-$brand-success: $green !default;
-$brand-danger: $red !default;
-$brand-warning: $orange !default;
-$brand-info: $cyan !default;
-$brand-rose: $pink !default;
+$brand-primary: #01B5AF !default;
+$brand-success: #83C562 !default;
+$brand-danger: #F26923 !default;
+$brand-warning: #ff9800 !default;
+$brand-info: #2F3C41 !default;
+$brand-rose: #F26923 !default;
 
 $black-color: #3c4858 !default;
 
@@ -97,10 +100,8 @@ $bmd-switch-handle-checked-bg: $brand-primary !default;
 $bmd-switch-handle-unchecked-bg: #f1f1f1 !default;
 $bmd-switch-handle-disabled-bg: #bdbdbd !default;
 $bmd-switch-unchecked-bg: $gray-lighter !default;
-$bmd-switch-checked-bg: desaturate(
-  lighten($bmd-switch-handle-checked-bg, 28%),
-  32%
-); // kind of magic recipe
+$bmd-switch-checked-bg: desaturate(lighten($bmd-switch-handle-checked-bg, 28%),
+  32%); // kind of magic recipe
 $bmd-switch-disabled-bg: $gray-lighter !default;
 
 // Popovers and Popups
@@ -116,10 +117,8 @@ $bmd-radio-label-padding: 0.3125rem !default; // 5px
 $bmd-radio-color-off: $bmd-label-color-inner-focus !default;
 $bmd-radio-color-on: $brand-primary !default;
 $bmd-radio-color-disabled: $gray-lighter; //
-$bmd-radio-color-disabled-inverse: rgba(
-  $white,
-  0.3
-); // dark theme spec: Disabled: #FFFFFF, Opacity  30%
+$bmd-radio-color-disabled-inverse: rgba($white,
+  0.3); // dark theme spec: Disabled: #FFFFFF, Opacity  30%
 
 $white-color: #fff !default;
 $navbar-color: #555 !default;

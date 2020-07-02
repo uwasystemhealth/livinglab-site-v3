@@ -1,5 +1,16 @@
 // THIS IS ONLY FOR STYLINGS THAT ARE VERY DIFFICULT TO OVERRIDE ON MUI
 // USE SPARINGLY
+
+$link-color: #01B5AF;
+
 a {
-    color: #01B5AF
+    color: $link-color;
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        color: darken($link-color, 5%);
+        text-decoration: none;
+    }
 }
