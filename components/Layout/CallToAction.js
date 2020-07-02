@@ -28,11 +28,11 @@ const CallToAction = (props) => {
 		<Fragment>
 			<section className={footerClasses}>
 				<div className={classes.container}>
-					<h3>Some Heading Here</h3>
+					<h3>Why Connect With Us?</h3>
 					<br />
 					<p>
-						Some Text That Can Be Seen Over Here Some Text That Can Be Seen Over HereSome Text That Can Be Seen Over HereSome Text That Can
-						Be Seen Over Here Some Text That Can Be Seen Over Here
+						We have a track record of being able to design testing equipment and tests. We have systems and processes in place. We know how
+						to collaborate. We are here to support WA based businesses.
 					</p>
 					<br />
 					<Button color='primary' onClick={openContactFormModal}>
