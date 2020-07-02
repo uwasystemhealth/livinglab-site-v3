@@ -53,8 +53,8 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<p>
-										Aliquip irure duis aute ipsum. Mollit reprehenderit amet est culpa labore aute sit ipsum ullamco enim do. Qui non do
-										nisi occaecat incididunt tempor proident dolore non laborum aliqua proident do ut.
+										Bridging the valley of death between development and deployment for MEMS-IOT products through accelerated life testing
+										and derisking site trials.
 									</p>
 								</ListItem>
 							</List>
@@ -139,15 +139,15 @@ const Footer = (props) => {
 					<br />
 					<div className={classes.left}>
 						&copy; {1900 + new Date().getYear()} , Made By{' '}
-						<a href='https://frinzelapuz.now.sh/'  target='_blank'>
+						<a href='https://frinzelapuz.now.sh/' target='_blank'>
 							Frinze Erin Lapuz
 						</a>{' '}
 						on Behalf of The Living Lab and The{' '}
-						<a href='https://systemhealthlab.com/'  target='_blank'>
+						<a href='https://systemhealthlab.com/' target='_blank'>
 							System Health Lab
 						</a>{' '}
 						with design by{' '}
-						<a href='https://www.creative-tim.com?ref=njsmk-footer'  target='_blank'>
+						<a href='https://www.creative-tim.com?ref=njsmk-footer' target='_blank'>
 							Creative Tim
 						</a>{' '}
 					</div>
