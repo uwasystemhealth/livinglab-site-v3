@@ -42,7 +42,7 @@ const ALTDescription = () => {
 		<GridContainer>
 			{[
 				{ Icon: Timer, title: 'Accelerated Life Testing', pathway: ALT_PATHWAY },
-				{ Icon: Assessment, title: 'Derisking Mine Site Testing', pathway: DST_PATHWAY },
+				{ Icon: Assessment, title: 'Derisking Site Trials', pathway: DST_PATHWAY },
 			].map(({ title, Icon, pathway }) => (
 				<GridItem xs={12} sm={12} md={6}>
 					<Card>
