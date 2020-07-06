@@ -1,11 +1,18 @@
 // REACT+NEXT
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment, useContext, useState } from 'react';
 import Link from 'next/link';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+
+import Typography from '@material-ui/core/Typography';
+import MenuItem from '@material-ui/core/MenuItem';
+import PopupState, { bindHover, bindPopover } from 'material-ui-popup-state';
+import Popover from 'material-ui-popup-state/HoverPopover';
+
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 //CORE COMPONENTS
 import Header from 'components/MaterialKit/Header/Header.js';
@@ -19,7 +26,48 @@ import Contact from 'components/Layout/Contact';
 import Context from 'components/Context/index';
 
 const useStyles = makeStyles(styles);
+
+const MenuPopupState = () => {
+	const classes = useStyles();
+	return (
+		<PopupState variant='popover' popupId='demo-popup-menu' disableAutoFocus>
+			{(popupState) => (
+				<React.Fragment>
+					<Button variant='contained' color='primary' {...bindHover(popupState)} style={{ width: '100%' }}>
+						Roadmaps <ExpandMoreIcon></ExpandMoreIcon>
+					</Button>
+					<Popover
+						{...bindPopover(popupState)}
+						anchorOrigin={{
+							vertical: 'bottom',
+							horizontal: 'left',
+						}}
+						transformOrigin={{
+							vertical: 'top',
+							horizontal: 'left',
+						}}
+					>
+						<List className={classes.list}>
+							<ListItem>
+								<Link href='/roadmap/accelerated-life-testing'>
+									<a className={classes.dropdownLink}>Accelerated Life Testing</a>
+								</Link>
+							</ListItem>
+							<ListItem>
+								<Link href='/roadmap/derisking-site-trials'>
+									<a className={classes.dropdownLink}>Derisking Site Trials</a>
+								</Link>
+							</ListItem>
+						</List>
+					</Popover>
+				</React.Fragment>
+			)}
+		</PopupState>
+	);
+};
+
 const Navbar = () => {
+	const [menuPosition, setMenuPosition] = useState(null);
 	const { openContactFormModal } = useContext(Context);
 	const classes = useStyles();
 	return (
@@ -54,29 +102,10 @@ const Navbar = () => {
 										<a className={classes.dropdownLink}>About Us</a>
 									</Link>,
 									<Link href='/accelerated-life-testing'>
-										<a className={classes.dropdownLink}>Accelerated Life Testing Equipment</a>
+										<a className={classes.dropdownLink}>Accelerated Life Test Equipment</a>
 									</Link>,
-									<CustomDropdown
-										hover
-										noLiPadding
-										navDropdown
-										buttonText='Roadmap'
-										buttonProps={{
-											className: classes.navLink,
-											color: 'transparent',
-										}}
-										dropdownList={[
-											<Link href='/roadmap/accelerated-life-testing'>
-												<a className={classes.dropdownLink}>Accelerated Life Testing</a>
-											</Link>,
-											<Link href='/roadmap/derisking-site-trials'>
-												<a className={classes.dropdownLink}>Site Testing</a>
-											</Link>,
-											<Link href='/roadmap'>
-												<a className={classes.dropdownLink}>More Details About Roadmaps</a>
-											</Link>,
-										]}
-									/>,
+									{ divider: true },
+									<MenuPopupState />,
 								]}
 							/>
 						</ListItem>
