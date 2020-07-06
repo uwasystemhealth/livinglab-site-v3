@@ -133,7 +133,7 @@ const Footer = (props) => {
 								<ListItem>
 									<strong>
 										<Link href='/accelerated-life-testing'>
-											<a className={aClasses}>Accelerated Life Test Equipments</a>
+											<a className={aClasses}>Accelerated Life Test Equipment</a>
 										</Link>
 									</strong>
 								</ListItem>

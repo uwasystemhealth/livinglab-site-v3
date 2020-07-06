@@ -26,11 +26,7 @@ const AcceleratedLifeTesting = () => {
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-					<GridContainer>
-						<GridItem xs={12} sm={12} md={6}>
-							<h1 className={classes.title}>Accelerated Life Testing</h1>
-						</GridItem>
-					</GridContainer>
+							<h1 className={classes.title}>Accelerated Life Test Equipment</h1>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
