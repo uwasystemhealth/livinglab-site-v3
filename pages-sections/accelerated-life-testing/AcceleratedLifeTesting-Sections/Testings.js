@@ -46,9 +46,9 @@ const Testings = () => {
 			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal}></TestingModal>
 			<div className={classes.section}>
 				<GridContainer>
-					{TestingData.map(({ title, backgroundImage, whatIsIt }) => (
+					{TestingData.map(({ title, backgroundImage, whatIsIt, workInProgress = null }) => (
 						<GridItem sm={12} md={6} key={title}>
-							<TestingCard title={title} img={backgroundImage} description={whatIsIt}></TestingCard>
+							<TestingCard title={title} img={backgroundImage} description={whatIsIt} workInProgress={workInProgress}></TestingCard>
 						</GridItem>
 					))}
 				</GridContainer>
