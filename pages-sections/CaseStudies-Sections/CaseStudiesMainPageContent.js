@@ -14,20 +14,19 @@ import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/pro
 
 const useStyles = makeStyles(styles);
 
-const About = ({ description, videoLink }) => {
+const About = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
 			<div className={classes.section}>
-				{/* <h2 className={classes.title}>Work In Progress</h2> */}
-				<GridContainer>
-					<GridItem xs={12} md={6}>
-						<h5 className={classes.description}>{description}</h5>
-					</GridItem>
-					<GridItem xs={12} md={6}>
-						<iframe className={classes.video} src={videoLink}></iframe>
-					</GridItem>
-				</GridContainer>
+				<h2 className={classes.title}>Case Studies</h2>
+				<h5 className={classes.description}>
+					Some TextSome Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text
+				</h5>
+			</div>
+			<div className={classes.section}>
+				<h2 className={classes.title}>Check Out Some Of Our Work</h2>
+				<h5 className={classes.description}>Some of our work can be seen here.</h5>
 			</div>
 		</Fragment>
 	);
