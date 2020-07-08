@@ -26,15 +26,10 @@ const About = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						The METS Ignited Mining Innovation Part 1: Imperatives and Barriers published in March 2017 identified one of the sector’s key
-						challenges as “innovators find it difficult to access sites to prove up results and Miners are averse to trialling/introducing
-						innovation without proven results”. In response to this METS Ignited has funded this Living Lab project. We have developed a
-						pre-test facility and supporting processes that:
-						<ol>
-							<li>is easy to access for the innovator, notably small-to-medium-sized enterprise (SME);</li>
-							<li>supports completion of industry-equivalent HSE and risk assessments; and </li>
-							<li>provides a realistic pre-mine site testing environment. </li>
-						</ol>
+						Innovators find it difficult to access sites to prove up results and Miners are averse to trialling/ introducing innovation
+						without proven results. This is called the ‘Valley of Death’. Our mission is to help bridge this. Following extensive
+						consultation with mining companies, SME’s and entrepreneurs we have developed a roadmap of checklists and physical tests to help
+						derisk your first site trial.
 					</h5>
 					<Button color='success' href='/roadmap/derisking-site-trials'>
 						More About <br />
