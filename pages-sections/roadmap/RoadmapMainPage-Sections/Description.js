@@ -15,11 +15,8 @@ const ALTDescription = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.section}>
-			<h2 className={classes.title}>Roadmap</h2>
-			<h5 className={classes.description}>
-				Some Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome Text HereSome
-				Text HereSome Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text HereSome Text HereSome Text Here
-			</h5>
+			<h2 className={classes.title}>Main Service We Offer</h2>
+			<h5 className={classes.description}>Some Text Text Some Text Text Some Text Text Some Text Text Some Text Text</h5>
 		</div>
 	);
 };
