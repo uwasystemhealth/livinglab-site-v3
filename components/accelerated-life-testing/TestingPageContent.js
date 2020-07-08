@@ -72,7 +72,7 @@ const About = (props) => {
 							direction={index % 2 ? 'row-reverse' : 'row'}
 							justify='center'
 							alignItems='center'
-							className={productClasses.section}
+							className={productClasses.descriptionContainer}
 						>
 							<GridItem className={productClasses.gridItemPadded} md={6}>
 								<div className={productClasses.descriptionContainer}>

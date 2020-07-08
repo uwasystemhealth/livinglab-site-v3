@@ -14,29 +14,30 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import ALTDescription from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Description.js';
-import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
+import Content from 'pages-sections/CaseStudies-Sections/CaseStudiesContent.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 const useStyles = makeStyles(styles);
 
-const AcceleratedLifeTesting = () => {
+const CaseStudies = ({ title, description, videoLink }) => {
 	const classes = useStyles();
 	return (
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-							<h1 className={classes.title}>Accelerated Life Test Equipment</h1>
+					<h1 className={classes.title}>
+						Case Study: <br />
+						{title}
+					</h1>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<ALTDescription></ALTDescription>
-					<Testings></Testings>
+					<Content description={description} videoLink={videoLink}></Content>
 				</div>
 			</div>
 		</Fragment>
 	);
 };
 
-export default AcceleratedLifeTesting;
+export default CaseStudies;
