@@ -19,7 +19,7 @@ const AboutLivingLab = () => {
 	return (
 		<div className={classes.section}>
 			<a className={classes.anchor} id='WhatIsTheLab'></a>
-			<h2 className={classes.title}>What is the Lab?</h2>
+			<h2 className={classes.title}>Why Was The Living Lab Founded?</h2>
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
