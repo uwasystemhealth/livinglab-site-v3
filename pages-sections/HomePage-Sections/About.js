@@ -22,24 +22,18 @@ const About = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						We are a team of technically competent, digitally savvy and technically curious students. We can design, build and execute
-						bespoke testing equipment and tests to try and fail your products by generating realistic failure modes in an accelerated time
-						scale.
+						<strong>What We Do</strong> <br /> We accelerate the path to market for IOT related products by providing accelerated life
+						tests and real-life trials. We design, build and execute bespoke testing equipment and tests to try and fail your products by
+						generating realistic failure modes in an accelerated time scale.
 					</h5>
 					<h5 className={classes.description}>
-						The Living Lab program is run by a team of engineers, coders and project managers employed by the UWA System Health Lab (SHL),
-						CORE Innovation Hub and UWA Facilities Management. The design, execution and evaluation of the test work is done by students in
-						collaboration with the client and supported by academic and professional staff. Participation in the program delivers real life
-						engineering experience to the students involved.
+						<strong>Who We Are:</strong> <br /> The Living Lab program is run by a team of engineers, coders and project managers employed
+						by the UWA System Health Lab (SHL), CORE Innovation Hub and UWA Facilities Management
 					</h5>
 					<h5 className={classes.description}>
-						In 2018 the Living Lab program received a $100K grant from the Australian Government’s METS Ignited Collaborative Project Fund
-						and another $100k from the BHP Fellowship for Engineering for Remote Operations. Our aim is to accelerate the path to market for
-						IOT related products by providing accelerated life tests and real-life trials.
-					</h5>
-					<h5 className={classes.description}>
-						We have developed procedures and legal agreement templates for the end to end process and testing our aim, through this web
-						site, is to make these publicly available so that other universities and research groups can adopt, adapt and apply them.
+						<strong>Why Us:</strong> <br /> In 2018 the Living Lab program received a $100K grant from the Australian Government’s METS
+						Ignited Collaborative Project Fund and another $100k from the BHP Fellowship for Engineering for Remote Operations. We have
+						procedures and legal agreement templates to enable testing and are here to help you deploy them.
 					</h5>
 					<Button color='rose' href='/about'>
 						<Book></Book>
