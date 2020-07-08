@@ -35,7 +35,7 @@ const About = () => {
 						repurpose equipment for specific accelerated life trials.
 					</h5>
 					<h5 className={classes.description}>Check out the types of accelerated testing we do.</h5>
-					<Button color='info' href='/accelerated-life-testing'>
+					<Button color='primary' href='/accelerated-life-testing'>
 						More About <br /> Accelerated Life Testing Equipment
 					</Button>
 				</GridItem>

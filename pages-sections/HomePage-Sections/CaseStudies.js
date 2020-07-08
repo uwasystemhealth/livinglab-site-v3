@@ -34,13 +34,16 @@ const About = () => {
 					<h5 className={classes.description}>{description}</h5>
 					<Button color='primary' href='/case-studies'>
 						<Book></Book>
-						More About Case Studies
-					</Button>
+						More About <br />
+						Case Studies
+					</Button>{' '}
 					<Button color='success' href={`/case-studies/${title.toLowerCase().replace(/ /g, '-')} })}`}>
-						More About <br/>{title}
+						More About <br />
+						{title}
 					</Button>
 				</GridItem>
 				<GridItem>
+					<br/>
 					<iframe className={classes.video} src={videoLink}></iframe>
 				</GridItem>
 			</GridContainer>
