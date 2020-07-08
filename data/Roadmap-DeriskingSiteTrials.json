@@ -62,7 +62,7 @@
         "description": "This document is co-developed by the team which includes representatives from the company and the Living Lab team. ",
         "requirements": [{
             "title": "Structure",
-            "content": "<ol><li>Objective of trial (one sentence)</li><li>Overview of product/ service (1/2 page)</li><li>Deliverables (table)</li><li>KPIs for trial success (table)</li><li>Commitments (resources, data, travel, time)</li><li>Site to vendor</li><li>Vendor to site</li><li>Schedule (including all participant’s availability)</li><li>List of Standards that must be met</li><li>Costs (table)</li><li>Commercials (summary)</li><li>Checklists</li></ol>"
+            "content": "<ol><li>Overview of the intent of the trials</li><li>Product description</li><li>Identify factors in a successful trial<div><ul><li>Function(s) and Processes to test</li><li>Test options<div><ul><li>Potential equipment on which product can be mounted</li><li>Test conditions and time, supporting calculations</li><li>Relevant Standards</li><li>Costs (for consumables)</li></ul></div></li><li>Comparison of test options</li><li>Detailed test description<div><ul><li>Aims/ hypothesis</li><li>Test method</li><li>Equipment required</li><li>Procedure</li><li>Results</li></ul></div></li><li>UWA Site trial risk and safety assessment</li><li>Actual site trial risk assessment</li></ul></div></li></ol>"
         }]
     }
 ]
