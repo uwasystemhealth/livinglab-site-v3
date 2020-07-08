@@ -25,23 +25,19 @@ const About = () => {
 			<GridContainer direction='row-reverse'>
 				<GridItem>
 					<h5 className={classes.description}>
-						Some TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome TextSome Text Some Text Some TextSome TextSome
-						TextSome TextSome TextSome Text
+						Watch this video for an example of the type of testing we can set up for you and your MEMS-IOT based sensing system.
 					</h5>
-					<h5 className={classes.description}>
-						Here is one of the work we have done, <strong>{title}</strong>.
-					</h5>
-					<h5 className={classes.description}>{description}</h5>
+				</GridItem>
+				<GridItem>
+					<br />
+					<iframe className={classes.video} src={videoLink} allowfullscreen='allowfullscreen'></iframe>
+					<br />
+				</GridItem>
+				<GridItem>
 					<Button color='primary' href='/case-studies'>
 						<Book></Book>
 						More About Case Studies
-					</Button>
-					<Button color='success' href={`/case-studies/${title.toLowerCase().replace(/ /g, '-')} })}`}>
-						More About <br/>{title}
-					</Button>
-				</GridItem>
-				<GridItem>
-					<iframe className={classes.video} src={videoLink}></iframe>
+					</Button>{' '}
 				</GridItem>
 			</GridContainer>
 		</div>

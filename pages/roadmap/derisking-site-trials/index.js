@@ -24,7 +24,7 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/Description';
+import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/DSTDescription';
 
 // DATA Import
 import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
