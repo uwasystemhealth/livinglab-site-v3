@@ -19,6 +19,9 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
 import About from 'pages-sections/HomePage-Sections/About.js';
+import AcceleratedLifeTesting from 'pages-sections/HomePage-Sections/AcceleratedLifeTesting.js';
+import DeriskingSiteTrials from 'pages-sections/HomePage-Sections/DeriskingSiteTrials.js';
+import CaseStudies from 'pages-sections/HomePage-Sections/CaseStudies.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 
@@ -35,11 +38,11 @@ const index = () => {
 							<h1 className={classes.title}>Living Lab</h1>
 							<h3>We Are A Team Of Engineers Ready To Help</h3>
 							<br />
-							<Button href='/roadmap/accelerated-life-testing' color='primary' size='lg'>
+							<Button href='#accelerated-life-testing' color='primary' size='lg'>
 								<Timer></Timer>
 								Accelerated Life Testing
 							</Button>
-							<Button href='/roadmap/derisking-site-trials' color='success' size='lg'>
+							<Button href='#derisking-site-trials' color='success' size='lg'>
 								<Assessment></Assessment>
 								Derisking Site Trials
 							</Button>
@@ -50,6 +53,9 @@ const index = () => {
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<About></About>
+					<AcceleratedLifeTesting></AcceleratedLifeTesting>
+					<DeriskingSiteTrials></DeriskingSiteTrials>
+					<CaseStudies></CaseStudies>
 				</div>
 			</div>
 		</Fragment>

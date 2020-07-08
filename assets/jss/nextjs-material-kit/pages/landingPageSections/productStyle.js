@@ -28,6 +28,7 @@ const productStyle = {
 	video: {
 		width: '100%',
 		height: '100%',
+minHeight:"",
 	},
 	imgALT: {
 		maxHeight: '300px',

@@ -11,19 +11,23 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
+import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 
 const useStyles = makeStyles(styles);
+const productUseStyles = makeStyles(productStyles);
 
 const About = () => {
 	const classes = useStyles();
+		const productClasses = productUseStyles();
 	return (
 		<div className={classes.section}>
-			<h2 className={classes.title}>About Us</h2>
+			<a className={productClasses.anchor} id='derisking-site-trials'></a>
+			<h2 className={classes.title}>Derisking Site Trials</h2>
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						<strong>What We Do</strong> <br /> We accelerate the path to market for IOT related products by providing accelerated life
-						tests and real-life trials. We design, build and execute bespoke testing equipment and tests to try and fail your products by
+						<strong>What We Do</strong> <br /> We accelerate the path to market for IOT related products by providing accelerated life tests
+						and real-life trials. We design, build and execute bespoke testing equipment and tests to try and fail your products by
 						generating realistic failure modes in an accelerated time scale.
 					</h5>
 					<h5 className={classes.description}>
