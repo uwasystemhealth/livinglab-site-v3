@@ -78,11 +78,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 										</Button>
 									)}
 								</GridItem>
-								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>
-									<Button color='success' simple>
-										{isMobile ? '' : 'Download PDF'} <DownloadIcon></DownloadIcon>
-									</Button>
-								</GridItem>
+
 								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>
 									{nextLink && (
 										<Button color='primary' simple href={nextLink}>
