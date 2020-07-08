@@ -50,7 +50,7 @@ const ContactFormField = ({ fieldName, handleChange, icon }) => (
 );
 
 const Contact = () => {
-	const { isContactFormModalOpen, closeContactFormModal, handleContactFormChange: handleChange } = useContext(Context);
+	const { isContactFormModalOpen, closeContactFormModal, handleContactFormChange: handleChange, handleFormSubmit } = useContext(Context);
 	const classes = useStyles();
 
 	return (
@@ -106,12 +106,7 @@ const Contact = () => {
 				</form>
 			</DialogContent>
 			<DialogActions>
-				<Button
-					onClick={() => {
-						console.log('SUBMIT');
-					}}
-					color='success'
-				>
+				<Button onClick={handleFormSubmit} color='success'>
 					Submit
 				</Button>
 			</DialogActions>
