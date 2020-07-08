@@ -35,14 +35,21 @@ const About = () => {
 						repurpose equipment for specific accelerated life trials.
 					</h5>
 					<h5 className={classes.description}>Check out the types of accelerated testing we do.</h5>
-					<Button color='info' href='/accelerated-life-testing'>
-						More About <br /> Accelerated Life Testing Equipment
-					</Button>
+				<GridContainer justify='center' alignItems='center'>
+				<Button color='primary' href='/accelerated-life-testing'>
+					More About <br /> Accelerated Life Testing Equipment
+				</Button>
+				<Button color='success' href='/roadmap/accelerated-life-testing'>
+					More About <br /> Accelerated Life Testing Roadmap
+				</Button>
+			</GridContainer>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
-					<img src='https://picsum.photos/400/400' alt='' className={classes.img} />
+					<img src='/img/accelerated-life-testing/accelerated-bearing-failure-testing/methodology.jpg' alt='' className={classes.img} />
 				</GridItem>
 			</GridContainer>
+			<br/>
+
 		</div>
 	);
 };

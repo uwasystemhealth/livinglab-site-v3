@@ -6,6 +6,7 @@ import classNames from 'classnames';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
+import FormHelperText from '@material-ui/core/FormHelperText';
 import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
 
@@ -15,7 +16,19 @@ const useStyles = makeStyles(styles);
 
 export default function CustomInput(props) {
 	const classes = useStyles();
-	const { formControlProps, labelText, id, labelProps, inputProps, error, white, inputRootCustomClasses, success } = props;
+	const {
+		formControlProps,
+		labelText,
+		helperText,
+		id,
+		labelProps,
+		inputProps,
+		error,
+		white,
+		inputRootCustomClasses,
+		success,
+		required = false,
+	} = props;
 
 	const labelClasses = classNames({
 		[' ' + classes.labelRootError]: error,
@@ -44,10 +57,11 @@ export default function CustomInput(props) {
 		<FormControl {...formControlProps} className={formControlClasses}>
 			{labelText !== undefined ? (
 				<InputLabel className={classes.labelRoot + ' ' + labelClasses} htmlFor={id} {...labelProps}>
-					{labelText}
+					{labelText} {required ? '*' : ''}
 				</InputLabel>
 			) : null}
 			<Input
+				required
 				classes={{
 					input: inputClasses,
 					root: marginTop,
@@ -58,6 +72,7 @@ export default function CustomInput(props) {
 				name={id}
 				{...inputProps}
 			/>
+			<FormHelperText className={classes.labelRoot + ' ' + labelClasses}>{helperText}</FormHelperText>
 		</FormControl>
 	);
 }

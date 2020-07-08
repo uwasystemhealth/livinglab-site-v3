@@ -24,7 +24,7 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
-import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/Description';
+import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/ALTDescription';
 import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
 
 // DATA Import
@@ -56,30 +56,36 @@ const AcceleratedLifeTesting = () => {
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<Description></Description>
-					<Stepper orientation='vertical'>
-						{ACCELERATED_LIFE_TESTING_DATA.map(({ title, description }) => (
-							<Step key={title} active={true}>
-								<StepLabel StepIconComponent={stepIcon}>
-									<h3 className={productClasses.title}>{title}</h3>
-								</StepLabel>
-								<StepContent>
-									<h5 className={productClasses.description}>{description}</h5> <br />
-									<GridContainer justify='center'>
-										<GridItem xs={9} md={3}>
-											<Button
-												color='primary'
-												href={`accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}
-												style={{ width: '100%' }}
-											>
-												More About <br />
-												{title}
-											</Button>
-										</GridItem>
-									</GridContainer>
-								</StepContent>
-							</Step>
-						))}
-					</Stepper>
+					<div className={productClasses.section}>
+						<h2 className={productClasses.title}>Roadmap</h2>
+						<h5 className={productClasses.description}>
+							Below are the details of the roadmap of getting involved in the Living Lab for Accelerated Life Testing.
+						</h5>
+						<Stepper orientation='vertical'>
+							{ACCELERATED_LIFE_TESTING_DATA.map(({ title, description }) => (
+								<Step key={title} active={true}>
+									<StepLabel StepIconComponent={stepIcon}>
+										<h3 className={productClasses.title}>{title}</h3>
+									</StepLabel>
+									<StepContent>
+										<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description }}></h5> <br />
+										<GridContainer justify='center'>
+											<GridItem xs={9} md={3}>
+												<Button
+													color='primary'
+													href={`accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}
+													style={{ width: '100%' }}
+												>
+													More About <br />
+													{title}
+												</Button>
+											</GridItem>
+										</GridContainer>
+									</StepContent>
+								</Step>
+							))}
+						</Stepper>
+					</div>
 				</div>
 			</div>
 		</Fragment>
