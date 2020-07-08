@@ -1,11 +1,17 @@
 import React, { createContext, useState } from 'react';
 import axios from 'axios';
+import { validateEmail, validatePhone, validateWebsite, notEmpty } from 'helpers/validation';
 
 const AppContext = createContext({});
 
 // Component System of Provider
 export const AppProvider = (props) => {
 	const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
+	const [notificationState, setNotificationState] = useState({
+		open: false,
+		text: '',
+		severity: 'success',
+	});
 	const [contactFormState, setContactFormState] = useState({
 		'Business Mailing Address': '',
 		'Business Name': '',
@@ -117,6 +123,10 @@ export const AppProvider = (props) => {
 		handleFormSubmit,
 		closeContactFormModal,
 		handleContactFormChange,
+		contactFormState,
+		contactFormErrorState,
+		notificationState,
+		closeNotification,
 	};
 	return <AppContext.Provider value={contextValue}>{props.children}</AppContext.Provider>;
 };
