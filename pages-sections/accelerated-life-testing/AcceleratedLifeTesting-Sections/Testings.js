@@ -45,12 +45,22 @@ const Testings = () => {
 		<Fragment>
 			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal}></TestingModal>
 			<div className={classes.section}>
+				<h2 className={classes.title}>Equipment Available</h2>
+				<h5 className={classes.description}>
+					The boxes below describe the accelerated life testing facilities we have available. However if you have tests that need equipment
+					not described below, please talk to us.
+				</h5>
 				<GridContainer>
 					{TestingData.map(({ title, backgroundImage, whatIsIt, workInProgress = null }) => (
 						<GridItem sm={12} md={6} key={title}>
 							<TestingCard title={title} img={backgroundImage} description={whatIsIt} workInProgress={workInProgress}></TestingCard>
 						</GridItem>
 					))}
+				</GridContainer>
+				<GridContainer justify='center' alignItems='center'>
+					<Button color='success' href='/roadmap/accelerated-life-testing'>
+						More About The Roadmap
+					</Button>
 				</GridContainer>
 			</div>
 		</Fragment>

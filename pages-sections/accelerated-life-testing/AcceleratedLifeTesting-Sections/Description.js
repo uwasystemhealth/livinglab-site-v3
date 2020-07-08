@@ -15,7 +15,7 @@ const ALTDescription = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.section}>
-			<h2 className={classes.title}>Testing In The Living Lab</h2>
+			<h2 className={classes.title}>Accelerated Life Testing with the Living Lab</h2>
 			<h5 className={classes.description}>
 				Accelerated aging and testing is used to simulate product failure in a short period of time, ideally before the products are in the
 				marketplace. Traditionally, it uses unusually high levels of environmental conditions to speed up the aging processes using a
@@ -30,9 +30,8 @@ const ALTDescription = () => {
 				Our aim is to help the product developer understand the vulnerabilities in their product during the design and prototyping phases so
 				their product is compliant when they seek accreditation against Standards.
 			</h5>
-			<Button color='success' href='/roadmap/accelerated-life-testing'>
-				More About Pathway
-			</Button>
+			
+
 		</div>
 	);
 };
