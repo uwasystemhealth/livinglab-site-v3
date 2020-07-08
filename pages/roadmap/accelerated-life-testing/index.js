@@ -28,7 +28,7 @@ import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/Descrip
 import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
 
 // DATA Import
-import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
+import ACCELERATED_LIFE_TESTING_DATA from 'data/Roadmap-AcceleratedLifeTesting.json';
 
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
@@ -57,7 +57,7 @@ const AcceleratedLifeTesting = () => {
 				<div className={classes.container}>
 					<Description></Description>
 					<Stepper orientation='vertical'>
-						{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
+						{ACCELERATED_LIFE_TESTING_DATA.map(({ title, description }) => (
 							<Step key={title} active={true}>
 								<StepLabel StepIconComponent={stepIcon}>
 									<h3 className={productClasses.title}>{title}</h3>

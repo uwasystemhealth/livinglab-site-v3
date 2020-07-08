@@ -22,6 +22,7 @@ import CallToAction from './CallToAction';
 
 // CONTENT
 import TestingData from 'data/AcceleratedLifeTestingContent.json';
+import CaseStudies from 'data/CaseStudies.json';
 
 const useStyles = makeStyles(styles);
 
@@ -85,7 +86,9 @@ const Footer = (props) => {
 									</Link>
 								</ListItem>
 							</List>
-							<Divider></Divider>
+							<ListItem>
+								<Divider></Divider>
+							</ListItem>
 							<List>
 								<ListItem>
 									<Link href='/privacy-policy'>
@@ -93,25 +96,6 @@ const Footer = (props) => {
 									</Link>
 								</ListItem>
 								<ListItem></ListItem>
-							</List>
-						</GridItem>
-						<GridItem md={3} sm={12}>
-							<List>
-								<ListItem>
-									<strong>
-										<Link href='/accelerated-life-testing'>
-											<a className={aClasses}>Accelerated Life Testing</a>
-										</Link>
-									</strong>
-								</ListItem>
-								{/* DYNAMIC FOOTER CREATION */}
-								{TestingData.map(({ title }) => (
-									<ListItem key={title}>
-										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
-											<a className={aClasses}>{title}</a>
-										</Link>
-									</ListItem>
-								))}
 							</List>
 						</GridItem>
 						<GridItem md={3} sm={12}>
@@ -133,6 +117,42 @@ const Footer = (props) => {
 										<a className={aClasses}>Derisking Site Trials</a>
 									</Link>
 								</ListItem>
+								<ListItem>
+									<Divider></Divider>
+								</ListItem>
+								<ListItem>
+									<strong>
+										<Link href='/case-studies'>
+											<a className={aClasses}>Case Studies</a>
+										</Link>
+									</strong>
+								</ListItem>
+								{CaseStudies.filter(({ workInProgress = null }) => !workInProgress).map(({ title }) => (
+									<ListItem key={title}>
+										<Link href={`/case-studies/${title.toLowerCase().replace(/ /g, '-')}`}>
+											<a className={aClasses}>{title}</a>
+										</Link>
+									</ListItem>
+								))}
+							</List>
+						</GridItem>
+						<GridItem md={3} sm={12}>
+							<List>
+								<ListItem>
+									<strong>
+										<Link href='/accelerated-life-testing'>
+											<a className={aClasses}>Accelerated Life Test Equipment</a>
+										</Link>
+									</strong>
+								</ListItem>
+								{/* DYNAMIC FOOTER CREATION */}
+								{TestingData.filter(({ workInProgress = null }) => !workInProgress).map(({ title }) => (
+									<ListItem key={title}>
+										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
+											<a className={aClasses}>{title}</a>
+										</Link>
+									</ListItem>
+								))}
 							</List>
 						</GridItem>
 					</GridContainer>

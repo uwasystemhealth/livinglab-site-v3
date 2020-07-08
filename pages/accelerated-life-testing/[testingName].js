@@ -28,8 +28,9 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
+	const testingAvailable = TestingData.filter(({ workInProgress = null }) => !workInProgress);
 	return {
-		paths: TestingData.map(({ title }) => ({ params: { testingName: title.toLowerCase().replace(/ /g, '-') } })),
+		paths: testingAvailable.map(({ title }) => ({ params: { testingName: title.toLowerCase().replace(/ /g, '-') } })),
 		fallback: false,
 	};
 }
