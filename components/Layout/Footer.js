@@ -77,7 +77,7 @@ const Footer = (props) => {
 								</ListItem>
 								<ListItem>
 									<Link href='/about#WhatIsTheLab'>
-										<a className={aClasses}>What is the Lab</a>
+										<a className={aClasses}>Why Was The Living Lab Founded</a>
 									</Link>
 								</ListItem>
 								<ListItem>
@@ -101,11 +101,7 @@ const Footer = (props) => {
 						<GridItem md={3} sm={12}>
 							<List>
 								<ListItem>
-									<strong>
-										<Link href='/roadmap'>
-											<a className={aClasses}>Roadmap</a>
-										</Link>
-									</strong>
+									<strong>Roadmap</strong>
 								</ListItem>
 								<ListItem>
 									<Link href='/roadmap/accelerated-life-testing'>
