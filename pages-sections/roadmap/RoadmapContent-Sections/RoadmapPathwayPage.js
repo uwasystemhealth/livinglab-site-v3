@@ -1,5 +1,6 @@
 // NEXT + REACT
 import React, { Component, Fragment } from 'react';
+import Link from "next/link"
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -65,9 +66,12 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 				<div className={classes.container}>
 					<Card>
 						<CardBody>
-							<GridContainer id='descriptionBox' direction='row' justify='center' alignItems='center'>
+							<GridContainer id='descriptionBox' justify='center' alignItems='center'>
 								<StepIcon icon={index + 1} roadmapTitle={pathwayName}></StepIcon>
-								<h5 className={classes.description}>{description}</h5>
+								<GridItem>
+									<h5 className={classes.description} dangerouslySetInnerHTML={{ __html: description}}>
+									</h5>
+								</GridItem>
 							</GridContainer>
 							<GridContainer id='card-actions' direction='row' justify='space-between' alignItems='center'>
 								<GridItem xs={4} md={4} style={{ textAlign: 'center' }}>

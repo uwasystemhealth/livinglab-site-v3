@@ -18,7 +18,7 @@ const productUseStyles = makeStyles(productStyles);
 
 const About = () => {
 	const classes = useStyles();
-		const productClasses = productUseStyles();
+	const productClasses = productUseStyles();
 	return (
 		<div className={classes.section}>
 			<a className={productClasses.anchor} id='derisking-site-trials'></a>
@@ -26,22 +26,14 @@ const About = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						<strong>What We Do</strong> <br /> We accelerate the path to market for IOT related products by providing accelerated life tests
-						and real-life trials. We design, build and execute bespoke testing equipment and tests to try and fail your products by
-						generating realistic failure modes in an accelerated time scale.
+						Innovators find it difficult to access sites to prove up results and Miners are averse to trialling/ introducing innovation
+						without proven results. This is called the ‘Valley of Death’. Our mission is to help bridge this. Following extensive
+						consultation with mining companies, SME’s and entrepreneurs we have developed a roadmap of checklists and physical tests to help
+						derisk your first site trial.
 					</h5>
-					<h5 className={classes.description}>
-						<strong>Who We Are:</strong> <br /> The Living Lab program is run by a team of engineers, coders and project managers employed
-						by the UWA System Health Lab (SHL), CORE Innovation Hub and UWA Facilities Management
-					</h5>
-					<h5 className={classes.description}>
-						<strong>Why Us:</strong> <br /> In 2018 the Living Lab program received a $100K grant from the Australian Government’s METS
-						Ignited Collaborative Project Fund and another $100k from the BHP Fellowship for Engineering for Remote Operations. We have
-						procedures and legal agreement templates to enable testing and are here to help you deploy them.
-					</h5>
-					<Button color='rose' href='/about'>
-						<Book></Book>
-						More About Us
+					<Button color='success' href='/roadmap/derisking-site-trials'>
+						More About <br />
+						Derisking Site Trials
 					</Button>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
