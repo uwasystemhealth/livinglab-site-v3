@@ -17,6 +17,12 @@ import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core';
 import Close from '@material-ui/icons/Close';
 import People from '@material-ui/icons/People';
+import WebsiteIcon from '@material-ui/icons/Language';
+import BusinessIcon from '@material-ui/icons/Business';
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 // core components
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
@@ -35,22 +41,35 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const useStyles = makeStyles(modalStyle);
 
-const ContactFormField = ({ fieldName, handleChange, icon }) => (
+const ContactFormField = ({ fieldName, handleChange, icon, required = false, value = '', error = '' }) => (
 	<CustomInput
+		success={!error && !!value}
+		error={!!error}
+		required={required}
 		labelText={fieldName}
+		key={fieldName}
 		id={fieldName}
 		formControlProps={{
 			fullWidth: true,
 		}}
+		helperText={error}
 		inputProps={{
 			endAdornment: <InputAdornment position='end'>{icon}</InputAdornment>,
 			onChange: handleChange,
+			value,
 		}}
 	/>
 );
 
 const Contact = () => {
-	const { isContactFormModalOpen, closeContactFormModal, handleContactFormChange: handleChange, handleFormSubmit } = useContext(Context);
+	const {
+		isContactFormModalOpen,
+		closeContactFormModal,
+		handleContactFormChange: handleChange,
+		handleFormSubmit,
+		contactFormState,
+		contactFormErrorState,
+	} = useContext(Context);
 	const classes = useStyles();
 
 	return (
@@ -80,27 +99,68 @@ const Contact = () => {
 					<h4>Your Company Details</h4>
 					<GridContainer>
 						<GridItem md={6}>
-							<ContactFormField fieldName='Business Name' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								required
+								fieldName='Business Name'
+								error={contactFormErrorState['Business Name']}
+								value={contactFormState['Business Name']}
+								handleChange={handleChange}
+								icon={<BusinessIcon />}
+							></ContactFormField>
 						</GridItem>
 
 						<GridItem md={6}>
-							<ContactFormField fieldName='Business Website' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								fieldName='Business Website'
+								error={contactFormErrorState['Business Website']}
+								value={contactFormState['Business Website']}
+								handleChange={handleChange}
+								icon={<WebsiteIcon />}
+							></ContactFormField>
 						</GridItem>
 						<GridItem md={12}>
-							<ContactFormField fieldName='Business Mailing Address' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								required
+								fieldName='Business Mailing Address'
+								error={contactFormErrorState['Business Mailing Address']}
+								value={contactFormState['Business Mailing Address']}
+								handleChange={handleChange}
+								icon={<ImportContactsIcon />}
+							></ContactFormField>
 						</GridItem>
 					</GridContainer>
 					<br></br>
 					<h4>Your Business Details</h4>
 					<GridContainer>
 						<GridItem md={4}>
-							<ContactFormField fieldName='Contact Name' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								required
+								fieldName='Contact Name'
+								error={contactFormErrorState['Contact Name']}
+								value={contactFormState['Contact Name']}
+								handleChange={handleChange}
+								icon={<ContactsIcon />}
+							></ContactFormField>
 						</GridItem>
 						<GridItem md={4}>
-							<ContactFormField fieldName='Contact Phone' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								required
+								fieldName='Contact Phone'
+								error={contactFormErrorState['Contact Phone']}
+								value={contactFormState['Contact Phone']}
+								handleChange={handleChange}
+								icon={<ContactPhoneIcon />}
+							></ContactFormField>
 						</GridItem>
 						<GridItem md={4}>
-							<ContactFormField fieldName='Contact Email' handleChange={handleChange} icon={<People />}></ContactFormField>
+							<ContactFormField
+								required
+								fieldName='Contact Email'
+								error={contactFormErrorState['Contact Email']}
+								value={contactFormState['Contact Email']}
+								handleChange={handleChange}
+								icon={<ContactMailIcon />}
+							></ContactFormField>
 						</GridItem>
 					</GridContainer>
 				</form>
