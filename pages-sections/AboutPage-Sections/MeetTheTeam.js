@@ -48,11 +48,11 @@ const MeetTheTeam = () => {
 							}) => (
 								<GridItem xs={12} md={12}>
 									<GridContainer>
-											<GridItem xs={12} md={2} >
-												<div className={classes.imgList} style={{ backgroundImage: `url(${picture})` }}></div>
+										<GridItem xs={12} md={2}>
+											<div className={classes.imgList} style={{ backgroundImage: `url(${picture})` }}></div>
 										</GridItem>
 										<GridItem xs={12} md={10}>
-											<h5 className={classes.description}>{bio}</h5>
+											<h5 className={classes.description} dangerouslySetInnerHTML={{ __html: bio }}></h5>
 										</GridItem>
 									</GridContainer>
 								</GridItem>
