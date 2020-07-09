@@ -2,25 +2,25 @@
         "firstName": "Aiden",
         "lastName": "Taba",
 
-        "bio": ""
+        "bio": "Aiden Taba is undertaking a Master’s in Electrical Engineering. He has been working at the SHL since his first year of university creating hardware/software for networked sensors. Outside of the SHL, Aiden is working as a Research Engineer at BRITELab/OncoRes, to develop a medical device used by surgeons to more effectively identify tumours. He has also completed internships in the telecommunications, renewables, neurotechnology and management consulting fields. He is particularly passionate about biomedical engineering and was selected to take part in the 2017 SPARK Co-Lab (Stanford University SPARK Affiliate)  Design Course as an Accelerating Australia Scholar."
     },
     {
         "firstName": "Amit",
         "lastName": "Patel",
         "picture": "/img/team/amit-patel.png",
-        "bio": ""
+        "bio": "Amit Patel is a Master’s student at UWA, in his final year of Mechanical Engineering. Amit is currently completing a research project on use of condition monitoring technique (vibration and MCSA analysis) to detect ragging in centrifugal pumps."
     },
     {
         "firstName": "Aseem",
         "lastName": "Maroo",
 
-        "bio": ""
+        "bio": "Aseem Maroo is a first year Master’s student at UWA, studying mechanical engineering. He has worked on improving the systems and processes of the lab, and more recently he has been working on the Living Labs project in collaboration with the SHL, Core and BHP. Aseem volunteers for the IMechE UWA Student Club and was a member of the 2017 SHL Unearthed Hackathon team. Aseem worked at Mining Area C for his internship in the Engineering team and has a keen interest in mechanical systems and design."
     },
     {
         "firstName": "Carlin",
         "lastName": "Lapuz",
 
-        "bio": ""
+        "bio": "Carlin Lapuz is currently studying a Master’s of Professional Engineering (Mechanical Engineering) at the UWA. He has demonstrated excellence as a workshop facilitator/tutor for undergraduate dynamics and electronics. With his experience as a Research Engineer in robotics, sensor development, and vibration sensing technology, he is currently undertaking his thesis on accelerometer signal processing with SHL’s BlueBox. He also volunteered for Engineers Without Borders – School Outreach Team and had developed their renewable energy module."
     },
     {
         "firstName": "Craig",
@@ -32,25 +32,25 @@
         "firstName": "Drew",
         "lastName": "Georgiades",
 
-        "bio": ""
+        "bio": "Drew Georgiades is a Master’s student at UWA, studying mechanical engineering. He is the Project Manager for the Living Lab at UWA SHL. He is currently completing a thesis investigating underwater sound radiation through numerical methods. Drew pioneered and maintains the SHL’s equation of the day."
     },
     {
         "firstName": "Eddie",
         "lastName": "Atkinson",
 
-        "bio": ""
+        "bio": "Eddie Atkinson began working with the lab as a second year Bachelor of Philosophy(Hons) student studying Computer Science and Data Science.For his BPhil research placement Eddie investigated Piezo MEMS microphones and their potential to be used as water - proof and dirt - proof microphonesfor research projects and smartphones.Previously the Safety Officer, Eddie is now the Treasurerfor UWA Makers."
     },
     {
         "firstName": "Frinze",
         "lastName": "Lapuz",
         "picture": "/img/team/frinze-lapuz.png",
-        "bio": ""
+        "bio": "Frinze Erin Lapuz is a penultimate undergraduate Software Engineering and Data Science student. He works as part of the Living Lab Team, collating information of equipment and procedures to create the Living Lab Website. Also, he volunteers for the Coders For Causes to help non-profit organisation and charity to get the digital solution they need."
     },
     {
         "firstName": "James",
         "lastName": "Dingley",
 
-        "bio": ""
+        "bio": "James Digley is a 2nd year undergraduate in Mechanical Engineering and Finance, Fogarty Scholar and part of the BPhi program. James is passionate about space and has even spent time volunteering at NASA’s Johnson Space Centre as well as taking part in the Australian Universities Rocket competition. He is also the creator of the Perth Science YouTube series www.atomicfrontieronline.com"
     },
     {
         "firstName": "Jaymin",
@@ -68,7 +68,7 @@
         "firstName": "Melinda",
         "lastName": "Hodkiewicz",
 
-        "bio": ""
+        "bio": "Professor Melinda Hodkiewicz was appointed the BHP Fellow for Engineering for Remote Operations in 2015. The BHP Fellowship funds the UWA System Health Lab. Prior to joining academia Melinda worked as an engineer in industry and uses this experience and her industry links to drive collaboration and innovation aimed at improving asset maintenance. Melinda tags along when SHL teams participate in Hackathons as she aspires to improve her programming skills. In 2016 she was awarded the MESA Medal, a lifetime achievement award for services to Asset Management."
     },
     {
         "firstName": "Paul",
@@ -80,7 +80,7 @@
         "firstName": "Peter",
         "lastName": "Clarke",
 
-        "bio": ""
+        "bio": "Peter Clarke has spent most of his career in technology development and commercialisation in a range of industries including mining, oil and gas, pharmaceuticals and agriculture.  He has been a co-founder of four companies, a robotics and engineering business, a computer vision company, a refrigeration product design company and a mining services company.  He was the WA Innovator of the Year in 2007, was made a University of Sydney Innovation Hero in 2011 and accepted the Australian Museum Eureka Commercialisation prize for Scanalyse in 2013. Currently he is General Manager for Industry Engagement with the METS Ignited Growth Centre, promoting the technology developers and suppliers to the Mining industry to both the Australian and global market. "
     },
     {
         "firstName": "Sharon",
@@ -98,6 +98,6 @@
         "firstName": "Toby",
         "lastName": "Griffiths",
 
-        "bio": ""
+        "bio": "Toby Griffiths is in his first year of study in the Master of Professional Engineering (Mechanical). Toby works as part of the Living Lab team, aiming to de-risk mine site trials for innovators by using campus test equipment. Outside of the SHL, Toby has worked on Asset Health projects at Roy Hill and volunteers as part of the executive teams for Teach Learn Grow, a not-for-profit tutoring company, and the IMechE UWA chapter."
     }
 ]

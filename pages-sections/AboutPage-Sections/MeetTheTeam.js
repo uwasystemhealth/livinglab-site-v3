@@ -11,11 +11,13 @@ import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 
 //OWN COMPONENTS
-import {AboutPageCollage} from 'components/Team/Collage.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 
 const useStyles = makeStyles(styles);
+
+// DATA
+import TEAM from 'data/Team.json';
 
 const MeetTheTeam = () => {
 	const classes = useStyles();
@@ -36,7 +38,27 @@ const MeetTheTeam = () => {
 					</h5>
 				</GridItem>
 				<GridItem xs={12}>
-					<AboutPageCollage></AboutPageCollage>
+					<GridContainer>
+						{TEAM.map(
+							({
+								firstName,
+								lastName,
+								bio = 'Insert Bio',
+								picture = `/img/team/${firstName.toLowerCase()}-${lastName.toLowerCase()}.jpg`,
+							}) => (
+								<GridItem xs={12} md={12}>
+									<GridContainer>
+											<GridItem xs={12} md={2} >
+												<div className={classes.imgList} style={{ backgroundImage: `url(${picture})` }}></div>
+										</GridItem>
+										<GridItem xs={12} md={10}>
+											<h5 className={classes.description}>{bio}</h5>
+										</GridItem>
+									</GridContainer>
+								</GridItem>
+							)
+						)}
+					</GridContainer>
 				</GridItem>
 			</GridContainer>
 		</div>
