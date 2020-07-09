@@ -30,10 +30,10 @@ const About = () => {
 				</GridItem>
 				<GridItem>
 					<br />
-					<iframe className={classes.video} src={videoLink} allowfullscreen='allowfullscreen'></iframe>
+					<iframe className={classes.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
 					<br />
 				</GridItem>
-				<GridItem>
+				<GridItem style={{marginTop:50}}>
 					<Button color='primary' href='/case-studies'>
 						<Book></Book>
 						More About Case Studies
