@@ -2,7 +2,7 @@ import React from 'react';
 import Router, { useRouter } from 'next/router';
 
 // OWN COMPONENT
-import TestingPageContent from 'pages-sections/CaseStudies-Sections/CaseStudiesPage.js';
+import CaseStudiesPageContent from 'components/case-studies/CSPageContent.js';
 
 // CONTENT
 import CaseStudies from 'data/CaseStudies.json';
@@ -14,7 +14,7 @@ const getCaseStudyObject = (caseStudyName) => {
 };
 
 const caseStudyPage = ({ caseStudyObject }) => {
-	return <TestingPageContent {...caseStudyObject}></TestingPageContent>;
+	return <CaseStudiesPageContent {...caseStudyObject}></CaseStudiesPageContent>;
 };
 
 export async function getStaticProps(context) {

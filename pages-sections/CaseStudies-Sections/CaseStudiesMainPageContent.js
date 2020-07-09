@@ -10,6 +10,9 @@ import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
+//SECTIONS
+import CaseStudiesList from 'pages-sections/CaseStudies-Sections/CaseStudiesList.js';
+
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 
 const useStyles = makeStyles(styles);
@@ -24,10 +27,7 @@ const About = () => {
 					Some TextSome Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text
 				</h5>
 			</div>
-			<div className={classes.section}>
-				<h2 className={classes.title}>Check Out Some Of Our Work</h2>
-				<h5 className={classes.description}>Some of our work can be seen here.</h5>
-			</div>
+			<CaseStudiesList></CaseStudiesList>
 		</Fragment>
 	);
 };
