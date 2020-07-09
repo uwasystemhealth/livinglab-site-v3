@@ -10,6 +10,9 @@ import Fingerprint from '@material-ui/icons/Fingerprint';
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 
+//OWN COMPONENTS
+import {AboutPageCollage} from 'components/Team/Collage.js';
+
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 
 const useStyles = makeStyles(styles);
@@ -33,7 +36,7 @@ const MeetTheTeam = () => {
 					</h5>
 				</GridItem>
 				<GridItem xs={12}>
-					<img src='/img/team.jpg' alt='' className={classes.img} />
+					<AboutPageCollage></AboutPageCollage>
 				</GridItem>
 			</GridContainer>
 		</div>
