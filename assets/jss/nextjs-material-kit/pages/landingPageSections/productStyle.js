@@ -34,6 +34,14 @@ const productStyle = {
 		maxHeight: '300px',
 		maxWidth: '100%',
 	},
+	imgList: {
+		minHeight: '200px',
+		maxWidth: '200px',
+		backgroundPosition: 'center',
+		backgroundSize: 'cover',
+		backgroundRepeat: 'no-repeat',
+		margin: "auto"
+	},
 	gridItemPadded: {
 		padding: '10px',
 	},

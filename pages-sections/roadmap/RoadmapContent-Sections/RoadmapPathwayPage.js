@@ -1,6 +1,6 @@
 // NEXT + REACT
 import React, { Component, Fragment } from 'react';
-import Link from "next/link"
+import Link from 'next/link';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -42,7 +42,17 @@ import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
 //OWN COMPONENT
 import StepperPathway, { StepIcon } from 'components/roadmaps/StepperPathway.js';
 
-const RoadmapPathwayPage = ({ title, description, requirements, index, previousLink, nextLink, pathway, pathwayName }) => {
+const RoadmapPathwayPage = ({
+	title,
+	description,
+	requirements,
+	index,
+	previousLink,
+	nextLink,
+	pathway,
+	pathwayName,
+	background = require('assets/img/landing-bg.jpg'),
+}) => {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -50,7 +60,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={background}>
 				<div className={classes.container}>
 					<GridContainer>
 						<GridItem>
@@ -69,8 +79,7 @@ const RoadmapPathwayPage = ({ title, description, requirements, index, previousL
 							<GridContainer id='descriptionBox' justify='center' alignItems='center'>
 								<StepIcon icon={index + 1} roadmapTitle={pathwayName}></StepIcon>
 								<GridItem>
-									<h5 className={classes.description} dangerouslySetInnerHTML={{ __html: description}}>
-									</h5>
+									<h5 className={classes.description} dangerouslySetInnerHTML={{ __html: description }}></h5>
 								</GridItem>
 							</GridContainer>
 							<GridContainer id='card-actions' direction='row' justify='space-between' alignItems='center'>
