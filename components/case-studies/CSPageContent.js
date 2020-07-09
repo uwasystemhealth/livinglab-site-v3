@@ -45,9 +45,11 @@ const About = (props) => {
 			<div className={classNames(landingClasses.main, landingClasses.mainRaised)}>
 				<div className={productClasses.section}>
 					{/* <h2 className={classes.title}>Work In Progress</h2> */}
-					<GridContainer>
+					<GridContainer className={productClasses.descriptionContainer}>
 						<GridItem xs={12} md={6} className={productClasses.gridItemPadded}>
-							<h5 className={classNames(productClasses.description, productClasses.descriptionContainer)}>{description}</h5>
+							<div className={productClasses.descriptionContainer}>
+								<h5 className={productClasses.description}>{description}</h5>
+							</div>
 						</GridItem>
 						<GridItem xs={12} md={6} className={productClasses.gridItemPadded}>
 							<iframe className={productClasses.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
