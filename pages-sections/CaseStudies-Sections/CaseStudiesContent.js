@@ -25,7 +25,7 @@ const About = ({ description, videoLink }) => {
 						<h5 className={classes.description}>{description}</h5>
 					</GridItem>
 					<GridItem xs={12} md={6}>
-						<iframe className={classes.video} src={videoLink} allowfullscreen='allowfullscreen'></iframe>
+						<iframe className={classes.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
 					</GridItem>
 				</GridContainer>
 			</div>
