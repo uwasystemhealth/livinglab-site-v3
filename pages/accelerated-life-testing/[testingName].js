@@ -1,5 +1,5 @@
 import React from 'react';
-import Router, { useRouter } from 'next/router';
+import { stringToLink } from 'helpers/validation';
 
 // OWN COMPONENT
 import TestingPageContent from 'components/accelerated-life-testing/TestingPageContent.js';
@@ -9,14 +9,15 @@ import TestingData from 'data/AcceleratedLifeTestingContent.json';
 
 const getTestObject = (testingName) => {
 	// REPLACE TITLE SPACES WITH - THEN COMPARE
-	const object = TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
+	const object = TestingData.find(({ title }) => testingName === stringToLink(title));
 	return object;
 };
 
 const TestingEquipmentPage = ({ testObject }) => {
-	return <TestingPageContent {...testObject}></TestingPageContent>;
+	return <TestingPageContent {...testObject} />;
 };
 
+// FETCHES THE STATIC PROPERTIES BASED ON THE ROUTING CONTEXT
 export async function getStaticProps(context) {
 	const { testingName } = context.params;
 	const testObject = getTestObject(testingName);
@@ -27,10 +28,11 @@ export async function getStaticProps(context) {
 	};
 }
 
+// VALIDATES THE VALID PATHS FOR THE DYNAMIC ROUTE
 export async function getStaticPaths() {
 	const testingAvailable = TestingData.filter(({ workInProgress = null }) => !workInProgress);
 	return {
-		paths: testingAvailable.map(({ title }) => ({ params: { testingName: title.toLowerCase().replace(/ /g, '-') } })),
+		paths: testingAvailable.map(({ title }) => ({ params: { testingName: stringToLink(title) } })),
 		fallback: false,
 	};
 }

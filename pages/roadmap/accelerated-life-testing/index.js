@@ -1,16 +1,16 @@
 // NEXT + REACT
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
+import { stringToLink } from 'helpers/validation';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 
 // @material-ui/core components
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import StepContent from '@material-ui/core/StepContent';
-import StepConnector from '@material-ui/core/StepConnector';
 
 //ICONS
 import PartnerIcon from '@material-ui/icons/SupervisorAccount';
@@ -25,15 +25,14 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
 import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/ALTDescription';
-import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
 
 // DATA Import
 import ACCELERATED_LIFE_TESTING_DATA from 'data/Roadmap-AcceleratedLifeTesting.json';
 
+// STYLES
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 import stepperStyles from 'assets/jss/custom/stepper.js';
-
 const useStyles = makeStyles(styles);
 const useStepperStyles = makeStyles(stepperStyles);
 const useStylesProduct = makeStyles(productStyles);
@@ -71,11 +70,7 @@ const AcceleratedLifeTesting = () => {
 										<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description }}></h5> <br />
 										<GridContainer justify='center'>
 											<GridItem xs={9} md={3}>
-												<Button
-													color='primary'
-													href={`accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}
-													style={{ width: '100%' }}
-												>
+												<Button color='primary' href={`accelerated-life-testing/${stringToLink(title)}`} style={{ width: '100%' }}>
 													More About <br />
 													{title}
 												</Button>

@@ -1,5 +1,5 @@
 // NEXT + REACT
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -8,9 +8,6 @@ import classNames from 'classnames';
 import { makeStyles } from '@material-ui/core/styles';
 
 // CORE COMPONENTS
-import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
-import GridItem from 'components/MaterialKit/Grid/GridItem.js';
-import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
@@ -26,7 +23,7 @@ const AcceleratedLifeTesting = () => {
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-							<h1 className={classes.title}>Accelerated Life Test Equipment</h1>
+					<h1 className={classes.title}>Accelerated Life Test Equipment</h1>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>

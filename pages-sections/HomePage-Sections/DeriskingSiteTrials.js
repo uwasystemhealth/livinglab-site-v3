@@ -10,13 +10,13 @@ import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
-
 const useStyles = makeStyles(styles);
 const productUseStyles = makeStyles(productStyles);
 
-const About = () => {
+const HomepageDST = () => {
 	const classes = useStyles();
 	const productClasses = productUseStyles();
 	return (
@@ -44,4 +44,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default HomepageDST;

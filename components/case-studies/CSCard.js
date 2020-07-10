@@ -1,16 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import { stringToLink } from 'helpers/validation';
 
 // material-ui components
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+
 // core components
 import Card from 'components/MaterialKit/Card/Card.js';
 
+// STYLES
 import imagesStyles from 'assets/jss/nextjs-material-kit/imagesStyles.js';
-
 import { cardTitle } from 'assets/jss/nextjs-material-kit.js';
-
 const styles = {
 	...imagesStyles,
 	cardTitle: {
@@ -25,12 +25,11 @@ const styles = {
 		backgroundColor: 'rgba(0, 0, 0, .5)',
 	},
 };
-
 const useStyles = makeStyles(styles);
 
-const TestingCard = ({ title = 'Card title', description = '', img = '/img/feature-bg.jpg', workInProgress = null }) => {
+const CSCard = ({ title = 'Card title', description = '', img = '/img/feature-bg.jpg', workInProgress = null }) => {
 	const classes = useStyles();
-	const caseStudyName = title.toLowerCase().replace(/ /g, '-');
+	const caseStudyName = stringToLink(title);
 	return (
 		<Card>
 			<img className={classes.imgCard} src={img} alt='Card-img' />
@@ -52,4 +51,4 @@ const TestingCard = ({ title = 'Card title', description = '', img = '/img/featu
 	);
 };
 
-export default TestingCard;
+export default CSCard;

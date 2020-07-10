@@ -1,5 +1,5 @@
 // NEXT + REACT
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -10,13 +10,13 @@ import { makeStyles } from '@material-ui/core/styles';
 // CORE COMPONENTS
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
-import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
 import AboutLivingLab from 'pages-sections/AboutPage-Sections/AboutLivingLab.js';
 import MeetTheTeam from 'pages-sections/AboutPage-Sections/MeetTheTeam.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 const useStyles = makeStyles(styles);
 

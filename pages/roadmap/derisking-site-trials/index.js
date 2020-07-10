@@ -1,5 +1,6 @@
 // NEXT + REACT
 import React, { Component, Fragment } from 'react';
+import { stringToLink } from 'helpers/validation';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -65,11 +66,7 @@ const AcceleratedLifeTesting = () => {
 									<h5 className={productClasses.description}>{description}</h5> <br />
 									<GridContainer justify='center'>
 										<GridItem xs={9} md={3}>
-											<Button
-												color='primary'
-												href={`derisking-site-trials/${title.toLowerCase().replace(/ /g, '-')}`}
-												style={{ width: '100%' }}
-											>
+											<Button color='primary' href={`derisking-site-trials/${stringToLink(title)}`} style={{ width: '100%' }}>
 												More About <br />
 												{title}
 											</Button>

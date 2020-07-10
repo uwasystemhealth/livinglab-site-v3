@@ -12,8 +12,10 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 //OWN COMPONENTS
 import Context from 'components/Context/index';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/components/callToActionStyle.js';
 const useStyles = makeStyles(styles);
+
 const CallToAction = (props) => {
 	const classes = useStyles();
 

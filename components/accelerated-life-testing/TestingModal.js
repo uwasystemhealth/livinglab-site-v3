@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+
 // material-ui components
 import withStyles from '@material-ui/core/styles/withStyles';
 import Slide from '@material-ui/core/Slide';
@@ -29,13 +30,14 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 // OWN COMPONENTS
 import TestingPageContent from 'components/accelerated-life-testing/TestingPageContent.js';
 
+// STYLES
 import modalStyle from 'assets/jss/nextjs-material-kit/modalStyle.js';
+const useStyles = makeStyles(modalStyle);
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
 	return <Slide direction='down' ref={ref} {...props} />;
 });
-
-const useStyles = makeStyles(modalStyle);
 
 const TestingModal = (props) => {
 	const { isModalOpen, closeModal, ...rest } = props;

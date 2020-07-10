@@ -2,23 +2,14 @@ import React, { Fragment } from 'react';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-// @material-ui/icons components
-import Book from '@material-ui/icons/Book';
-
-// core components
-import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
-import GridItem from 'components/MaterialKit/Grid/GridItem.js';
-import Button from 'components/MaterialKit/CustomButtons/Button.js';
-
 //SECTIONS
 import CaseStudiesList from 'pages-sections/CaseStudies-Sections/CaseStudiesList.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
-
 const useStyles = makeStyles(styles);
 
-const About = () => {
-	const classes = useStyles();
+const CaseStudiesMainPageContent = () => {
 	return (
 		<Fragment>
 			{/* <div className={classes.section}>
@@ -32,4 +23,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default CaseStudiesMainPageContent;
