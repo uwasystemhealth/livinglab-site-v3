@@ -17,15 +17,15 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
+// STYLES
 import landingStyles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import modalStyle from 'assets/jss/nextjs-material-kit/modalStyle.js';
-
 const useStylesLanding = makeStyles(landingStyles);
 const useStylesProduct = makeStyles(productStyles);
 const useStylesModal = makeStyles(modalStyle);
 
-const About = (props) => {
+const TestingPageContent = (props) => {
 	const {
 		title,
 		backgroundImage,
@@ -95,4 +95,4 @@ const About = (props) => {
 	);
 };
 
-export default About;
+export default TestingPageContent;

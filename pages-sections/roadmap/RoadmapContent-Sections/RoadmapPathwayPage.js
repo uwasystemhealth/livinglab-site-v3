@@ -1,40 +1,29 @@
 // NEXT + REACT
-import React, { Component, Fragment } from 'react';
-import Link from 'next/link';
+import React, { Fragment } from 'react';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
-import Stepper from '@material-ui/core/Stepper';
-import Step from '@material-ui/core/Step';
-import StepLabel from '@material-ui/core/StepLabel';
-import StepContent from '@material-ui/core/StepContent';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
 
 //ICONS
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
-import DownloadIcon from '@material-ui/icons/GetApp';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 // CORE COMPONENTS
 import Card from 'components/MaterialKit/Card/Card.js';
 import CardBody from 'components/MaterialKit/Card/CardBody.js';
-import CardHeader from 'components/MaterialKit/Card/CardHeader.js';
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 //STYLES
-import stepperStyle from 'assets/jss/custom/stepper.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
-import { StepperConnector } from '../../../assets/jss/custom/stepper';
-
 const useStyles = makeStyles(styles);
-const useStepperStyles = makeStyles(stepperStyle);
 
 //SECTIONS
 import Content from 'pages-sections/roadmap/RoadmapContent-Sections/Content.js';
@@ -56,7 +45,6 @@ const RoadmapPathwayPage = ({
 	const classes = useStyles();
 	const theme = useTheme();
 	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	const stepperClasses = useStepperStyles();
 
 	return (
 		<Fragment>

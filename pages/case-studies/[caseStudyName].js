@@ -1,5 +1,5 @@
 import React from 'react';
-import Router, { useRouter } from 'next/router';
+import { stringToLink } from 'helpers/validation';
 
 // OWN COMPONENT
 import CaseStudiesPageContent from 'components/case-studies/CSPageContent.js';
@@ -9,14 +9,15 @@ import CaseStudies from 'data/CaseStudies.json';
 
 const getCaseStudyObject = (caseStudyName) => {
 	// REPLACE TITLE SPACES WITH - THEN COMPARE
-	const object = CaseStudies.find(({ title }) => caseStudyName === title.toLowerCase().replace(/ /g, '-'));
+	const object = CaseStudies.find(({ title }) => caseStudyName === stringToLink(title));
 	return object;
 };
 
 const caseStudyPage = ({ caseStudyObject }) => {
-	return <CaseStudiesPageContent {...caseStudyObject}></CaseStudiesPageContent>;
+	return <CaseStudiesPageContent {...caseStudyObject} />;
 };
 
+// FETCHES THE STATIC PROPERTIES BASED ON THE ROUTING CONTEXT
 export async function getStaticProps(context) {
 	const { caseStudyName } = context.params;
 	const caseStudyObject = getCaseStudyObject(caseStudyName);
@@ -27,10 +28,11 @@ export async function getStaticProps(context) {
 	};
 }
 
+// VALIDATES THE VALID PATHS FOR THE DYNAMIC ROUTE
 export async function getStaticPaths() {
 	const caseStudies = CaseStudies.filter(({ workInProgress = null }) => !workInProgress);
 	return {
-		paths: caseStudies.map(({ title }) => ({ params: { caseStudyName: title.toLowerCase().replace(/ /g, '-') } })),
+		paths: caseStudies.map(({ title }) => ({ params: { caseStudyName: stringToLink(title) } })),
 		fallback: false,
 	};
 }

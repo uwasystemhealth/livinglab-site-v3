@@ -1,5 +1,5 @@
 // NEXT + REACT
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
@@ -16,10 +16,11 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 // SECTIONS
 import Content from 'pages-sections/CaseStudies-Sections/CaseStudiesMainPageContent.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 const useStyles = makeStyles(styles);
 
-const PrivacyPolicy = () => {
+const CaseStudies = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
@@ -41,4 +42,4 @@ const PrivacyPolicy = () => {
 	);
 };
 
-export default PrivacyPolicy;
+export default CaseStudies;

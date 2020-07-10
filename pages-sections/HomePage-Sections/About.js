@@ -13,11 +13,11 @@ import Button from 'components/MaterialKit/CustomButtons/Button.js';
 //OWN COMPONENTS
 import Collage from 'components/Team/Collage.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
-
 const useStyles = makeStyles(styles);
 
-const About = () => {
+const HomepageAbout = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.section}>
@@ -51,4 +51,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default HomepageAbout;
