@@ -58,7 +58,6 @@ export const AppProvider = (props) => {
 				validateModifyState(value, notEmpty, 'Required Field');
 		}
 
-		console.log(newState);
 	};
 
 	const closeNotification = () =>
@@ -70,7 +69,6 @@ export const AppProvider = (props) => {
 
 	const handleFormSubmit = async (e) => {
 		e.preventDefault();
-		console.log(contactFormState);
 		try {
 			setNotificationState({
 				open: true,
@@ -104,6 +102,7 @@ export const AppProvider = (props) => {
 				text: 'Successfully sent',
 				severity: 'success',
 			});
+
 			setIsContactFormModalOpen(false);
 		} catch (err) {
 			setNotificationState({

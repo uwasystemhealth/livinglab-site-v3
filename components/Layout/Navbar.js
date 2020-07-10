@@ -7,8 +7,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
-import Typography from '@material-ui/core/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
 import PopupState, { bindHover, bindPopover } from 'material-ui-popup-state';
 import Popover from 'material-ui-popup-state/HoverPopover';
 
@@ -27,6 +25,7 @@ import Context from 'components/Context/index';
 
 const useStyles = makeStyles(styles);
 
+// EXTENDED MENU OF THE NAVBAR
 const MenuPopupState = () => {
 	const classes = useStyles();
 	return (
@@ -67,7 +66,6 @@ const MenuPopupState = () => {
 };
 
 const Navbar = () => {
-	const [menuPosition, setMenuPosition] = useState(null);
 	const { openContactFormModal } = useContext(Context);
 	const classes = useStyles();
 	return (

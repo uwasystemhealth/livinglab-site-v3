@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from 'react';
+
 // material-ui components
-import withStyles from '@material-ui/core/styles/withStyles';
 import Slide from '@material-ui/core/Slide';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -11,14 +11,11 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 
 // FORM Material UI
-import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import Divider from '@material-ui/core/Divider';
 
 // @material-ui/icons
 import { makeStyles } from '@material-ui/core';
 import Close from '@material-ui/icons/Close';
-import People from '@material-ui/icons/People';
 import WebsiteIcon from '@material-ui/icons/Language';
 import BusinessIcon from '@material-ui/icons/Business';
 import ImportContactsIcon from '@material-ui/icons/ImportContacts';
@@ -35,15 +32,17 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 // OWN COMPONENTS
 import Context from 'components/Context/index';
 
+// STYLINGS
 import modalStyle from 'assets/jss/nextjs-material-kit/modalStyle.js';
+const useStyles = makeStyles(modalStyle);
 
+// TRANSITION
 const Transition = React.forwardRef(function Transition(props, ref) {
 	return <Slide direction='down' ref={ref} {...props} />;
 });
 
+// NOTIFICATIONS
 const Alert = (props) => <MuiAlert elevation={6} variant='filled' {...props} />;
-
-const useStyles = makeStyles(modalStyle);
 
 const ContactFormField = ({ fieldName, handleChange, icon, required = false, value = '', error = '' }) => (
 	<CustomInput
@@ -114,7 +113,7 @@ const Contact = () => {
 					<h4 className={classes.modalTitle}>Contact Us</h4>
 				</DialogTitle>
 				<DialogContent id='modal-slide-description' className={classes.modalBody}>
-					<form id='contactform' method='post' action='https://formspree.io/systemhealthlab@gmail.com'>
+					<form id='contactform' method='post'>
 						<h4>Your Company Details</h4>
 						<GridContainer>
 							<GridItem md={6}>

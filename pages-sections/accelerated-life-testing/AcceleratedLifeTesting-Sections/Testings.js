@@ -1,9 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import { useRouter } from 'next/router';
+import { stringToLink } from 'helpers/validation';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
-
-// @material-ui/icons
 
 // core components
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
@@ -17,13 +16,15 @@ import TestingModal from 'components/accelerated-life-testing/TestingModal.js';
 // CONTENT
 import TestingData from 'data/AcceleratedLifeTestingContent.json';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 const useStyles = makeStyles(styles);
 
+// GET THE TEST OBJECT USING THE ROUTER
 const getTestObject = (router) => {
 	const { testingName } = router.query;
 	// REPLACE TITLE SPACES WITH - THEN COMPARE
-	const object = TestingData.find(({ title }) => testingName === title.toLowerCase().replace(/ /g, '-'));
+	const object = TestingData.find(({ title }) => testingName === stringToLink(title));
 	if (object) {
 		return object;
 	} else if (typeof window !== 'undefined') {

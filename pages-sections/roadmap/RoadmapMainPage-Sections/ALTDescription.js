@@ -2,13 +2,11 @@ import React from 'react';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
-// @material-ui/icons
-
 // core components
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
-
 const useStyles = makeStyles(styles);
 
 const ALTDescription = () => {
