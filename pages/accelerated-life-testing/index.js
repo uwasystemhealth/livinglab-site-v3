@@ -23,7 +23,7 @@ const AcceleratedLifeTesting = () => {
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-					<h1 className={classes.title}>Accelerated Life Test Equipment</h1>
+					<h1 className={classes.title}>Accelerated Life Testing Equipment</h1>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
