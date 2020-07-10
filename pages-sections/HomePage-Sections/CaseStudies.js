@@ -10,15 +10,15 @@ import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
-
 const useStyles = makeStyles(styles);
 
 // DATA
 import CaseStudies from 'data/CaseStudies.json';
-const About = () => {
+const HomepageCS = () => {
 	const classes = useStyles();
-	const { title, description, videoLink } = CaseStudies[0]; // SELECT TO DISPLAY WHAT CASE STUDY
+	const { videoLink } = CaseStudies[0]; // SELECT TO DISPLAY WHAT CASE STUDY
 	return (
 		<div className={classes.section}>
 			<h2 className={classes.title}>Our Work</h2>
@@ -33,7 +33,7 @@ const About = () => {
 					<iframe className={classes.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
 					<br />
 				</GridItem>
-				<GridItem style={{marginTop:50}}>
+				<GridItem style={{ marginTop: 50 }}>
 					<Button color='primary' href='/case-studies'>
 						<Book></Book>
 						More About Case Studies
@@ -44,4 +44,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default HomepageCS;

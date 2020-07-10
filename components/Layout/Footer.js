@@ -1,17 +1,15 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
+import { stringToLink } from 'helpers/validation';
 
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 
 // material-ui core components
-import { List, ListItem, ListItemText, Divider } from '@material-ui/core';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Divider from '@material-ui/core/Divider';
 import { makeStyles } from '@material-ui/core/styles';
-
-// @material-ui/icons
-import Favorite from '@material-ui/icons/Favorite';
-
-import styles from 'assets/jss/nextjs-material-kit/components/footerStyle.js';
 
 // core components
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
@@ -24,7 +22,9 @@ import CallToAction from './CallToAction';
 import TestingData from 'data/AcceleratedLifeTestingContent.json';
 import CaseStudies from 'data/CaseStudies.json';
 
+//STYLES
 const useStyles = makeStyles(styles);
+import styles from 'assets/jss/nextjs-material-kit/components/footerStyle.js';
 
 const Footer = (props) => {
 	const classes = useStyles();
@@ -125,7 +125,7 @@ const Footer = (props) => {
 								</ListItem>
 								{CaseStudies.filter(({ workInProgress = null }) => !workInProgress).map(({ title }) => (
 									<ListItem key={title}>
-										<Link href={`/case-studies/${title.toLowerCase().replace(/ /g, '-')}`}>
+										<Link href={`/case-studies/${stringToLink(title)}`}>
 											<a className={aClasses}>{title}</a>
 										</Link>
 									</ListItem>
@@ -144,7 +144,7 @@ const Footer = (props) => {
 								{/* DYNAMIC FOOTER CREATION */}
 								{TestingData.filter(({ workInProgress = null }) => !workInProgress).map(({ title }) => (
 									<ListItem key={title}>
-										<Link href={`/accelerated-life-testing/${title.toLowerCase().replace(/ /g, '-')}`}>
+										<Link href={`/accelerated-life-testing/${stringToLink(title)}`}>
 											<a className={aClasses}>{title}</a>
 										</Link>
 									</ListItem>

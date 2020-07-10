@@ -1,14 +1,13 @@
-import React, { useState, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { useRouter } from 'next/router';
+import { stringToLink } from 'helpers/validation';
+
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
-
-// @material-ui/icons
 
 // core components
 import GridContainer from 'components/MaterialKit/Grid/GridContainer.js';
 import GridItem from 'components/MaterialKit/Grid/GridItem.js';
-import Button from 'components/MaterialKit/CustomButtons/Button.js';
 
 // OWN COMPONENTS
 import CSCard from 'components/case-studies/CSCard.js';
@@ -17,13 +16,15 @@ import CSModal from 'components/case-studies/CSModal.js';
 // CONTENT
 import CaseStudiesData from 'data/CaseStudies.json';
 
+// STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 const useStyles = makeStyles(styles);
 
-const getTestObject = (router) => {
+// GET CASE STUDY OBJECT VIA ROUTER
+const getCaseStudyObject = (router) => {
 	const { caseStudyName } = router.query;
 	// REPLACE TITLE SPACES WITH - THEN COMPARE
-	const object = CaseStudiesData.find(({ title }) => caseStudyName === title.toLowerCase().replace(/ /g, '-'));
+	const object = CaseStudiesData.find(({ title }) => caseStudyName === stringToLink(title));
 	if (object) {
 		return object;
 	} else if (typeof window !== 'undefined') {
@@ -32,9 +33,9 @@ const getTestObject = (router) => {
 	}
 };
 
-const Testings = () => {
+const CaseStudiesList = () => {
 	const router = useRouter();
-	const caseObject = !!router.query.caseStudyName ? getTestObject(router) : null;
+	const caseObject = !!router.query.caseStudyName ? getCaseStudyObject(router) : null;
 
 	const closeTestModal = () => {
 		router.push('/case-studies');
@@ -59,4 +60,4 @@ const Testings = () => {
 	);
 };
 
-export default Testings;
+export default CaseStudiesList;
