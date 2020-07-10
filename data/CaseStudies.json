@@ -1,6 +1,13 @@
 [{
-    "title": "Accelerated Failure Of Bearings",
-    "description": "Research at the University of Western Australia into the accelerated failure of rolling element bearings in a pump has proved as an interesting test case for the validity of vibration sensors in determining bearing failure. UWA has a Goulds 3196 centrifugal pump (water) which is contained in a simple loop system. The pump is powered by a 1500 W motor, and this pump can be replaced with either failed bearings, or bearings with incorrect lubrication (Eg. mixed lubrication, lubricant packed with dirt). This pump has been used in a mixed grease test, and this pump can be adapted for different trials to fail bearings in an accelerated fashion. Get in touch with the Living Lab to find out if we can find a solution for your problem. ",
-    "videoLink": "https://www.youtube.com/embed/MmbBz9Nug7U",
-    "backgroundImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/cover.jpg"
-}]
+        "title": "Accelerated Failure Of Bearings",
+        "description": "Research at the University of Western Australia into the accelerated failure of rolling element bearings in a pump has proved as an interesting test case for the validity of vibration sensors in determining bearing failure. UWA has a Goulds 3196 centrifugal pump (water) which is contained in a simple loop system. The pump is powered by a 1500 W motor, and this pump can be replaced with either failed bearings, or bearings with incorrect lubrication (Eg. mixed lubrication, lubricant packed with dirt). This pump has been used in a mixed grease test, and this pump can be adapted for different trials to fail bearings in an accelerated fashion. Get in touch with the Living Lab to find out if we can find a solution for your problem. ",
+        "videoLink": "https://www.youtube.com/embed/MmbBz9Nug7U",
+        "backgroundImage": "/img/accelerated-life-testing/accelerated-bearing-failure-testing/cover.jpg"
+    },
+    {
+        "title": "Comparing The Performance Of Mems IoT With Conventional Piezoelectric Vibration Sensor",
+        "description": "If you have an IOT sensor, you want to know how it performs, and how it compares with other sensors. The System Health Lab has a BlueBox device which is an IOT accelerometer package that measures vibration for machine condition monitoring. We have compared our BlueBox with SlamStick and conventional piezoelectric vibration measurement systems. Then we used UWA facilities and equipment to build up a trial - we used vibration shakers to get a better understanding of our device in a controlled environment. We used fans and pumps to determine how the BlueBox performs against other vibration measurement devices. We found that our BlueBox device can obtain similar results to the commercially available devices when used in vibration shakers and fans. Furthermore, we can safely induce machine defects and detect it with your IOT sensor.",
+        "videoLink": "https://www.youtube.com/embed/8urupobGLOQ",
+        "backgroundImage": "/img/case-studies/mems-iot-comparison.png"
+    }
+]
