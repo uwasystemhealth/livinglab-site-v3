@@ -29,7 +29,8 @@ const imagesStyles = {
   },
   imgCard: {
     width: "100%",
-    borderRadius: "calc(.25rem - 1px)"
+    borderRadius: "calc(.25rem - 1px)",
+    minHeight: "300px",
   },
   imgCardOverlay: {
     position: "absolute",

@@ -46,7 +46,7 @@ const Testings = () => {
 			<CSModal isModalOpen={!!router.query.caseStudyName} {...caseObject} closeModal={closeTestModal}></CSModal>
 			<div className={classes.section}>
 				<h2 className={classes.title}>Check Out Some Of Our Work</h2>
-				<h5 className={classes.description}></h5>
+				<h5 className={classes.description}>Here are some examples of testing we have conducted.</h5>
 				<GridContainer>
 					{CaseStudiesData.map(({ title, backgroundImage = 'img/feature-bg.jpg', whatIsIt = '', workInProgress = null }) => (
 						<GridItem sm={12} md={6} key={title}>
