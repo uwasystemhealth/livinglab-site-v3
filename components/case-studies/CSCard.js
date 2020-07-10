@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+
 // material-ui components
 import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 // core components
 import Card from 'components/MaterialKit/Card/Card.js';
 
