@@ -21,12 +21,12 @@ const About = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<div className={classes.section}>
+			{/* <div className={classes.section}>
 				<h2 className={classes.title}>Case Studies</h2>
 				<h5 className={classes.description}>
 					Some TextSome Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text
 				</h5>
-			</div>
+			</div> */}
 			<CaseStudiesList></CaseStudiesList>
 		</Fragment>
 	);
