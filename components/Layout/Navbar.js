@@ -100,7 +100,7 @@ const Navbar = () => {
 										<a className={classes.dropdownLink}>About Us</a>
 									</Link>,
 									<Link href='/accelerated-life-testing'>
-										<a className={classes.dropdownLink}>Accelerated Life Test Equipment</a>
+										<a className={classes.dropdownLink}>Accelerated Life Testing Equipment</a>
 									</Link>,
 									{ divider: true },
 									<MenuPopupState />,
