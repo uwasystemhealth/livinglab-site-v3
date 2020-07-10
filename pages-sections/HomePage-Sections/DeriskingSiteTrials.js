@@ -37,7 +37,7 @@ const HomepageDST = () => {
 					</Button>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
-					<img src='https://picsum.photos/400/400' alt='' className={classes.img} />
+					<img src='/img/home-img.jpeg' alt='' className={classes.img} />
 				</GridItem>
 			</GridContainer>
 		</div>
