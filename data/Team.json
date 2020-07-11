@@ -1,7 +1,22 @@
-[{
+[
+    {
+        "firstName": "Melinda",
+        "lastName": "Hodkiewicz",
+        "bio": "Professor <b>Melinda Hodkiewicz</b>  is the leader of the Living Lab project and founded the UWA System Health Lab. Both operations are co-funded by her BHP Fellow for Engineering for Remote Operations in 2015.  The BHP Fellowship is an integral part of BHP's investment in the new EZone at UWA and this Living Lab project is one of a number of activities aimed at bridging the gap between industry and the university and improving the engineering student experience."
+    },
+    {
+        "firstName": "Drew",
+        "lastName": "Georgiades",
+        "bio": "<b>Drew Georgiades</b> is a Master’s student at UWA, studying mechanical engineering. He is the Project Manager for the Living Lab at UWA SHL. He is currently completing a thesis investigating underwater sound radiation through numerical methods. Drew pioneered and maintains the SHL’s equation of the day."
+    },
+    {
+        "firstName": "Tamryn",
+        "lastName": "Barker",
+        "bio": "<b>Tamryn </b>is committed to growing a community of innovators in WA to deliver the ideas, solutions and skills we need into the future. She is one of the founders of CORE Innovation Hub, Australia’s first co-working, collaboration and innovation hub focused on the resources and energy sector. CORE provides a common point for operators, suppliers, researchers, entrepreneurs and startups to connect, collaborate and upskill on innovative challenges and opportunities.  "
+    },
+    {
         "firstName": "Aiden",
         "lastName": "Taba",
-
         "bio": "<b>Aiden Taba</b> is undertaking a Master’s in Electrical Engineering. He has been working at the SHL since his first year of university creating hardware/software for networked sensors. Outside of the SHL, Aiden is working as a Research Engineer at BRITELab/OncoRes, to develop a medical device used by surgeons to more effectively identify tumours. He has also completed internships in the telecommunications, renewables, neurotechnology and management consulting fields. He is particularly passionate about biomedical engineering and was selected to take part in the 2017 SPARK Co-Lab (Stanford University SPARK Affiliate)  Design Course as an Accelerating Australia Scholar."
     },
     {
@@ -13,31 +28,21 @@
     {
         "firstName": "Aseem",
         "lastName": "Maroo",
-
         "bio": "<b>Aseem Maroo</b> is a first year Master’s student at UWA, studying mechanical engineering. He has worked on improving the systems and processes of the lab, and more recently he has been working on the Living Labs project in collaboration with the SHL, Core and BHP. Aseem volunteers for the IMechE UWA Student Club and was a member of the 2017 SHL Unearthed Hackathon team. Aseem worked at Mining Area C for his internship in the Engineering team and has a keen interest in mechanical systems and design."
     },
     {
         "firstName": "Carlin",
         "lastName": "Lapuz",
-
         "bio": "<b>Carlin Lapuz</b> is currently studying a Master’s of Professional Engineering (Mechanical Engineering) at the UWA. He has demonstrated excellence as a workshop facilitator/tutor for undergraduate dynamics and electronics. With his experience as a Research Engineer in robotics, sensor development, and vibration sensing technology, he is currently undertaking his thesis on accelerometer signal processing with SHL’s BlueBox. He also volunteered for Engineers Without Borders – School Outreach Team and had developed their renewable energy module."
     },
     {
         "firstName": "Craig",
         "lastName": "Hook",
-
         "bio": "<b>Craig Hook</b> is a highly accomplished executive, Non-Executive Director and Advisory Board Chair with leadership and strategic experience across a portfolio of Board positions.  He chairs several METS nationally including mine technical consulting, asset maintenance software, and tenement management software businesses.  Previously Craig was a Partner of Churchill Consulting, a leading boutique management consultancy based in Perth WA.  Prior to his consulting career, Craig was General Manager of OceanaGold (NZ) and held senior operational and technical roles internationally with Rio Tinto.  Qualifications in mine engineering, business management with substantial experience in the mining industry across feasibility studies, operational readiness, business improvement projects and restructures. "
-    },
-    {
-        "firstName": "Drew",
-        "lastName": "Georgiades",
-
-        "bio": "<b>Drew Georgiades</b> is a Master’s student at UWA, studying mechanical engineering. He is the Project Manager for the Living Lab at UWA SHL. He is currently completing a thesis investigating underwater sound radiation through numerical methods. Drew pioneered and maintains the SHL’s equation of the day."
     },
     {
         "firstName": "Eddie",
         "lastName": "Atkinson",
-
         "bio": "<b>Eddie Atkinson</b> began working with the lab as a second year Bachelor of Philosophy(Hons) student studying Computer Science and Data Science.For his BPhil research placement Eddie investigated Piezo MEMS microphones and their potential to be used as water - proof and dirt - proof microphonesfor research projects and smartphones.Previously the Safety Officer, Eddie is now the Treasurerfor UWA Makers."
     },
     {
@@ -65,12 +70,6 @@
         "bio": ""
     },
     {
-        "firstName": "Melinda",
-        "lastName": "Hodkiewicz",
-
-        "bio": "Professor <b>Melinda Hodkiewicz</b> was appointed the BHP Fellow for Engineering for Remote Operations in 2015. The BHP Fellowship funds the UWA System Health Lab. Prior to joining academia Melinda worked as an engineer in industry and uses this experience and her industry links to drive collaboration and innovation aimed at improving asset maintenance. Melinda tags along when SHL teams participate in Hackathons as she aspires to improve her programming skills. In 2016 she was awarded the MESA Medal, a lifetime achievement award for services to Asset Management."
-    },
-    {
         "firstName": "Paul",
         "lastName": "McCann",
         "bio": ""
@@ -78,7 +77,6 @@
     {
         "firstName": "Peter",
         "lastName": "Clarke",
-
         "bio": "<b>Peter Clarke</b> has spent most of his career in technology development and commercialisation in a range of industries including mining, oil and gas, pharmaceuticals and agriculture.  He has been a co-founder of four companies, a robotics and engineering business, a computer vision company, a refrigeration product design company and a mining services company.  He was the WA Innovator of the Year in 2007, was made a University of Sydney Innovation Hero in 2011 and accepted the Australian Museum Eureka Commercialisation prize for Scanalyse in 2013. Currently he is General Manager for Industry Engagement with the METS Ignited Growth Centre, promoting the technology developers and suppliers to the Mining industry to both the Australian and global market. "
     },
     {
@@ -88,15 +86,8 @@
         "bio": "<b>Sharon Wong</b> is a strategy and business analyst who supported the Living Labs project as a representative for BHP. Sharon managed the BHP stakeholder engagement through her experience in innovation, operations and technical engineering to support the project. "
     },
     {
-        "firstName": "Tamryn",
-        "lastName": "Barker",
-
-        "bio": "<b>Tamryn </b>is committed to growing a community of innovators in WA to deliver the ideas, solutions and skills we need into the future. She is one of the founders of CORE Innovation Hub, Australia’s first co-working, collaboration and innovation hub focused on the resources and energy sector. CORE provides a common point for operators, suppliers, researchers, entrepreneurs and startups to connect, collaborate and upskill on innovative challenges and opportunities.  "
-    },
-    {
         "firstName": "Toby",
         "lastName": "Griffiths",
-
         "bio": "<b>Toby Griffiths</b> is in his first year of study in the Master of Professional Engineering (Mechanical). Toby works as part of the Living Lab team, aiming to de-risk mine site trials for innovators by using campus test equipment. Outside of the SHL, Toby has worked on Asset Health projects at Roy Hill and volunteers as part of the executive teams for Teach Learn Grow, a not-for-profit tutoring company, and the IMechE UWA chapter."
     }
 ]
