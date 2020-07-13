@@ -25,7 +25,7 @@ const PrivacyPolicyContent = () => {
 				<h2 className={classes.title}>How We Store Information</h2>
 				<h5 className={classes.description}>
 					We do not keep information that we no longer need for the purpose it was collected, unless the law requires us to do so. It is
-					either destroyed or de-identified as required under the Archives Act 1983. Only authorised Health staff can access personal
+					either destroyed or de-identified as required under the Archives Act 1983. Only authorised personnel can access personal
 					information stored by us.
 				</h5>
 				<h5 className={classes.description}>
@@ -34,7 +34,7 @@ const PrivacyPolicyContent = () => {
 						<li>our document and records management systems</li>
 						<li>cloud storage</li>
 					</ul>
-					We do not store nor use cookies.
+					Furthermore, we do not store nor use cookies.
 				</h5>
 			</div>
 		</Fragment>
