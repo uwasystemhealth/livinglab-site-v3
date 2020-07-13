@@ -1,5 +1,4 @@
-[
-    {
+[{
         "firstName": "Melinda",
         "lastName": "Hodkiewicz",
         "bio": "Professor <b>Melinda Hodkiewicz</b>  is the leader of the Living Lab project and founded the UWA System Health Lab. Both operations are co-funded by her BHP Fellow for Engineering for Remote Operations in 2015.  The BHP Fellowship is an integral part of BHP's investment in the new EZone at UWA and this Living Lab project is one of a number of activities aimed at bridging the gap between industry and the university and improving the engineering student experience."
@@ -60,19 +59,17 @@
     {
         "firstName": "Jaymin",
         "lastName": "Moffatt",
-        "picture": "/img/team/placeholder.jpg",
-        "bio": ""
+        "bio": "<b>Jaymin Moffatt</b> is a Master's student in UWA, studying Electrical Engineering. He worked in the Living Lab Project for two years."
     },
     {
         "firstName": "Matt",
         "lastName": "Arpin",
-        "picture": "/img/team/placeholder.jpg",
-        "bio": ""
+        "bio": "<b>Matt Arpin</b> is the technical manager of the of the Faculty of Engineering and Mathematical Sciences. He leads a Technical Team consisting of the following specialist areas: EMS Safety team; Teaching technicians; Mechanical, Physics and Electronics Workshops. "
     },
     {
         "firstName": "Paul",
         "lastName": "McCann",
-        "bio": ""
+        "bio": "<b>Paul McCann</b> is the campus services manager of the Faculty of Engineering and Mathematical Sciences. He is a highly motivated, innovative and dynamic executive and project manager with international experience in aerospace & military operations and property and buildings, supported by an outstanding military career."
     },
     {
         "firstName": "Peter",

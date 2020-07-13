@@ -40,6 +40,7 @@ const RoadmapPathwayPage = ({
 	nextLink,
 	pathway,
 	pathwayName,
+	children,
 	background = require('assets/img/landing-bg.jpg'),
 }) => {
 	const classes = useStyles();
@@ -90,7 +91,7 @@ const RoadmapPathwayPage = ({
 							</GridContainer>
 						</CardBody>
 					</Card>
-					<Content requirements={requirements}></Content>
+					{children ? children : <Content requirements={requirements}></Content>}
 				</div>
 			</div>
 		</Fragment>
