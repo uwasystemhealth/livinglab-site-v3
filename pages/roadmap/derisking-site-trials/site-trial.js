@@ -59,7 +59,7 @@ const AcceleratedLifeTests = () => {
 			img: '/img/roadmap/derisking-site-trials/fan.jpg',
 			title: 'Centrifugal Fan',
 			description:
-				'A centrifugal fan was used for the comparison of vibration measurement equipment by Carlin Lapuz in development of a Master’s Thesis.',
+				'A centrifugal fan was used for the comparison of MEMS IoT with conventional piezoelectric vibration sensor.',
 		},
 	];
 	const pathwayObject = getPathwayObject();
