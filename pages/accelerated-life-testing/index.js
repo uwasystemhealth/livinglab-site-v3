@@ -12,7 +12,7 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
 import ALTDescription from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Description.js';
-import Testings from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
+import Testings, { MoreAboutPathway } from 'pages-sections/accelerated-life-testing/AcceleratedLifeTesting-Sections/Testings.js';
 
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
 const useStyles = makeStyles(styles);
@@ -30,6 +30,7 @@ const AcceleratedLifeTesting = () => {
 				<div className={classes.container}>
 					<ALTDescription></ALTDescription>
 					<Testings></Testings>
+					<MoreAboutPathway></MoreAboutPathway>
 				</div>
 			</div>
 		</Fragment>

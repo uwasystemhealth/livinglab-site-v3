@@ -58,13 +58,21 @@ const Testings = () => {
 						</GridItem>
 					))}
 				</GridContainer>
-				<GridContainer justify='center' alignItems='center'>
-					<Button color='success' href='/roadmap/accelerated-life-testing'>
-						More About The Roadmap
-					</Button>
-				</GridContainer>
 			</div>
 		</Fragment>
+	);
+};
+
+export const MoreAboutPathway = () => {
+	const classes = useStyles();
+	return (
+		<div className={classes.section}>
+			<GridContainer justify='center' alignItems='center'>
+				<Button color='success' href='/roadmap/accelerated-life-testing'>
+					More About The Roadmap
+				</Button>
+			</GridContainer>
+		</div>
 	);
 };
 
