@@ -37,7 +37,7 @@ const AboutLivingLab = () => {
 					</h5>
 					<h5 className={classes.description}>To date the LivingLab@UWA team has delivered the following: </h5>
 					<ul className={classes.description}>
-						<li> UV, vibration and IP reliability assessment for MEMS-IOT device for major mining company.</li>
+						<li> UV, vibration and IP reliability assessment for MEMS-IOT device for major resources company.</li>
 						<li> Performance testing of wireless MEMS-IOT vibration unit developed at UWA on rotating equipment</li>
 						<li>
 							Understanding of how to access the asset registers for university infrastructure equipment and test equipment held by
@@ -47,7 +47,7 @@ const AboutLivingLab = () => {
 						<li>
 							Procedures for testing for UV, vibration, IP and EMC reliability to improve reliability and derisk certification testing.
 						</li>
-						<li>A set of checklists, co-developed with mining and METS companies, for mine site trial</li>
+						<li>A set of checklists, co-developed with resources and METS companies, for mine site trial</li>
 					</ul>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
