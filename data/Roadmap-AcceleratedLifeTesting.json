@@ -55,7 +55,8 @@
                 "title": "Innovator personnel trial requirements",
                 "content": "<ul><li>Inductions (corporate, site)</li><li>Permit training (tagging on/off, confined space, working at heights)</li><li>Medical</li><li>PPE</li><li>Tags</li><li>Accommodation</li><li>Site organizational chart and contact details for key contacts</li><li>Know who other contractors/ vendors are on site</li><li>Know who will install, reset and remove the product. What training and support do they need?</li><li>Security/ police checks if necessary</li></ul>"
             }
-        ]
+        ],
+        "custom": true
     },
     {
         "title": "Accelerated Life Test Trial Proposal",
