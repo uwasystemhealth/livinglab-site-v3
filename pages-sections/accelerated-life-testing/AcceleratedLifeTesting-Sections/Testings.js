@@ -33,18 +33,18 @@ const getTestObject = (router) => {
 	}
 };
 
-const Testings = () => {
+const Testings = ({ closeLink = '/accelerated-life-testing' }) => {
 	const router = useRouter();
 	const testObject = !!router.query.testingName ? getTestObject(router) : null;
 
-	const closeTestModal = () => {
-		router.push('/accelerated-life-testing');
+	const closeTestModal = (closeLink) => () => {
+		router.push(closeLink);
 	};
 
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal}></TestingModal>
+			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal(closeLink)}></TestingModal>
 			<div className={classes.section}>
 				<h2 className={classes.title}>Equipment Available</h2>
 				<h5 className={classes.description}>
@@ -54,7 +54,13 @@ const Testings = () => {
 				<GridContainer>
 					{TestingData.map(({ title, backgroundImage, whatIsIt, workInProgress = null }) => (
 						<GridItem sm={12} md={6} key={title}>
-							<TestingCard title={title} img={backgroundImage} description={whatIsIt} workInProgress={workInProgress}></TestingCard>
+							<TestingCard
+								title={title}
+								img={backgroundImage}
+								description={whatIsIt}
+								workInProgress={workInProgress}
+								preLink={closeLink}
+							></TestingCard>
 						</GridItem>
 					))}
 				</GridContainer>

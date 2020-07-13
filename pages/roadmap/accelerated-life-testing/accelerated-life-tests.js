@@ -22,7 +22,7 @@ const AcceleratedLifeTests = () => {
 	const pathwayObject = getPathwayObject();
 	return (
 		<RoadmapPathwayPage {...pathwayObject} pathway={PATHWAY} pathwayName='Accelerated Life Testing'>
-			<Testings></Testings>
+			<Testings closeLink='/roadmap/accelerated-life-testing/accelerated-life-tests'></Testings>
 		</RoadmapPathwayPage>
 	);
 };

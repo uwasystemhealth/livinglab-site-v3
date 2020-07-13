@@ -31,6 +31,7 @@ const TestingCard = ({
 	title = 'Card title',
 	description = 'Insert Description here',
 	img = '/img/feature-bg.jpg',
+	preLink = "/accelerated-life-testing",
 	workInProgress = null,
 }) => {
 	const classes = useStyles();
@@ -45,7 +46,7 @@ const TestingCard = ({
 				<strong>
 					{!workInProgress ? (
 						<Link
-							href={`/accelerated-life-testing/?testingName=${testingName}`}
+							href={`${preLink}/?testingName=${testingName}`}
 							as={`/accelerated-life-testing/${testingName}`}
 							scroll={false}
 						>
