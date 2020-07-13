@@ -54,8 +54,8 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<p>
-										Bridging the valley of death between development and deployment for MEMS-IOT products through accelerated life testing
-										and derisking site trials.
+										Bridging the valley of death between development and deployment for MEMS-IOT products through Accelerated Life Testing
+										and Derisking Site Trials.
 									</p>
 								</ListItem>
 							</List>
@@ -101,7 +101,7 @@ const Footer = (props) => {
 						<GridItem md={3} sm={12}>
 							<List>
 								<ListItem>
-									<strong>Roadmap</strong>
+									<strong>Partner Roadmap</strong>
 								</ListItem>
 								<ListItem>
 									<Link href='/roadmap/accelerated-life-testing'>

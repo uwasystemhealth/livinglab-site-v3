@@ -15,8 +15,8 @@ const ALTDescription = () => {
 		<div className={classes.section}>
 			<h2 className={classes.title}>What is it?</h2>
 			<h5 className={classes.description}>
-				The Accelerated Life Testing (ALT) roadmap is a comprehensive testing plan that asseses your product from design intent through to
-				final test results report.
+				The Accelerated Life Testing (ALT) partner roadmap is a comprehensive testing plan that asseses your product from design intent
+				through to final test results report.
 			</h5>
 			<h5 className={classes.description}>
 				The first stage is for us to understand the needs of your company and the product you would like to test, and for you to understand

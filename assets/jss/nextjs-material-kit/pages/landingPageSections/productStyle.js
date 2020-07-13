@@ -40,10 +40,20 @@ const productStyle = {
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
-		margin: "auto"
+		margin: 'auto',
 	},
 	gridItemPadded: {
 		padding: '10px',
+	},
+	partnersSection: {
+		padding: '30px',
+	},
+	whiteFont: {
+		color: '#FFFFFF',
+	},
+	partnersLogo: {
+		maxHeight: '200px',
+		maxWidth: '100%',
 	},
 };
 

@@ -37,7 +37,7 @@ const HomepageALT = () => {
 							More About <br /> Accelerated Life Testing Equipment
 						</Button>
 						<Button color='success' href='/roadmap/accelerated-life-testing'>
-							More About <br /> Accelerated Life Testing Roadmap
+							More About <br /> Accelerated Life Testing Partner Roadmap
 						</Button>
 					</GridContainer>
 				</GridItem>

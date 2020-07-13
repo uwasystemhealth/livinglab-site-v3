@@ -37,14 +37,13 @@ const useStyles = makeStyles(styles);
 const useStepperStyles = makeStyles(stepperStyles);
 const useStylesProduct = makeStyles(productStyles);
 
+// OWN COMPONENTS
+import { StepIconALT } from 'components/roadmaps/StepperPathway.js';
+
 const AcceleratedLifeTesting = () => {
 	const classes = useStyles();
 	const productClasses = useStylesProduct();
-	const stepperClasses = useStepperStyles();
-	const stepIcon = (props) => {
-		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
+
 	return (
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
@@ -56,14 +55,14 @@ const AcceleratedLifeTesting = () => {
 				<div className={classes.container}>
 					<Description></Description>
 					<div className={productClasses.section}>
-						<h2 className={productClasses.title}>Roadmap</h2>
+						<h2 className={productClasses.title}>Partner Roadmap</h2>
 						<h5 className={productClasses.description}>
-							Below are the details of the roadmap of getting involved in the Living Lab for Accelerated Life Testing.
+							Below are the details of the partner roadmap of getting involved in the Living Lab for Accelerated Life Testing.
 						</h5>
 						<Stepper orientation='vertical'>
 							{ACCELERATED_LIFE_TESTING_DATA.map(({ title, description }) => (
 								<Step key={title} active={true}>
-									<StepLabel StepIconComponent={stepIcon}>
+									<StepLabel StepIconComponent={StepIconALT}>
 										<h3 className={productClasses.title}>{title}</h3>
 									</StepLabel>
 									<StepContent>

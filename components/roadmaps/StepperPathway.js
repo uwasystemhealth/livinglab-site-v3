@@ -38,6 +38,12 @@ export const StepIcon = (props) => {
 	return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
 };
 
+export const StepIconALT = (props) => {
+	const stepperClasses = useStepperStyles();
+	const icons = [<PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <TimerIcon></TimerIcon>, <DraftsIcon></DraftsIcon>];
+	return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
+};
+
 const StepperPathway = ({ pathway, roadmapTitle, whiteFont }) => {
 	const stepperClasses = useStepperStyles();
 	const StepButtonCustom = whiteFont ? StyledStepButton : StepButton; // OVERWRITE BY WHITEFONT
