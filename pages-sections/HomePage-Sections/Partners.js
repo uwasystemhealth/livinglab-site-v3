@@ -17,18 +17,20 @@ const useStyles = makeStyles(styles);
 const HomepageAbout = () => {
 	const classes = useStyles();
 	const LOGOS = [
-		require('assets/img/partners/core.png'),
-		require('assets/img/partners/mets.png'),
-		require('assets/img/partners/shl.png'),
-		require('assets/img/partners/uwa.png'),
+		{ name: 'Core Innovation Hub', href: 'https://www.corehub.com.au/', logo: require('assets/img/partners/core.png') },
+		{ name: 'METS Ignited', href: 'https://metsignited.org/', logo: require('assets/img/partners/mets.png') },
+		{ name: 'System Health Lab', href: 'https://systemhealthlab.com/', logo: require('assets/img/partners/shl.png') },
+		{ name: 'University of Western Australia', href: 'https://www.uwa.edu.au/', logo: require('assets/img/partners/uwa.png') },
 	];
 	return (
 		<div className={classes.section} className={classes.partnersSection}>
 			<h2 className={classNames(classes.title)}>Our Partners</h2>
 			<GridContainer justify='center' alignItems='center'>
-				{LOGOS.map((logo, index) => (
+				{LOGOS.map(({ name, href, logo }, index) => (
 					<GridItem key={index} xs={6} sm={6} md={3} style={{ textAlign: 'center' }}>
-						<img src={logo} alt='' className={classes.partnersLogo} />
+						<a href={href}>
+							<img src={logo} alt={name} className={classes.partnersLogo} />
+						</a>
 					</GridItem>
 				))}
 			</GridContainer>
