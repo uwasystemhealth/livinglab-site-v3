@@ -35,7 +35,7 @@ export async function getStaticProps(context) {
 // VALIDATES THE VALID PATHS FOR THE DYNAMIC ROUTE
 export async function getStaticPaths() {
 	return {
-		paths: PATHWAY.map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
+		paths: PATHWAY.filter(({custom=null}) => custom==null).map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
 		fallback: false,
 	};
 }
