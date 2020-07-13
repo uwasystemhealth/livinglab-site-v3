@@ -48,7 +48,7 @@ const Testings = ({ closeLink = '/accelerated-life-testing' }) => {
 			<div className={classes.section}>
 				<h2 className={classes.title}>Equipment Available</h2>
 				<h5 className={classes.description}>
-					The boxes below describe the accelerated life testing facilities we have available. However if you have tests that need equipment
+					The boxes below describe the Accelerated Life Testing facilities we have available. However if you have tests that need equipment
 					not described below, please talk to us.
 				</h5>
 				<GridContainer>
@@ -75,7 +75,7 @@ export const MoreAboutPathway = () => {
 		<div className={classes.section}>
 			<GridContainer justify='center' alignItems='center'>
 				<Button color='success' href='/roadmap/accelerated-life-testing'>
-					More About The Roadmap
+					More About The Partner Roadmap
 				</Button>
 			</GridContainer>
 		</div>

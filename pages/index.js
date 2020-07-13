@@ -19,6 +19,7 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 
 // SECTIONS
 import About from 'pages-sections/HomePage-Sections/About.js';
+import Partners from 'pages-sections/HomePage-Sections/Partners.js';
 import AcceleratedLifeTesting from 'pages-sections/HomePage-Sections/AcceleratedLifeTesting.js';
 import DeriskingSiteTrials from 'pages-sections/HomePage-Sections/DeriskingSiteTrials.js';
 import CaseStudies from 'pages-sections/HomePage-Sections/CaseStudies.js';
@@ -36,7 +37,7 @@ const index = () => {
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6}>
 							<h1 className={classes.title}>Living Lab</h1>
-							<h3>We Are A Team Of Engineers Ready To Help</h3>
+							<h3>We are a Team of Engineers Ready to Help</h3>
 							<br />
 							<Button href='#accelerated-life-testing' color='primary' size='lg'>
 								<Timer></Timer>
@@ -53,6 +54,9 @@ const index = () => {
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
 					<About></About>
+				</div>
+				<Partners></Partners>
+				<div className={classes.container}>
 					<AcceleratedLifeTesting></AcceleratedLifeTesting>
 					<DeriskingSiteTrials></DeriskingSiteTrials>
 					<CaseStudies></CaseStudies>

@@ -91,7 +91,8 @@ const RoadmapPathwayPage = ({
 							</GridContainer>
 						</CardBody>
 					</Card>
-					{children ? children : <Content requirements={requirements}></Content>}
+					{children ? children : null}
+					<Content requirements={requirements}></Content>
 				</div>
 			</div>
 		</Fragment>
