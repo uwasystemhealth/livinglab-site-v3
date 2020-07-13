@@ -33,7 +33,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
 	return {
-		paths: PATHWAY.map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
+		paths: PATHWAY.filter(({ custom = null }) => custom == null).map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
 		fallback: false,
 	};
 }
