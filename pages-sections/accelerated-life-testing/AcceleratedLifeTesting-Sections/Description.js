@@ -12,18 +12,16 @@ const ALTDescription = () => {
 		<div className={classes.section}>
 			<h2 className={classes.title}>Accelerated Life Testing with the Living Lab</h2>
 			<h5 className={classes.description}>
-				Accelerated aging and testing is used to simulate product failure in a short period of time, ideally before the products are in the
-				marketplace. Traditionally, it uses unusually high levels of environmental conditions to speed up the aging processes using a
-				standard test methodology.
+				Accelerated Lifecycle Testing (ALT) is used to simulate the environmental and operational conditions expected over the lifecycle of
+				a product in a short period of time.
 			</h5>
 			<h5 className={classes.description}>
-				The Living Lab has access to a wide range of expensive test equipment on the UWA Campus as well as the ability to design/ repurpose
-				equipment for specific accelerated life trials.
+				This test will identify how the product should perform over its lifecycle and the likely failure modes under conditions it will
+				experience.
 			</h5>
 			<h5 className={classes.description}>
-				We are not an accredited test laboratory and do not seek to compete with these highly specialised, ISO 9001 compliant businesses.
-				Our aim is to help the product developer understand the vulnerabilities in their product during the design and prototyping phases so
-				their product is compliant when they seek accreditation against Standards.
+				The LivingLab have access to a wide range of test equipment on the UWA Campus as well as the ability to design/ repurpose equipment
+				for specific accelerated life trials.
 			</h5>
 		</div>
 	);

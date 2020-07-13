@@ -15,13 +15,24 @@ const ALTDescription = () => {
 		<div className={classes.section}>
 			<h2 className={classes.title}>What is it?</h2>
 			<h5 className={classes.description}>
-				Accelerated aging and testing is used to simulate product failure in a short period of time, ideally before the products are in the
-				marketplace. Traditionally, it uses unusually high levels of environmental conditions to speed up the aging processes using a
-				standard test methodology.
+				The Accelerated Life Testing (ALT) roadmap is a comprehensive testing plan that asseses your product from design intent through to
+				final test results report.
 			</h5>
 			<h5 className={classes.description}>
-				The Living Lab has access to a wide range of expensive test equipment on the UWA Campus as well as the ability to design/ repurpose
-				equipment for specific accelerated life trials. Check out the types of accelerated testing we do.
+				The first stage is for us to understand the needs of your company and the product you would like to test, and for you to understand
+				the mission and capabilities of the Living Lab team.
+			</h5>
+			<h5 className={classes.description}>
+				Next you and The LivingLab sign a non-disclosure agreement so that you can safely communicate details with us.
+			</h5>
+			<h5 className={classes.description}>
+				Finally, we need to understand in detail what your product does, its functional specifications and the environment in which it will
+				be deployed.
+			</h5>
+			<h5 className={classes.description}>
+				We will then form a joint team to work on developing the test procedures. This is done in a collaborative on-line environment
+				enabling ease of communication between team members. Once drafted, the test procedures are approved and executed. Results are
+				rapidly shared with the team members. A final report is co-drafted by the team.
 			</h5>
 			<Button color='primary' href='/accelerated-life-testing'>
 				More About <br /> Accelerated Life Testing Equipment
