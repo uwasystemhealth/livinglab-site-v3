@@ -12,9 +12,13 @@ import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import Hidden from '@material-ui/core/Hidden';
 import Drawer from '@material-ui/core/Drawer';
+import Fade from '@material-ui/core/Fade';
 // @material-ui/icons
 import Menu from '@material-ui/icons/Menu';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+
 // core components
+import CustomButton from 'components/MaterialKit/CustomButtons/Button.js';
 import styles from 'assets/jss/nextjs-material-kit/components/headerStyle.js';
 
 const useStyles = makeStyles(styles);
@@ -35,6 +39,10 @@ export default function Header(props) {
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen);
 	};
+	const [scrollUpShow, setScrollUpShow] = React.useState(false);
+	const scrollTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
 	const headerColorChange = () => {
 		const { color, changeColorOnScroll } = props;
 		const windowsScrollTop = window.pageYOffset;
@@ -43,10 +51,12 @@ export default function Header(props) {
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[color]);
 			document.body.getElementsByTagName('header')[0].classList.add(classes[changeColorOnScroll.color]);
 			document.getElementById('logo').src = '/img/logos/Living-Lab-Logo-WEB-without@UWA.png';
+			setScrollUpShow(true);
 		} else {
 			document.body.getElementsByTagName('header')[0].classList.add(classes[color]); // BELOW SCROLL
 			document.body.getElementsByTagName('header')[0].classList.remove(classes[changeColorOnScroll.color]);
 			document.getElementById('logo').src = '/img/logos/Living-Lab-Logo-WEB-white-without@UWA.png';
+			setScrollUpShow(false);
 		}
 	};
 	const { color, rightLinks, leftLinks, brand, brandImage, fixed, absolute } = props;
@@ -99,6 +109,11 @@ export default function Header(props) {
 					</div>
 				</Drawer>
 			</Hidden>
+			<Fade in={scrollUpShow}>
+				<CustomButton justIcon round color='primary' className={classes.scrollButton} onClick={scrollTop}>
+					<ArrowUpwardIcon style={{ color: '#FFFFFF' }} />
+				</CustomButton>
+			</Fade>
 		</AppBar>
 	);
 }

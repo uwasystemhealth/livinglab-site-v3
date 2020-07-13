@@ -33,18 +33,18 @@ const getTestObject = (router) => {
 	}
 };
 
-const Testings = () => {
+const Testings = ({ closeLink = '/accelerated-life-testing' }) => {
 	const router = useRouter();
 	const testObject = !!router.query.testingName ? getTestObject(router) : null;
 
-	const closeTestModal = () => {
-		router.push('/accelerated-life-testing');
+	const closeTestModal = (closeLink) => () => {
+		router.push(closeLink);
 	};
 
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal}></TestingModal>
+			<TestingModal isModalOpen={!!router.query.testingName} {...testObject} closeModal={closeTestModal(closeLink)}></TestingModal>
 			<div className={classes.section}>
 				<h2 className={classes.title}>Equipment Available</h2>
 				<h5 className={classes.description}>
@@ -54,17 +54,31 @@ const Testings = () => {
 				<GridContainer>
 					{TestingData.map(({ title, backgroundImage, whatIsIt, workInProgress = null }) => (
 						<GridItem sm={12} md={6} key={title}>
-							<TestingCard title={title} img={backgroundImage} description={whatIsIt} workInProgress={workInProgress}></TestingCard>
+							<TestingCard
+								title={title}
+								img={backgroundImage}
+								description={whatIsIt}
+								workInProgress={workInProgress}
+								preLink={closeLink}
+							></TestingCard>
 						</GridItem>
 					))}
 				</GridContainer>
-				<GridContainer justify='center' alignItems='center'>
-					<Button color='success' href='/roadmap/accelerated-life-testing'>
-						More About The Roadmap
-					</Button>
-				</GridContainer>
 			</div>
 		</Fragment>
+	);
+};
+
+export const MoreAboutPathway = () => {
+	const classes = useStyles();
+	return (
+		<div className={classes.section}>
+			<GridContainer justify='center' alignItems='center'>
+				<Button color='success' href='/roadmap/accelerated-life-testing'>
+					More About The Roadmap
+				</Button>
+			</GridContainer>
+		</div>
 	);
 };
 
