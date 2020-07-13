@@ -38,14 +38,12 @@ const useStyles = makeStyles(styles);
 const useStepperStyles = makeStyles(stepperStyles);
 const useStylesProduct = makeStyles(productStyles);
 
+// OWN COMPONENTS
+import { StepIcon } from 'components/roadmaps/StepperPathway.js';
+
 const AcceleratedLifeTesting = () => {
 	const classes = useStyles();
 	const productClasses = useStylesProduct();
-	const stepperClasses = useStepperStyles();
-	const stepIcon = (props) => {
-		const icons = [<PartnerIcon></PartnerIcon>, <PartnerIcon></PartnerIcon>, <SafetyIcon></SafetyIcon>, <DraftsIcon></DraftsIcon>];
-		return <div className={stepperClasses.root}>{icons[props.icon - 1]}</div>;
-	};
 	return (
 		<Fragment>
 			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
@@ -59,7 +57,7 @@ const AcceleratedLifeTesting = () => {
 					<Stepper orientation='vertical'>
 						{DERISKING_SITE_TRIALS_DATA.map(({ title, description }) => (
 							<Step key={title} active={true}>
-								<StepLabel StepIconComponent={stepIcon}>
+								<StepLabel StepIconComponent={StepIcon}>
 									<h3 className={productClasses.title}>{title}</h3>
 								</StepLabel>
 								<StepContent>
