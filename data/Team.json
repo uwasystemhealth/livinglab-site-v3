@@ -59,12 +59,12 @@
     {
         "firstName": "Jaymin",
         "lastName": "Moffatt",
-        "bio": "<b>Jaymin Moffatt</b>is a Master’s student in Electrical Engineering at UWA. He is a facilitator for the unit Risk, Reliability and Safety and is currently working on the Living Lab Project completing EMC testing. Jaymin has recently completed his thesis doing research into detecting the cascading failures of assets using his knowledge of complex network analysis."
+        "bio": "<b>Jaymin Moffatt</b> is a Master’s student in Electrical Engineering at UWA. He is a facilitator for the unit Risk, Reliability and Safety and is currently working on the Living Lab Project completing EMC testing. Jaymin has recently completed his thesis doing research into detecting the cascading failures of assets using his knowledge of complex network analysis."
     },
     {
         "firstName": "Matt",
         "lastName": "Arpin",
-        "bio": "<b>Matt Arpin</b> is the technical manager of the of the Faculty of Engineering and Mathematical Sciences. He leads a Technical Team consisting of the following specialist areas: EMS Safety team; Teaching technicians; Mechanical, Physics and Electronics Workshops. "
+        "bio": "<b>Matt Arpin</b> is the technical manager of the of the Faculty of Engineering and Mathematical Sciences. He leads a Technical Team consisting of the following specialist areas: EMS Safety team; Teaching technicians; Mechanical, Physics and Electronics Workshops. Also, he was previously the managing member of Mekrolek Industrial Supplies in South Africa specialising in precision engineering and industrial manufacturing, OEM of Rotary Couplings , mechanical seals, gearboxes, pumps, pneumatic and hydraulic equipment, Laser and encoder alignment specialist. A qualified Tool, Jig and Die Maker and started first Engineering business at 21 years old. "
     },
     {
         "firstName": "Paul",
@@ -75,6 +75,12 @@
         "firstName": "Peter",
         "lastName": "Clarke",
         "bio": "<b>Peter Clarke</b> has spent most of his career in technology development and commercialisation in a range of industries including mining, oil and gas, pharmaceuticals and agriculture.  He has been a co-founder of four companies, a robotics and engineering business, a computer vision company, a refrigeration product design company and a mining services company.  He was the WA Innovator of the Year in 2007, was made a University of Sydney Innovation Hero in 2011 and accepted the Australian Museum Eureka Commercialisation prize for Scanalyse in 2013. Currently he is General Manager for Industry Engagement with the METS Ignited Growth Centre, promoting the technology developers and suppliers to the Mining industry to both the Australian and global market. "
+    },
+    {
+        "firstName": "Quenten",
+        "lastName": "Thomas",
+        "picture": "/img/team/quenten-thomas.png",
+        "bio": "<b>Quenten Thomas</b> is a software and mechatronics engineer with more than a decade of industry experience designing and building hardware, firmware and software. He is one of the founders of WearHawk – a start-up that is developing technology to monitor conveyor belts in the mining industry to predict and thereby prevent costly failures. Through the MO4U arrangement with UWA he works alongside, and collaborates with, the System Health Lab team and the Living Lab project."
     },
     {
         "firstName": "Sharon",
