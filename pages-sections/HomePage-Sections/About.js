@@ -25,18 +25,20 @@ const HomepageAbout = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						<strong>What We Do</strong> <br /> We accelerate the path to market for IOT related products by providing accelerated life tests
-						and real-life trials. We design, build and execute bespoke testing equipment and tests to try and fail your products by
-						generating realistic failure modes in an accelerated time scale.
+						The Living Lab are a team of engineers ready to help innovators test and prepare their products for trial to resource company
+						customers. In 2018 METS Ignited issued a call for interested parties to develop real or near real-world testing environments to
+						form a network of “Living Labs” across Australia. The METS Ignited-BHP Fellowship-UWA-CORE supported Living Lab@UWA is the first
+						of these.
 					</h5>
 					<h5 className={classes.description}>
-						<strong>Who We Are:</strong> <br /> The Living Lab program is run by a team of engineers, coders and project managers employed
-						by the UWA System Health Lab (SHL), CORE Innovation Hub and UWA Facilities Management
+						The Living Lab program is run by a team of engineers, coders and project managers employed by the UWA System Health Lab (SHL),
+						CORE Innovation Hub and UWA Facilities Management. We accelerate the path to market for IOT related products by providing
+						accelerated life tests and real-life trials.
 					</h5>
 					<h5 className={classes.description}>
-						<strong>Why Us:</strong> <br /> In 2018 the Living Lab program received a $100K grant from the Australian Government’s METS
-						Ignited Collaborative Project Fund and another $100k from the BHP Fellowship for Engineering for Remote Operations. We have
-						procedures and legal agreement templates to enable testing and are here to help you deploy them.
+						We design, build and execute bespoke testing equipment and tests to try and fail your products by generating realistic failure
+						modes in an accelerated time scale. We have procedures and legal agreement templates to enable testing and are here to help you
+						deploy them.
 					</h5>
 					<Button color='rose' href='/about'>
 						<Book></Book>
