@@ -31,7 +31,7 @@ const MeetTheTeam = () => {
 								bio = 'Insert Bio',
 								picture = `/img/team/${firstName.toLowerCase()}-${lastName.toLowerCase()}.jpg`,
 							}) => (
-								<GridItem xs={12} md={12}>
+								<GridItem xs={12} md={12} key={`${firstName}-${lastName}`}>
 									<GridContainer>
 										<GridItem xs={12} md={2}>
 											<div className={classes.imgList} style={{ backgroundImage: `url(${picture})` }}></div>
