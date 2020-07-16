@@ -1,0 +1,10 @@
+version: "3"
+services:
+  livinglab-site-v3:
+    image: livinglab-site-v3
+    ports:
+    - 10001:3000
+    expose:
+    - "3000"
+    environment:
+        - .env
