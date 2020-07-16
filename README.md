@@ -11,6 +11,8 @@ This is the Living Lab Website version 3. This has been created by [Frinze Erin 
   - [File Structure](#file-structure)
   - [Additional Notes](#additional-notes)
     - [File-Based Routing](#file-based-routing)
+    - [File-Splitting Guide](#file-splitting-guide)
+    - [File-Content Convention](#file-content-convention)
     - [Directory Naming In Some Directory](#directory-naming-in-some-directory)
     - [Environment Variable](#environment-variable)
     - [Docker Deploy](#docker-deploy)
@@ -196,6 +198,49 @@ livinglab-site-v3
 ### File-Based Routing
 `pages` directory is a very important folder as it determines the routing of the website. This can only contain "PAGE" components, and may contain static props fetching especially the **dynamic pages**.
 
+More info about [routing here](https://nextjs.org/docs/routing/introduction) and about [dynamic routing here](https://nextjs.org/docs/routing/dynamic-routes).
+
+### File-Splitting Guide
+This project components are mainly divided into three main parts: `components`, `pages`, `pages-sections`:
+1. components - are very basic components that could be reused anywhere
+2. pages-sections - are sections of pages. For example the `pages/index` are divided into multiple sections seen in `pages-sections/HomePage-Sections`
+3. pages - these are accessible routes. The names of this files depends on what you want the page URL to look like. This is related to [File-Based Routing](#file-based-routing).
+
+### File-Content Convention
+The file content writing has a convention that follows:
+1. Importing of Modules
+2. Setting Up Components
+3. Component Exporting Content
+4. (Optional - used only for dynamic pages) Setting Up How The Component will Be Processed as a page. Read more about this [here](https://nextjs.org/docs/basic-features/data-fetching)
+5. Default Export  of 3
+
+Take a look at `component/roadmaps/StepperPathway.js` as an example:
+```js
+// 1. Importing of Modules
+import ... from "..."
+
+// 2. Setting Up Components
+const StyledStepButton = styled(StepButton)({
+	...
+});
+
+// 3. (START) Component Exporting Content
+export const StepIcon = (props) => {
+	...
+};
+
+export const StepIconALT = (props) => {
+	...
+};
+
+const StepperPathway = ({ pathway, roadmapTitle, whiteFont }) => {
+	...
+};
+
+// 5. Default Export
+export default StepperPathway;
+```
+
 ### Directory Naming In Some Directory
 In some folder such as `components`, `pages-section`, and `public/img`. There will occasionally be directories that are lower caps, these are directories that follows the same format as of the one in the `pages` directory for easy reference.
 
@@ -213,10 +258,14 @@ Make sure you have docker installed and running.
 Type the command:
 
 This will build an image in docker
-`$    docker build -t livinglab-site-v3 .`
+```bash
+$    docker build -t livinglab-site-v3 .
+```
 
 Run the docker compose to run the image with configurations in "detached mode" - run in background
-`$    docker-compose up -d`
+```bash
+$    docker-compose up -d
+```
 
 ## Template Licensing
 - Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
