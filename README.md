@@ -16,6 +16,7 @@ This is the Living Lab Website version 3. This has been created by [Frinze Erin 
     - [Directory Naming In Some Directory](#directory-naming-in-some-directory)
     - [Environment Variable](#environment-variable)
     - [Docker Deploy](#docker-deploy)
+    - [Colors and Branding](#colors-and-branding)
   - [Template Licensing](#template-licensing)
 
 ## Technology Stack
@@ -266,6 +267,9 @@ Run the docker compose to run the image with configurations in "detached mode" -
 ```bash
 $    docker-compose up -d
 ```
+
+### Colors and Branding
+Can be found [here](https://github.com/uwasystemhealth/livinglab-site-v3/blob/master/guide/Living%20Lab%20Brand%20Stylesheet-1.pdf).
 
 ## Template Licensing
 - Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=njsmk-readme)
