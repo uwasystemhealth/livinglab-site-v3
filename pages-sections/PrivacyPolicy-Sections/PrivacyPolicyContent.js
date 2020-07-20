@@ -18,6 +18,7 @@ const PrivacyPolicyContent = () => {
 					<ul>
 						<li>Your Business Information such as: Business Name, Business Website, Business Mailing Address</li>
 						<li>Your Contact Information such as: Contact Name, Contact Phone, Contact Email</li>
+						<li>Your activities in this website facilitated by Google Analytics </li>
 					</ul>
 				</h5>
 			</div>
