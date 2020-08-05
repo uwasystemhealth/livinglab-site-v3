@@ -53,11 +53,13 @@ const AcceleratedLifeTesting = () => {
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div className={classes.container}>
-					<Description></Description>
 					<div className={productClasses.section}>
 						<h2 className={productClasses.title}>Partner Roadmap</h2>
 						<h5 className={productClasses.description}>
-							Below are the details of the partner roadmap of getting involved in the Living Lab for Accelerated Life Testing.
+							<strong>
+								Our Partner Roadmap for Accelerated Life Testing (ALT) is a comprehensive testing plan that assesses your product from
+								design intent through to final test results reporting.
+							</strong>
 						</h5>
 						<Stepper orientation='vertical'>
 							{ACCELERATED_LIFE_TESTING_DATA.map(({ title, description }) => (

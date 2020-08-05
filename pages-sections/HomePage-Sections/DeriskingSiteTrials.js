@@ -26,10 +26,13 @@ const HomepageDST = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						Innovators find it difficult to access sites to prove up results and resources companies are averse to trialling/ introducing
-						innovation without proven results. This is called the ‘Valley of Death’. Our mission is to help bridge this. Following extensive
-						consultation with companies, SME’s and entrepreneurs we have developed a partner roadmap of checklists and physical tests to
-						help derisk your first site trial.
+						Innovators often find it difficult to access sites to validate results and resources companies are averse to trialling or
+						introducing innovation without proven results. In startup terms, this is called the “Valley of Death”. Our mission is to help
+						bridge this gap.
+					</h5>
+					<h5 className={classes.description}>
+						Following extensive consultation with industry, small and medium sized enterprises and entrepreneurs, we have developed a
+						Partner Roadmap with checklists and physical tests to help derisk your first site trial.
 					</h5>
 					<Button color='success' href='/roadmap/derisking-site-trials'>
 						More About <br />

@@ -61,7 +61,7 @@ const AcceleratedLifeTesting = () => {
 									<h3 className={productClasses.title}>{title}</h3>
 								</StepLabel>
 								<StepContent>
-									<h5 className={productClasses.description}>{description}</h5> <br />
+									<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description }}></h5> <br />
 									<GridContainer justify='center'>
 										<GridItem xs={9} md={3}>
 											<Button color='primary' href={`derisking-site-trials/${stringToLink(title)}`} style={{ width: '100%' }}>
