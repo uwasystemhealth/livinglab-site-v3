@@ -48,8 +48,8 @@ const Testings = ({ closeLink = '/accelerated-life-testing' }) => {
 			<div className={classes.section}>
 				<h2 className={classes.title}>Equipment Available</h2>
 				<h5 className={classes.description}>
-					The boxes below describe the Accelerated Life Testing facilities we have available. However if you have tests that need equipment
-					not described below, please talk to us.
+					The following Accelerated Life Testing facilities are available. However, if you have tests that need equipment not described
+					below, please talk to us.
 				</h5>
 				<GridContainer>
 					{TestingData.map(({ title, backgroundImage, whatIsIt, workInProgress = null }) => (

@@ -53,13 +53,12 @@ const AcceleratedLifeTests = () => {
 		{
 			img: '/img/roadmap/derisking-site-trials/pump.jpg',
 			title: 'Central Plant Centrifugal Pump',
-			description: 'The System Health Lab’s Blue Box was tested at UWA’s Central Plant to monitor the vibration of a centrifugal pump.',
+			description: 'The UWA System Health Lab’s BlueBox was tested at UWA’s Central Plant to monitor the vibration of a centrifugal pump.',
 		},
 		{
 			img: '/img/roadmap/derisking-site-trials/fan.jpg',
 			title: 'Centrifugal Fan',
-			description:
-				'A centrifugal fan was used for the comparison of MEMS IoT with conventional piezoelectric vibration sensor.',
+			description: 'A centrifugal fan was used for the comparison of MEMS-IoT with conventional piezoelectric vibration sensor.',
 		},
 	];
 	const pathwayObject = getPathwayObject();

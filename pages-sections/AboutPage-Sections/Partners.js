@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -14,7 +14,7 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 const useStyles = makeStyles(styles);
 
-const HomepagePartners = () => {
+const AboutPartners = () => {
 	const classes = useStyles();
 	const LOGOS = [
 		{ name: 'METS Ignited', href: 'https://metsignited.org/', logo: require('assets/img/partners/mets.png') },
@@ -24,19 +24,18 @@ const HomepagePartners = () => {
 		{ name: 'Core Innovation Hub', href: 'https://www.corehub.com.au/', logo: require('assets/img/partners/core.png') },
 	];
 	return (
-		<div className={classes.section} className={classes.partnersSection}>
-			<h2 className={classNames(classes.title)}>Our Partners</h2>
+		<Fragment>
 			<GridContainer justify='center' alignItems='center'>
 				{LOGOS.map(({ name, href, logo }, index) => (
-					<GridItem key={index} xs={6} sm={6} md={2} style={{ textAlign: 'center' }}>
+					<GridItem key={index} xs={6} style={{ textAlign: 'center' }}>
 						<a href={href}>
 							<img src={logo} alt={name} className={classes.partnersLogo} />
 						</a>
 					</GridItem>
 				))}
 			</GridContainer>
-		</div>
+		</Fragment>
 	);
 };
 
-export default HomepagePartners;
+export default AboutPartners;

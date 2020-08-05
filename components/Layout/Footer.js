@@ -54,8 +54,8 @@ const Footer = (props) => {
 							<List>
 								<ListItem>
 									<p>
-										Bridging the valley of death between development and deployment for MEMS-IOT products through Accelerated Life Testing
-										and Derisking Site Trials.
+										Bridging the gap between development and deployment for MEMS-IoT products through Accelerated Life Testing and Derisking
+										Site Trials.
 									</p>
 								</ListItem>
 							</List>
@@ -77,12 +77,12 @@ const Footer = (props) => {
 								</ListItem>
 								<ListItem>
 									<Link href='/about#WhatIsTheLab'>
-										<a className={aClasses}>Why Was The Living Lab Founded</a>
+										<a className={aClasses}>Foundation of the Living Lab</a>
 									</Link>
 								</ListItem>
 								<ListItem>
 									<Link href='/about#MeetTheTeam'>
-										<a className={aClasses}>Meet The Team</a>
+										<a className={aClasses}>Meet the Team</a>
 									</Link>
 								</ListItem>
 							</List>

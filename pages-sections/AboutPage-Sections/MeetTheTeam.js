@@ -19,7 +19,7 @@ const MeetTheTeam = () => {
 		<div className={classes.section}>
 			<a className={classes.anchor} id='MeetTheTeam'></a>
 			<h2 id='MeetTheTeam' className={classes.title}>
-				Meet The Team
+				Meet the Team
 			</h2>
 			<GridContainer>
 				<GridItem xs={12}>

@@ -23,21 +23,22 @@ const HomepageALT = () => {
 			<GridContainer direction='row-reverse'>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						Accelerated aging and testing is used to simulate product failure in a short period of time, ideally before the products are in
-						the marketplace. Traditionally, it uses unusually high levels of environmental conditions to speed up the aging processes using
-						a standard test methodology.
+						Accelerated aging and testing is used to simulate product failure in an accelerated time frame, ideally before the products are
+						in the marketplace. Traditionally, it uses exaggerated environmental conditions to speed up the aging processes using a
+						standardised test methodology.
 					</h5>
 					<h5 className={classes.description}>
-						The Living Lab has access to a wide range of expensive test equipment on the UWA Campus as well as the ability to design/
-						repurpose equipment for specific accelerated life trials.
+						The Living Lab has access to a wide range of specialist testing equipment on the UWA campuses as well as the ability to design
+						or repurpose equipment for specific accelerated life trials for your product. Check out the types of accelerated life testing we
+						do.
 					</h5>
 					<h5 className={classes.description}>Check out the types of accelerated testing we do.</h5>
 					<GridContainer justify='center' alignItems='center'>
 						<Button color='primary' href='/accelerated-life-testing'>
-							More About <br /> Accelerated Life Testing Equipment
+							More <br /> Accelerated Life Testing Equipment
 						</Button>
 						<Button color='success' href='/roadmap/accelerated-life-testing'>
-							More About <br /> Accelerated Life Testing Partner Roadmap
+							More <br /> Accelerated Life Testing Partner Roadmap
 						</Button>
 					</GridContainer>
 				</GridItem>
