@@ -25,20 +25,28 @@ const HomepageAbout = () => {
 			<GridContainer>
 				<GridItem xs={12} sm={12} md={8}>
 					<h5 className={classes.description}>
-						The Living Lab are a team of engineers ready to help innovators test and prepare their products for trial to resource company
-						customers. In 2018 METS Ignited issued a call for interested parties to develop real or near real-world testing environments to
-						form a network of “Living Labs” across Australia. The METS Ignited-BHP Fellowship-UWA-CORE supported Living Lab@UWA is the first
-						of these.
+						<strong>The Living Lab @UWA</strong> is a team of engineers equipped to help innovators test and prepare products for trial to
+						resources company customers.
 					</h5>
 					<h5 className={classes.description}>
-						The Living Lab program is run by a team of engineers, coders and project managers employed by the UWA System Health Lab (SHL),
-						CORE Innovation Hub and UWA Facilities Management. We accelerate the path to market for IOT related products by providing
-						accelerated life tests and real-life trials.
+						In 2018, <a href='https://metsignited.org/'>METS Ignited</a>, the Australian Industry Growth Centre for Mining Equipment,
+						Technology and Services, issued a call for interest to develop real or near real-world testing environments to form a network of
+						“Living Labs” across Australia.{' '}
+						<strong>
+							Supported by METS Ignited, BHP Fellowship, UWA and CORE Innovation Hub, the Living Lab @UWA is the first of these.
+						</strong>
 					</h5>
 					<h5 className={classes.description}>
-						We design, build and execute bespoke testing equipment and tests to try and fail your products by generating realistic failure
-						modes in an accelerated time scale. We have procedures and legal agreement templates to enable testing and are here to help you
-						deploy them.
+						The Living Lab is run by engineers, coders and project managers from{' '}
+						<a href='https://systemhealthlab.com/'>UWA System Health Lab</a> (SHL),{' '}
+						<a href='https://www.corehub.com.au/'>CORE Innovation Hub</a> and{' '}
+						<a href='https://www.uwa.edu.au/'>UWA Facilities Management</a>.
+					</h5>
+					<h5 className={classes.description}>
+						We <strong>accelerate your path to market</strong> for IoT-related products by providing Accelerated Life Testing and a
+						real-life trials. We <strong>design, build and execute bespoke testing equipment and tests</strong> to try and fail your
+						products by generating realistic failure modes in an accelerated time scale. We have{' '}
+						<strong>procedures and legal agreement templates to enable testing</strong> and can help you deploy them.
 					</h5>
 					<Button color='rose' href='/about'>
 						<Book></Book>

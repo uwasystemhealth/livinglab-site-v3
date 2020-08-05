@@ -30,11 +30,11 @@ const CallToAction = (props) => {
 		<Fragment>
 			<section className={footerClasses}>
 				<div className={classes.container}>
-					<h3>Why Connect With Us?</h3>
+					<h3>Connect With Us?</h3>
 					<br />
 					<p>
-						We have a track record of being able to design testing equipment and tests. We have systems and processes in place. We know how
-						to collaborate. We are here to support WA based businesses.
+						We have a proven track record of designing testing equipment and tests. By sharing our highly developed systems and processes
+						with innovators we’re perfectly placed to support WA-based businesses.
 					</p>
 					<br />
 					<Button color='primary' onClick={openContactFormModal}>

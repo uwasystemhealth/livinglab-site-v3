@@ -25,7 +25,7 @@ const HomepageCS = () => {
 			<GridContainer direction='row-reverse'>
 				<GridItem>
 					<h5 className={classes.description}>
-						Watch this video for an example of the type of testing we can set up for you and your MEMS-IOT based sensing system.
+						Watch this video for an example of the type of testing we can set up for you and your MEMS-IoT based sensing system.
 					</h5>
 				</GridItem>
 				<GridItem>
@@ -36,7 +36,7 @@ const HomepageCS = () => {
 				<GridItem style={{ marginTop: 50 }}>
 					<Button color='primary' href='/case-studies'>
 						<Book></Book>
-						More About Case Studies
+						More Case Studies
 					</Button>{' '}
 				</GridItem>
 			</GridContainer>

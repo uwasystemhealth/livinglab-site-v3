@@ -34,21 +34,20 @@ const index = () => {
 		<Fragment>
 			<Parallax filter responsive image={require('assets/img/landing-bg.jpg')}>
 				<div className={classes.container}>
-					<GridContainer>
-						<GridItem xs={12} sm={12} md={6}>
-							<h1 className={classes.title}>Living Lab</h1>
-							<h3>We are a Team of Engineers Ready to Help</h3>
-							<br />
-							<Button href='#accelerated-life-testing' color='primary' size='lg'>
-								<Timer></Timer>
-								Accelerated Life Testing
-							</Button>
-							<Button href='#derisking-site-trials' color='success' size='lg'>
-								<Assessment></Assessment>
-								Derisking Site Trials
-							</Button>
-						</GridItem>
-					</GridContainer>
+					<h1 className={classes.title}>Living Lab</h1>
+					<h3>
+						We are a team of engineers ready to help innovators bridge the gap between development and deployment for MEMS-IoT products
+						through Accelerated Life Testing and Derisking Site Trials.
+					</h3>
+					<br />
+					<Button href='#accelerated-life-testing' color='primary' size='lg'>
+						<Timer></Timer>
+						Accelerated Life Testing
+					</Button>
+					<Button href='#derisking-site-trials' color='success' size='lg'>
+						<Assessment></Assessment>
+						Derisking Site Trials
+					</Button>
 				</div>
 			</Parallax>
 			<div className={classNames(classes.main, classes.mainRaised)}>
