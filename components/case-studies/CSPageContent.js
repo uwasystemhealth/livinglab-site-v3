@@ -47,7 +47,7 @@ const About = (props) => {
 					<GridContainer className={productClasses.descriptionContainer}>
 						<GridItem xs={12} md={6} className={productClasses.gridItemPadded}>
 							<div className={productClasses.descriptionContainer}>
-								<h5 className={productClasses.description}>{description}</h5>
+								<h5 className={productClasses.description} dangerouslySetInnerHTML={{ __html: description }}></h5>
 							</div>
 						</GridItem>
 						<GridItem xs={12} md={6} className={productClasses.gridItemPadded}>
