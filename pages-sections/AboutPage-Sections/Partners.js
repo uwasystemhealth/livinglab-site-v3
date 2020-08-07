@@ -14,15 +14,12 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 const useStyles = makeStyles(styles);
 
+//Partner Logos
+import LOGOS from "data/Partner.js"
+
 const AboutPartners = () => {
 	const classes = useStyles();
-	const LOGOS = [
-		{ name: 'METS Ignited', href: 'https://metsignited.org/', logo: require('assets/img/partners/mets.png') },
-		{ name: 'System Health Lab', href: 'https://systemhealthlab.com/', logo: require('assets/img/partners/shl.png') },
-		{ name: 'University of Western Australia', href: 'https://www.uwa.edu.au/', logo: require('assets/img/partners/uwa.png') },
-		{ name: 'BHP', href: 'https://www.bhp.com/', logo: require('assets/img/partners/bhp.png') },
-		{ name: 'Core Innovation Hub', href: 'https://www.corehub.com.au/', logo: require('assets/img/partners/core.png') },
-	];
+
 	return (
 		<Fragment>
 			<GridContainer justify='center' alignItems='center'>
