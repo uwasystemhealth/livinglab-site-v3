@@ -24,7 +24,7 @@ const AboutLivingLab = () => {
 					<h5 className={classes.description}>
 						One of the main areas of development for the Australian METS sector is WiFi-enabled digital-electronic sensing systems, commonly
 						known as Internet-of Things (IoT) applications, which will power Industry 4.0. Examples include asset health, ground control and
-						environmental monitoring, and sensing systems for use one robotics and drones. However, in Australia it is difficult for
+						environmental monitoring, and sensing systems for use on robotics and drones. However, in Australia it is difficult for
 						developers of these new digital sensing systems to efficiently test new electronic products in an industry setting. This proves
 						a significant barrier in being able to deliver current, commercial solutions to the resources sector.
 					</h5>
