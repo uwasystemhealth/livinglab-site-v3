@@ -39,7 +39,7 @@ const AboutLivingLab = () => {
 						testings and can also place IoT products on infrastructure available at the University. Testing is done by the System Health Lab
 						engineers providing valuable industry experience for the students involved.
 					</h5>
-					<h5 className={classes.description}>To date the LivingLab@UWA team has delivered the following: </h5>
+					<h5 className={classes.description}>To date the Living Lab @UWA team has delivered the following: </h5>
 					<ul className={classes.description}>
 						<li> UV, vibration and IP reliability assessment for MEMS-IoT device for major resources company.</li>
 						<li> Performance testing of wireless MEMS-IoT vibration unit developed at UWA on rotating equipment</li>
