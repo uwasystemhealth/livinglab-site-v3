@@ -18,7 +18,7 @@ const useStyles = makeStyles(styles);
 import CaseStudies from 'data/CaseStudies.json';
 const HomepageCS = () => {
 	const classes = useStyles();
-	const { videoLink } = CaseStudies[0]; // SELECT TO DISPLAY WHAT CASE STUDY
+	const { title, videoLink } = CaseStudies[0]; // SELECT TO DISPLAY WHAT CASE STUDY
 	return (
 		<div className={classes.section}>
 			<h2 className={classes.title}>Our Work</h2>
@@ -30,7 +30,7 @@ const HomepageCS = () => {
 				</GridItem>
 				<GridItem>
 					<br />
-					<iframe className={classes.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
+					<iframe title={title} className={classes.video} src={videoLink} allowFullScreen='allowFullScreen'></iframe>
 					<br />
 				</GridItem>
 				<GridItem style={{ marginTop: 50 }}>
