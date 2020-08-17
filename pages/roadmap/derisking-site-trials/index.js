@@ -46,7 +46,7 @@ const AcceleratedLifeTesting = () => {
 	const productClasses = useStylesProduct();
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('public/img/roadmap/derisking-site-trials/pump.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Derisking Site Trials</h1>
 				</div>
