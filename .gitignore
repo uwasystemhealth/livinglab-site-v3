@@ -1,4 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
+#image optimizer
+/image-optimizer/input/*
+/image-optimizer/outputNormal/*
+/image-optimizer/outputTransparent/*
 
 # dependencies
 /node_modules
