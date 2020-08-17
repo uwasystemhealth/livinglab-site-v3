@@ -28,7 +28,7 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/DSTDescription';
 
 // DATA Import
-import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.json';
+import DERISKING_SITE_TRIALS_DATA from 'data/Roadmap-DeriskingSiteTrials.js';
 
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPage.js';
@@ -46,7 +46,7 @@ const AcceleratedLifeTesting = () => {
 	const productClasses = useStylesProduct();
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('public/img/roadmap/derisking-site-trials/pump.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Derisking Site Trials</h1>
 				</div>

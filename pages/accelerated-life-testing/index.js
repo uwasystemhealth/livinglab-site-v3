@@ -21,7 +21,7 @@ const AcceleratedLifeTesting = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('assets/img/accelerated-life-testing-equipment.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Accelerated Life Testing Equipment</h1>
 				</div>

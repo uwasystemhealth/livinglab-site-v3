@@ -2,7 +2,7 @@ import React from 'react';
 import { stringToLink } from 'helpers/validation';
 
 // DATA CONTENT
-import PATHWAY from 'data/Roadmap-DeriskingSiteTrials.json';
+import PATHWAY from 'data/Roadmap-DeriskingSiteTrials.js';
 
 // SECTIONS
 import RoadmapPathwayPage from 'pages-sections/roadmap/RoadmapContent-Sections/RoadmapPathwayPage.js';

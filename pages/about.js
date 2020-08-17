@@ -24,7 +24,7 @@ const About = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('assets/img/about.jpg')}>
 				<div className={classes.container}>
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6}>

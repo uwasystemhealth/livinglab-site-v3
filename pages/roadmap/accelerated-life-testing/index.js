@@ -27,7 +27,7 @@ import Parallax from 'components/MaterialKit/Parallax/Parallax.js';
 import Description from 'pages-sections/roadmap/RoadmapMainPage-Sections/ALTDescription';
 
 // DATA Import
-import ACCELERATED_LIFE_TESTING_DATA from 'data/Roadmap-AcceleratedLifeTesting.json';
+import ACCELERATED_LIFE_TESTING_DATA from 'data/Roadmap-AcceleratedLifeTesting.js';
 
 // STYLES
 import productStyles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
@@ -46,7 +46,7 @@ const AcceleratedLifeTesting = () => {
 
 	return (
 		<Fragment>
-			<Parallax small filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax small filter responsive image={require('assets/img/accelerated-life-testing-roadmap.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Accelerated Life Testing</h1>
 				</div>

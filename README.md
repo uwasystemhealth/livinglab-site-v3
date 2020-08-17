@@ -137,8 +137,8 @@ livinglab-site-v3
 ├── data                                      //CONTAINS ALL GROUPED DATA SUCH AS:
 │   ├── AcceleratedLifeTestingContent.json    // ALT
 │   ├── CaseStudies.json                      // Case Studies
-│   ├── Roadmap-AcceleratedLifeTesting.json   // Roadmap Pathways and Details
-│   ├── Roadmap-DeriskingSiteTrials.json
+│   ├── Roadmap-AcceleratedLifeTesting.js   // Roadmap Pathways and Details
+│   ├── Roadmap-DeriskingSiteTrials.js
 │   └── Team.json                             // Team Details
 │
 ├── pages-sections                            // SECTIONS OF PAGES - NAMED AFTER PAGES AND ROUTES OF PAGES

@@ -2,7 +2,7 @@ import React from 'react';
 import { stringToLink } from 'helpers/validation';
 
 // DATA CONTENT
-import PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.json';
+import PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.js';
 
 // SECTIONS
 import RoadmapPathwayPage from 'pages-sections/roadmap/RoadmapContent-Sections/RoadmapPathwayPage.js';

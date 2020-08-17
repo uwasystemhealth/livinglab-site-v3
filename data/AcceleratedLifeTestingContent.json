@@ -44,7 +44,7 @@
     },
     {
         "title": "Ingress Protection Testing (Dust)",
-        "backgroundImage": "/img/accelerated-life-testing/ip-testing-dust/cover.png",
+        "backgroundImage": "/img/accelerated-life-testing/ip-testing-dust/cover.jpg",
         "whatIsIt": "Simulation of the dusty conditions that devices can be exposed to while on a mine site. Electronics and sensors are placed within the simulation enclosure to see how they perform under dusty conditions.",
         "whatEquipmentsAreInvolvedImage": "/img/accelerated-life-testing/ip-testing-water/equipment.png",
         "methodology": "A typical test procedure for ingress protection testing (water) as carried out by the Living Lab is as follows:<ul><li>Remove any electronic components from within the container being tested (if practical)</li><li>Prepare the sample as per client instructions. The sample should be as close to room temperature as possible to reduce condensation inside the container</li><li>Mount the device onto the short backing plate and use the hose to spray the sample. Use flow rate and direction as indicated in the IPX1-IPX6 standard being tested for</li><li>Open the device and visually inspect for the ingress of water. Record any ingress, dry the sample and repeat test as needed</li><li>Replace the backing plate with the longer version. This will allow the sample to be submerged in the tank to a depth of one metre.</li><li>As per IPX7, submerge the sample at a one metre depth for 30 minutes. Open the device and inspect for water ingress.</li></ul>",
