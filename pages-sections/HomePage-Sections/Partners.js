@@ -26,7 +26,7 @@ const HomepagePartners = () => {
 			<GridContainer justify='center' alignItems='center'>
 				{LOGOS.map(({ name, href, logo }, index) => (
 					<GridItem key={index} xs={6} sm={6} md={3} style={{ textAlign: 'center' }}>
-						<a href={href}>
+						<a href={href} rel='noopener'>
 							<img src={logo} alt={name} className={classes.partnersLogo} />
 						</a>
 					</GridItem>

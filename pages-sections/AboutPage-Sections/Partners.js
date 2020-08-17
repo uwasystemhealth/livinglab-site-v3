@@ -15,7 +15,7 @@ import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/pro
 const useStyles = makeStyles(styles);
 
 //Partner Logos
-import LOGOS from "data/Partner.js"
+import LOGOS from 'data/Partner.js';
 
 const AboutPartners = () => {
 	const classes = useStyles();
@@ -25,7 +25,7 @@ const AboutPartners = () => {
 			<GridContainer justify='center' alignItems='center'>
 				{LOGOS.map(({ name, href, logo }, index) => (
 					<GridItem key={index} xs={6} style={{ textAlign: 'center' }}>
-						<a href={href}>
+						<a href={href} rel='noopener'>
 							<img src={logo} alt={name} className={classes.partnersLogo} />
 						</a>
 					</GridItem>

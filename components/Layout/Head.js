@@ -1,12 +1,11 @@
 // REACT+NEXT
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
+
+// import your default seo configuration
+import SEO from '../../next-seo.config';
 
 const HeadMeta = () => {
-	return (
-		<Head>
-			<title>Living Lab</title>
-		</Head>
-	);
+	return <NextSeo {...SEO}></NextSeo>;
 };
 
 export default HeadMeta;
