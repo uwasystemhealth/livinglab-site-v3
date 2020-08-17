@@ -26,8 +26,8 @@ const useStepperStyles = makeStyles(stepperStyle);
 import StepperPathway from 'components/roadmaps/StepperPathway.js';
 
 // DATA SECTIONS
-import DST_PATHWAY from 'data/Roadmap-DeriskingSiteTrials.json';
-import ALT_PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.json';
+import DST_PATHWAY from 'data/Roadmap-DeriskingSiteTrials.js';
+import ALT_PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.js';
 
 const RoadmapsCard = () => {
 	const classes = useStyles();

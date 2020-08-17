@@ -2,7 +2,7 @@ import React from 'react';
 import { stringToLink } from 'helpers/validation';
 
 // DATA CONTENT
-import PATHWAY from 'data/Roadmap-DeriskingSiteTrials.json';
+import PATHWAY from 'data/Roadmap-DeriskingSiteTrials.js';
 
 // material-ui components
 import { makeStyles } from '@material-ui/core/styles';
