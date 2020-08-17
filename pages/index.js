@@ -32,7 +32,7 @@ const index = () => {
 	const classes = useStyles();
 	return (
 		<Fragment>
-			<Parallax filter responsive image={require('assets/img/landing-bg.jpg')}>
+			<Parallax filter responsive image={require('assets/img/homepage.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Living Lab</h1>
 					<h3>

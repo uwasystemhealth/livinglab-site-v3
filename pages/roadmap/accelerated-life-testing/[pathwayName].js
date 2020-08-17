@@ -2,7 +2,7 @@ import React from 'react';
 import { stringToLink } from 'helpers/validation';
 
 // DATA CONTENT
-import PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.json';
+import PATHWAY from 'data/Roadmap-AcceleratedLifeTesting.js';
 
 // SECTIONS
 import RoadmapPathwayPage from 'pages-sections/roadmap/RoadmapContent-Sections/RoadmapPathwayPage.js';
@@ -35,7 +35,7 @@ export async function getStaticProps(context) {
 // VALIDATES THE VALID PATHS FOR THE DYNAMIC ROUTE
 export async function getStaticPaths() {
 	return {
-		paths: PATHWAY.filter(({custom=null}) => custom==null).map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
+		paths: PATHWAY.filter(({ custom = null }) => custom == null).map(({ title }) => ({ params: { pathwayName: stringToLink(title) } })),
 		fallback: false,
 	};
 }
