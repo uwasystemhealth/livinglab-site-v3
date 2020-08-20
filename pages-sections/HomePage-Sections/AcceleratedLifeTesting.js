@@ -43,7 +43,11 @@ const HomepageALT = () => {
 					</GridContainer>
 				</GridItem>
 				<GridItem xs={12} sm={12} md={4}>
-					<img src='/img/accelerated-life-testing/accelerated-bearing-failure-testing/methodology.jpg' alt='' className={classes.img} />
+					<img
+						src={require('../../assets/img/accelerated-life-testing/accelerated-bearing-failure-testing/methodology.jpg')}
+						alt=''
+						className={classes.img}
+					/>
 				</GridItem>
 			</GridContainer>
 			<br />
