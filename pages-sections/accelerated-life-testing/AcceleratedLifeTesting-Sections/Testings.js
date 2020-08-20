@@ -14,7 +14,7 @@ import TestingCard from 'components/accelerated-life-testing/TestingCard.js';
 import TestingModal from 'components/accelerated-life-testing/TestingModal.js';
 
 // CONTENT
-import TestingData from 'data/AcceleratedLifeTestingContent.json';
+import TestingData from 'data/AcceleratedLifeTestingContent.js';
 
 // STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';
