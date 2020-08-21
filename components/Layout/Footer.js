@@ -20,7 +20,7 @@ import CallToAction from './CallToAction';
 
 // CONTENT
 import TestingData from 'data/AcceleratedLifeTestingContent.js';
-import CaseStudies from 'data/CaseStudies.json';
+import CaseStudies from 'data/CaseStudies.js';
 
 //STYLES
 const useStyles = makeStyles(styles);
