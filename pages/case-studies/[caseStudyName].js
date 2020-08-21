@@ -5,7 +5,7 @@ import { stringToLink } from 'helpers/validation';
 import CaseStudiesPageContent from 'components/case-studies/CSPageContent.js';
 
 // CONTENT
-import CaseStudies from 'data/CaseStudies.json';
+import CaseStudies from 'data/CaseStudies.js';
 
 const getCaseStudyObject = (caseStudyName) => {
 	// REPLACE TITLE SPACES WITH - THEN COMPARE

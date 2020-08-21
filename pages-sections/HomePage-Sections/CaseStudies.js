@@ -15,7 +15,7 @@ import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/pro
 const useStyles = makeStyles(styles);
 
 // DATA
-import CaseStudies from 'data/CaseStudies.json';
+import CaseStudies from 'data/CaseStudies.js';
 const HomepageCS = () => {
 	const classes = useStyles();
 	const { title, videoLink } = CaseStudies[0]; // SELECT TO DISPLAY WHAT CASE STUDY
