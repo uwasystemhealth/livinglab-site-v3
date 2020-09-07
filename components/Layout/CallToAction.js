@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 // MATERIAL UI ICON
 import DownloadIcon from '@material-ui/icons/GetApp';
+import MessageIcon from '@material-ui/icons/Message';
 
 // material-ui core components
 import { makeStyles } from '@material-ui/core/styles';
@@ -47,7 +48,7 @@ const CallToAction = (props) => {
 							<GridContainer>
 								<GridItem md={6}>
 									<Button color='primary' onClick={openContactFormModal}>
-										Get Involved
+										<MessageIcon></MessageIcon>Get Involved
 									</Button>
 								</GridItem>
 								<GridItem md={6}>
