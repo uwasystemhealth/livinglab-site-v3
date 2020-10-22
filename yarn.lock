@@ -6420,10 +6420,10 @@ next@^9.4.5-canary.18:
     webpack "4.44.1"
     webpack-sources "1.4.3"
 
-nextjs-redirect@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/nextjs-redirect/-/nextjs-redirect-2.0.2.tgz#ccc335ebb7922cf71d8ba360444ab1eb4813ce50"
-  integrity sha512-2k6Bzg1UjEUJ4qy3XY0x8qNZROpHQYH7phtTjcrMh96HZtSzANixAb4LtAbzGzEpdlEBzwzBisd+zVKbLAVAXg==
+nextjs-redirect@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/nextjs-redirect/-/nextjs-redirect-5.0.0.tgz#30a05fb189a5d1fcd5d15e46fbeee7e611579fc6"
+  integrity sha512-/AImO+Qe/BJBkqYv894wH1Gw0TWHhBQ8cXVcSc6QeGsyGDD8zWLaqzHwyRmDPXmI+Q75LoeBtUMtbx8M3rNe1A==
 
 nice-try@^1.0.4:
   version "1.0.5"
