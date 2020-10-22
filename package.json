@@ -45,7 +45,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
     "material-ui-popup-state": "^1.6.1",
-    "moment": "2.25.3",
+    "moment": "2.29.1",
     "next": "^9.4.5-canary.18",
     "next-compose-plugins": "2.2.0",
     "next-optimized-images": "^2.6.2",
