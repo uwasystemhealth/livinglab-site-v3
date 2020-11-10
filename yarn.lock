@@ -6373,9 +6373,9 @@ next-optimized-images@^2.6.2:
     url-loader "^1.1.2"
 
 next-seo@^4.7.3:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.14.0.tgz#8a3243286f65606da81f6fdb0f8b1673ab5dd5a6"
-  integrity sha512-HHL82n2bx1Aj0z8kpy31LoJxzWpZwC/RlXleoO5zNNjJjEGtNS7uZ+wrvAbFGUqC4V54I1sZa4f0WZV+mpOx6w==
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.16.0.tgz#e976432553425d35ae145dd09389a28ea96af9c2"
+  integrity sha512-32dS768q9q3QcTCeBWlThhAqE8yjchWUvyM8sB4ioaW3VPXEVlfK7wQqHHIg/dkfKALFUK9wQ8DdsRGD1UYGog==
 
 next-tick@~1.0.0:
   version "1.0.0"
