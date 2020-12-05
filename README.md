@@ -9,4 +9,4 @@ This is the Living Lab Website version 3. This has been created by [Frinze Erin 
 - To start a normal server: `npm run start` or `yarn start`
 
 ## Documentation
-Check it here
+Check it here [Documentation](https://uwasystemhealth.github.io/livinglab-site-v3/) or the raw files are [here](https://github.com/uwasystemhealth/livinglab-site-v3/tree/master/mkdocs/docs).
