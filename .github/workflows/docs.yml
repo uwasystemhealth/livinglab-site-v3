@@ -11,12 +11,10 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v1
-
+      - uses: actions/checkout@v1
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+      - uses: actions/setup-python@v2
+        run: pip install -r "${GITHUB_WORKSPACE}/${CONFIG_FOLDER}/requirements.txt" && mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/${CONFIG_FOLDER}/mkdocs.yml" --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs/mkdocs.yml
+          CONFIG_FOLDER: "mkdocs"
