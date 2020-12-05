@@ -12,12 +12,12 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout main
         uses: actions/checkout@v1
-      - name: Get Python
-        uses: actions/setup-python@v2
-      - name: Deploy Docs
-        run: pip install -r "${GITHUB_WORKSPACE}/${CONFIG_FOLDER}/requirements.txt" && mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/${CONFIG_FOLDER}/mkdocs.yml" --force
+
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FOLDER: "mkdocs"
+          CONFIG_FILE: mkdocs/mkdocs.yml
+          REQUIREMENTS: mkdocs/requirements.txt
