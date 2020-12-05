@@ -1,12 +1,12 @@
-site_name: MkDocs Frinze Template
+site_name: Living Lab Website Documentation
 copyright: Copyright Frinze Erin Lapuz 2020
-repo_url: https://github.com/frinzekt/mkdocs-frinze-template/
+repo_url: https://github.com/uwasystemhealth/livinglab-site-v3
 theme:
   name: material
   custom_dir: overrides
   palette:
     primary: orange
-    scheme: default # "slate" is dark, "default" is white
+    scheme: slate # "slate" is dark, "default" is white
   logo: images/docs.png
   favicon: images/docs.png
   # features:
@@ -16,7 +16,7 @@ plugins:
   - mermaid2:
       version: 8.8.2
       arguments:
-        theme: white # change this as you see fit
+        theme: dark # white | dark
 
 markdown_extensions:
   - admonition
@@ -58,4 +58,3 @@ extra_javascript:
 
 nav:
 - Overview: index.md
-- Extensions Installed Overview: extensions.md
