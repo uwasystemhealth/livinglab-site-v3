@@ -8034,9 +8034,9 @@ responselike@1.0.2:
     lowercase-keys "^1.0.0"
 
 responsive-loader@^2.0.2:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.2.0.tgz#0fe49e6f8397e7dd33630bc3417c7767c117d2b0"
-  integrity sha512-hhShIoU1Ltx1VpLGsll4yAc6bz05V+gX1PjiSOqKLVS9fInb70ymMrStedkTyOFHxw/hGDyVsb1DKk99RiZyKg==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/responsive-loader/-/responsive-loader-2.3.0.tgz#3123b6db1dd8aeee37c4d7805e3f45d2e8f5edc1"
+  integrity sha512-8GyyasTKdOfTMDvYy/mBpyV2EM7hz7zWoKdxpocA60eX1jM2udsb+ji03haZWeGnTkQvOplXVqHsev9952dWng==
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
