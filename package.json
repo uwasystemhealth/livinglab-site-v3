@@ -4,7 +4,9 @@
   "description": "NextJS Version of Material Kit React by Creative Tim (https://creative-tim.com)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "ci:test": "start-server-and-test start http://localhost:3000 cypress:run",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -60,5 +62,10 @@
     "react-swipeable-views": "0.13.9",
     "styled-components": "5.1.0",
     "webpack": "4.43.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.0.3",
+    "cypress": "^6.3.0",
+    "start-server-and-test": "^1.11.7"
   }
 }
