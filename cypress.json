@@ -1,1 +1,5 @@
-{}
+{
+    "env": {
+        "allureResultsPath": "test_results/"
+    }
+}
