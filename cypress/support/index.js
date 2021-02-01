@@ -20,4 +20,4 @@ import './commands'
 // require('./commands')
 
 // Import Allure Test commands
-import '@shelex/cypress-allure-plugin';
+import '@frinzekt/cypress-allure-plugin';

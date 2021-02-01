@@ -66,8 +66,10 @@
     "webpack": "4.43.0"
   },
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.0.3",
+    "@frinzekt/cypress-allure-plugin": "^0.0.1-development",
     "cypress": "^6.3.0",
+    "del": "^6.0.0",
+    "move-file": "^2.0.0",
     "start-server-and-test": "^1.11.7"
   }
 }
