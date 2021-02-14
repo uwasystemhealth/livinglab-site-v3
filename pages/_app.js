@@ -72,7 +72,7 @@ const App = (props) => {
 
 											`);
 		document.insertBefore(comment, document.documentElement);
-		if(process.env.NODE_ENV!=="development")
+		if(process.env.NODE_ENV==="production")
 		{
 			ReactGa.initialize('UA-93921730-2');
 
