@@ -19,17 +19,27 @@ describe('Image Difference', () => {
     "roadmap/derisking-site-trials/function-and-safety-standards",
     "roadmap/derisking-site-trials/site-trial",
     "roadmap/derisking-site-trials/site-trial-proposal",
- ]
+  ]
 
   const fullUrlEndpoints = ENDPOINTS.map(endpoint => `${PAGE_URL}/${endpoint}`)
-  
-  fullUrlEndpoints.forEach((currentPageUrl)=>{
-    const endpoint = currentPageUrl.replace(`${PAGE_URL}/`,"").replace("/","=")
+
+  fullUrlEndpoints.forEach((currentPageUrl) => {
+    const endpoint = currentPageUrl.replace(`${PAGE_URL}/`, "").replace("/", "=")
     // Match Each of the Endpoint in its previous snapshot
-    it(endpoint, () => {
+    it(`Renders the page - ${endpoint}`, () => {
       cy.visit(currentPageUrl)
-      cy.document().toMatchImageSnapshot()
     })
+
+    it(`Image Difference on 720p Screens - ${endpoint}`, () => {
+      cy.viewport(1280, 720)
+      cy.matchImageSnapshot();
+
+    })
+
+    it(`Image Difference on Iphone 6+ Screens - ${endpoint}`, () => {
+      cy.viewport("iphone-6+")
+      cy.matchImageSnapshot();
+    })
+
   })
-  
 })

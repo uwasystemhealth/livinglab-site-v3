@@ -6,8 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --env allure=true",
-    "env:import": "export $(cat .env | xargs)",
-    "allure:send": "npm run env:import && python send_and_generate.py livinglab-site-v3 $ALLURE_USER $ALLURE_PASSWORD $ALLURE_API_SERVER /test_results github github",
+    "allure:send": "export $(cat .env | xargs) && python send_and_generate.py livinglab-site-v3 $ALLURE_USER $ALLURE_PASSWORD $ALLURE_API_SERVER /test_results github github",
     "ci:test": "NODE_ENV=testing start-server-and-test start http://localhost:3000 cypress:run",
     "dev": "NODE_ENV=development next",
     "build": "next build",
@@ -76,7 +75,7 @@
   "devDependencies": {
     "@frinzekt/cypress-allure-plugin": "^0.0.1-development",
     "cypress": "^6.3.0",
-    "cypress-plugin-snapshots": "^1.4.4",
+    "cypress-image-snapshot": "^4.0.1",
     "del": "^6.0.0",
     "move-file": "^2.0.0",
     "start-server-and-test": "^1.11.7"

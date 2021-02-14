@@ -13,7 +13,7 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-const { initPlugin } = require('cypress-plugin-snapshots/plugin');
+const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin');
 const allureWriter = require('@frinzekt/cypress-allure-plugin/writer');
 const del = require('del')
 const moveFile = require('move-file')
@@ -24,7 +24,7 @@ const path = require('path');
  */
 
 module.exports = (on, config) => {
-    initPlugin(on, config);
+    addMatchImageSnapshotPlugin(on, config);
     allureWriter(on, config);
     on('after:spec', (spec, results) => {
         if (results.stats.failures === 0 && results.video) {
