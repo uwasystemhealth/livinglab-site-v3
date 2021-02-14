@@ -11,7 +11,6 @@ describe('Image Difference', () => {
     "case-studies",
     "case-studies/accelerated-failure-of-bearings",
     "case-studies/comparing-the-performance-of-mems-iot-with-conventional-piezoelectric-vibration-sensor",
-    "roadmap",
     "roadmap/accelerated-life-testing/product-opportunity",
     "roadmap/accelerated-life-testing/function-and-safety-standards",
     "roadmap/accelerated-life-testing/accelerated-life-tests",
@@ -25,8 +24,9 @@ describe('Image Difference', () => {
   const fullUrlEndpoints = ENDPOINTS.map(endpoint => `${PAGE_URL}/${endpoint}`)
   
   fullUrlEndpoints.forEach((currentPageUrl)=>{
-    const endpoint = currentPageUrl.replace(PAGE_URL,"").replace("/","|")
-    it(`Match previous image - ${endpoint}`, () => {
+    const endpoint = currentPageUrl.replace(`${PAGE_URL}/`,"").replace("/","=")
+    // Match Each of the Endpoint in its previous snapshot
+    it(endpoint, () => {
       cy.visit(currentPageUrl)
       cy.document().toMatchImageSnapshot()
     })
