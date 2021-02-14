@@ -5,7 +5,7 @@ import { stringToLink } from 'helpers/validation';
 import TestingPageContent from 'components/accelerated-life-testing/TestingPageContent.js';
 
 // CONTENT
-import TestingData from 'data/AcceleratedLifeTestingContent.json';
+import TestingData from 'data/AcceleratedLifeTestingContent.js';
 
 const getTestObject = (testingName) => {
 	// REPLACE TITLE SPACES WITH - THEN COMPARE

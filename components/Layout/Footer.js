@@ -19,8 +19,8 @@ import GridItem from 'components/MaterialKit/Grid/GridItem.js';
 import CallToAction from './CallToAction';
 
 // CONTENT
-import TestingData from 'data/AcceleratedLifeTestingContent.json';
-import CaseStudies from 'data/CaseStudies.json';
+import TestingData from 'data/AcceleratedLifeTestingContent.js';
+import CaseStudies from 'data/CaseStudies.js';
 
 //STYLES
 const useStyles = makeStyles(styles);

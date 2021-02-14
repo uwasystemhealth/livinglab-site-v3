@@ -22,7 +22,7 @@ const styles = {
 		'&,&:hover,&:focus': {
 			color: '#FFFFFF',
 		},
-		backgroundColor: 'rgba(0, 0, 0, .5)',
+		backgroundColor: 'rgba(0, 0, 0, .2)',
 	},
 };
 const useStyles = makeStyles(styles);

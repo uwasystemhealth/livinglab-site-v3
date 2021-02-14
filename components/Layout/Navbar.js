@@ -113,9 +113,6 @@ const Navbar = () => {
 							</Button>
 						</ListItem>
 						<ListItem className={classes.listItem}>
-							<Button href='https://id.atlassian.com/login' className={classes.registerNavLink} color='primary' round external>
-								Login
-							</Button>
 						</ListItem>
 					</List>
 				}

@@ -24,7 +24,7 @@ const AboutLivingLab = () => {
 					<h5 className={classes.description}>
 						One of the main areas of development for the Australian METS sector is WiFi-enabled digital-electronic sensing systems, commonly
 						known as Internet-of Things (IoT) applications, which will power Industry 4.0. Examples include asset health, ground control and
-						environmental monitoring, and sensing systems for use one robotics and drones. However, in Australia it is difficult for
+						environmental monitoring, and sensing systems for use on robotics and drones. However, in Australia it is difficult for
 						developers of these new digital sensing systems to efficiently test new electronic products in an industry setting. This proves
 						a significant barrier in being able to deliver current, commercial solutions to the resources sector.
 					</h5>
@@ -39,7 +39,7 @@ const AboutLivingLab = () => {
 						testings and can also place IoT products on infrastructure available at the University. Testing is done by the System Health Lab
 						engineers providing valuable industry experience for the students involved.
 					</h5>
-					<h5 className={classes.description}>To date the LivingLab@UWA team has delivered the following: </h5>
+					<h5 className={classes.description}>To date the Living Lab @UWA team has delivered the following: </h5>
 					<ul className={classes.description}>
 						<li> UV, vibration and IP reliability assessment for MEMS-IoT device for major resources company.</li>
 						<li> Performance testing of wireless MEMS-IoT vibration unit developed at UWA on rotating equipment</li>

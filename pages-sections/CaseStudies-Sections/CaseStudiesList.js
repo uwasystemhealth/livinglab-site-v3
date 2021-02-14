@@ -14,7 +14,7 @@ import CSCard from 'components/case-studies/CSCard.js';
 import CSModal from 'components/case-studies/CSModal.js';
 
 // CONTENT
-import CaseStudiesData from 'data/CaseStudies.json';
+import CaseStudiesData from 'data/CaseStudies.js';
 
 // STYLES
 import styles from 'assets/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js';

@@ -11,34 +11,43 @@
     {
         "firstName": "Tamryn",
         "lastName": "Barker",
-        "bio": "<b>Tamryn</b> is committed to growing a community of innovators in WA to deliver the ideas, solutions and skills we need into the future. She is one of the founders of CORE Innovation Hub, Australia’s first co-working, collaboration and innovation hub focused on the resources and energy sector. CORE provides a common point for operators, suppliers, researchers, entrepreneurs and startups to connect, collaborate and upskill on innovative challenges and opportunities."
-    },
-    {
-        "firstName": "Aiden",
-        "lastName": "Taba",
-        "bio": "<b>Aiden Taba</b> is undertaking a Master’s in Electrical Engineering. He has been working at the SHL since his first year of university creating hardware/software for networked sensors. Outside of the SHL, Aiden is working as a Research Engineer at BRITELab/OncoRes, to develop a medical device used by surgeons to more effectively identify tumours. He has also completed internships in the telecommunications, renewables, neurotechnology and management consulting fields. He is particularly passionate about biomedical engineering and was selected to take part in the 2017 SPARK Co-Lab (Stanford University SPARK Affiliate)  Design Course as an Accelerating Australia Scholar."
-    },
-    {
-        "firstName": "Amit",
-        "lastName": "Patel",
-        "picture": "/img/team/amit-patel.png",
-        "bio": "<b>Amit Patel</b> is a Master's student in Mechanical Engineering at UWA. Amit is currently completing a research project on use of condition monitoring technique (vibration and MCSA analysis) to detect ragging in centrifugal pumps."
-    },
-    {
-        "firstName": "Aseem",
-        "lastName": "Maroo",
-        "bio": "<b>Aseem Maroo</b> is a Master's student of Mechanical Engineering at UWA. He has worked on improving the systems and processes of the lab, and more recently he has been working on the Living Labs project in collaboration with the SHL, Core and BHP. Aseem volunteers for the IMechE UWA Student Club and was a member of the 2017 SHL Unearthed Hackathon team. Aseem worked at Mining Area C for his internship in the Engineering team and has a keen interest in mechanical systems and design."
-    },
-    {
-        "firstName": "Carlin",
-        "lastName": "Lapuz",
-        "bio": "<b>Carlin Lapuz</b> is currently studying a Master’s of Professional Engineering (Mechanical Engineering) at UWA. He has demonstrated excellence as a workshop facilitator/tutor for undergraduate dynamics and electronics. With his experience as a Research Engineer in robotics, sensor development, and vibration sensing technology, he is currently undertaking his thesis on accelerometer signal processing with SHL’s BlueBox. He also volunteered for Engineers Without Borders – School Outreach Team and had developed their renewable energy module."
+        "bio": "<b>Tamryn Barker</b> is committed to growing a community of innovators in WA to deliver the ideas, solutions and skills we need into the future. She is one of the founders of CORE Innovation Hub, Australia’s first co-working, collaboration and innovation hub focused on the resources and energy sector. CORE provides a common point for operators, suppliers, researchers, entrepreneurs and startups to connect, collaborate and upskill on innovative challenges and opportunities."
     },
     {
         "firstName": "Craig",
         "lastName": "Hook",
         "bio": "<b>Craig Hook</b> is a highly accomplished executive, Non-Executive Director and Advisory Board Chair with leadership and strategic experience across a portfolio of Board positions.  He chairs several METS nationally including mine technical consulting, asset maintenance software, and tenement management software businesses.  Previously Craig was a Partner of Churchill Consulting, a leading boutique management consultancy based in Perth.  Prior to his consulting career, Craig was General Manager of OceanaGold (NZ) and held senior operational and technical roles internationally with Rio Tinto.  Qualifications in mine engineering, business management with substantial experience in the mining industry across feasibility studies, operational readiness, business improvement projects and restructures. "
     },
+
+    {
+        "firstName": "Aseem",
+        "lastName": "Maroo",
+        "bio": "<b>Aseem Maroo</b> is a Master's student of Mechanical Engineering at UWA. He has worked on improving the systems and processes of the lab, and more recently he has been working on the Living Labs project in collaboration with the SHL, Core and BHP. Aseem volunteers for the IMechE UWA Student Club and was a member of the 2017 SHL Unearthed Hackathon team. Aseem worked at Mining Area C for his internship in the Engineering team and has a keen interest in mechanical systems and design."
+    },
+    {
+        "firstName": "Amit",
+        "lastName": "Patel",
+        "bio": "<b>Amit Patel</b> is a Master's student in Mechanical Engineering at UWA. Amit is currently completing a research project on use of condition monitoring technique (vibration and MCSA analysis) to detect ragging in centrifugal pumps."
+    },
+
+    {
+        "firstName": "Carlin",
+        "lastName": "Lapuz",
+        "bio": "<b>Carlin Lapuz</b> is currently studying a Master’s of Professional Engineering (Mechanical Engineering) at UWA. He has demonstrated excellence as a workshop facilitator/tutor for undergraduate dynamics and electronics. With his experience as a Research Engineer in robotics, sensor development, and vibration sensing technology, he is currently undertaking his thesis on accelerometer signal processing with SHL’s BlueBox. He also volunteered for Engineers Without Borders – School Outreach Team and had developed their renewable energy module."
+    },
+
+    {
+        "firstName": "James",
+        "lastName": "Royer",
+        "bio": "<b>James Royer</b> is in his first year of study in the Master of Professional Engineering (Mechanical) at UWA. James works as part of the Living Lab team and will be conducting his thesis in 2021. Outside of the SHL and Living Lab, James has worked on alumina and gold projects for Monadelphous and volunteers for university clubs such as Co-Directing PROSH UWA in 2018 and as an ordinary member for IMechE UWA chapter. "
+    },
+
+    {
+        "firstName": "Aiden",
+        "lastName": "Taba",
+        "bio": "<b>Aiden Taba</b> is undertaking a Master’s in Electrical Engineering. He has been working at the SHL since his first year of university creating hardware/software for networked sensors. Outside of the SHL, Aiden is working as a Research Engineer at BRITELab/OncoRes, to develop a medical device used by surgeons to more effectively identify tumours. He has also completed internships in the telecommunications, renewables, neurotechnology and management consulting fields. He is particularly passionate about biomedical engineering and was selected to take part in the 2017 SPARK Co-Lab (Stanford University SPARK Affiliate)  Design Course as an Accelerating Australia Scholar."
+    },
+
     {
         "firstName": "Eddie",
         "lastName": "Atkinson",
@@ -47,7 +56,6 @@
     {
         "firstName": "Frinze",
         "lastName": "Lapuz",
-        "picture": "/img/team/frinze-lapuz.png",
         "bio": "<b>Frinze Erin Lapuz</b> is a Software Engineering and Data Science student at UWA. He works as part of the Living Lab team, collating information of equipment and procedures to create the Living Lab website. He also volunteers for the Coders For Causes to help non-profit organisation and charity to get the digital solution they need. Projects he has worked on can be seen in his <a href='https://frinzelapuz.now.sh/'>portfolio</a>."
     },
     {
@@ -62,9 +70,9 @@
         "bio": "<b>Jaymin Moffatt</b> is a Master’s student in Electrical Engineering at UWA. He is a facilitator for the unit Risk, Reliability and Safety and is currently working on the Living Lab Project completing EMC testing. Jaymin has recently completed his thesis doing research into detecting the cascading failures of assets using his knowledge of complex network analysis."
     },
     {
-        "firstName": "Matt",
-        "lastName": "Arpin",
-        "bio": "<b>Matt Arpin</b> is the Technical Manager of the Faculty of Engineering and Mathematical Sciences at UWA. He leads a team consisting of the following specialist areas: EMS Safety team; Teaching technicians; Mechanical, Physics and Electronics Workshops. Also, he was previously the managing member of Mekrolek Industrial Supplies in South Africa specialising in precision engineering and industrial manufacturing, OEM of Rotary Couplings, mechanical seals, gearboxes, pumps, pneumatic and hydraulic equipment, Laser and encoder alignment specialist. A qualified tool, jig and die maker, he started first engineering business at 21 years old."
+        "firstName": "Toby",
+        "lastName": "Griffiths",
+        "bio": "<b>Toby Griffiths</b> is in his first year of study in the Master of Professional Engineering (Mechanical) at UWA. Toby works as part of the Living Lab team, aiming to de-risk mine site trials for innovators by using campus test equipment. Outside of the SHL, Toby has worked on Asset Health projects at Roy Hill and volunteers as part of the executive teams for Teach Learn Grow, a not-for-profit tutoring company, and the IMechE UWA chapter."
     },
     {
         "firstName": "Paul",
@@ -79,7 +87,6 @@
     {
         "firstName": "Quenten",
         "lastName": "Thomas",
-        "picture": "/img/team/quenten-thomas.png",
         "bio": "<b>Quenten Thomas</b> is a software and mechatronics engineer with more than a decade of industry experience designing and building hardware, firmware and software. He is one of the founders of WearHawk – a start-up that is developing technology to monitor conveyor belts in the mining industry to predict and thereby prevent costly failures. Through the MO4U arrangement with UWA he works alongside, and collaborates with, the SHL team and the Living Lab"
     },
     {
@@ -89,8 +96,9 @@
         "bio": "<b>Sharon Wong</b> is a strategy and business analyst who supported the Living Lab as a representative for BHP. Sharon managed the BHP stakeholder engagement through her experience in innovation, operations and technical engineering to support the project. "
     },
     {
-        "firstName": "Toby",
-        "lastName": "Griffiths",
-        "bio": "<b>Toby Griffiths</b> is in his first year of study in the Master of Professional Engineering (Mechanical) at UWA. Toby works as part of the Living Lab team, aiming to de-risk mine site trials for innovators by using campus test equipment. Outside of the SHL, Toby has worked on Asset Health projects at Roy Hill and volunteers as part of the executive teams for Teach Learn Grow, a not-for-profit tutoring company, and the IMechE UWA chapter."
+        "firstName": "Matt",
+        "lastName": "Arpin",
+        "bio": "<b>Matt Arpin</b> is the Technical Manager of the Faculty of Engineering and Mathematical Sciences at UWA. He leads a team consisting of the following specialist areas: EMS Safety team; Teaching technicians; Mechanical, Physics and Electronics Workshops. Also, he was previously the managing member of Mekrolek Industrial Supplies in South Africa specialising in precision engineering and industrial manufacturing, OEM of Rotary Couplings, mechanical seals, gearboxes, pumps, pneumatic and hydraulic equipment, Laser and encoder alignment specialist. A qualified tool, jig and die maker, he started first engineering business at 21 years old."
     }
+
 ]
