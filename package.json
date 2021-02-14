@@ -9,9 +9,9 @@
     "env:import": "export $(cat .env | xargs)",
     "allure:send": "npm run env:import && python send_and_generate.py livinglab-site-v3 $ALLURE_USER $ALLURE_PASSWORD $ALLURE_API_SERVER /test_results github github",
     "ci:test": "start-server-and-test start http://localhost:3000 cypress:run",
-    "dev": "next",
+    "dev": "NODE_ENV=development next",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production next start",
     "export": "next export",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
   },

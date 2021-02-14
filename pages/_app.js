@@ -72,10 +72,13 @@ const App = (props) => {
 
 											`);
 		document.insertBefore(comment, document.documentElement);
-		ReactGa.initialize('UA-93921730-2');
+		if(process.env.NODE_ENV!=="development")
+		{
+			ReactGa.initialize('UA-93921730-2');
 
-		//REPORT PAGE VIEW
-		ReactGa.pageview(router.pathname);
+			//REPORT PAGE VIEW
+			ReactGa.pageview(router.pathname);
+		}
 	}, []);
 
 	return (
