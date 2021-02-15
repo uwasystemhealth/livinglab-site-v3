@@ -25,6 +25,8 @@ jobs:
       - uses: bahmutov/npm-install@v1
         with:
           install-command: yarn --frozen-lockfile --silent
+      - name: "Build frontend"
+        run: npm run build
       - name: Run end-to-end-testing
         run: |
           ls
