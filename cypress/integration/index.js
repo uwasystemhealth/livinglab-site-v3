@@ -27,6 +27,10 @@ describe('Image Difference', () => {
     const endpoint = currentPageUrl.replace(`${PAGE_URL}/`, "").replace("/", "=")
 
     it(`Image Difference on 720p Screens - ${endpoint}`, () => {
+      // Setting Up
+      cy.allure()
+      .feature(endpoint)
+      .parameter('Endpoint', endpoint)
       cy.visit(currentPageUrl)
       cy.viewport(1280, 720)
 
