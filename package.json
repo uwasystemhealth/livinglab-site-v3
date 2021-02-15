@@ -7,7 +7,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --env allure=true",
     "allure:send": "export $(cat .env | xargs) && python send_and_generate.py livinglab-site-v3 $ALLURE_USER $ALLURE_PASSWORD $ALLURE_API_SERVER /test_results github github",
-    "ci:test": "NODE_ENV=testing start-server-and-test start http://localhost:3000 cypress:run",
+    "ci:test": "NODE_ENV=testing start-server-and-test start:test http://localhost:3000 cypress:run",
     "dev": "NODE_ENV=development next",
     "build": "next build",
     "start": "NODE_ENV=production next start",
