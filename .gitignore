@@ -9,6 +9,10 @@ mkdocs/
 /image-optimizer/outputNormal/*
 /image-optimizer/outputTransparent/*
 
+/test_results
+/cypress/screenshots
+/cypress/videos
+
 # dependencies
 /node_modules
 
