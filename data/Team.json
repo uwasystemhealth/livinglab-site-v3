@@ -35,7 +35,11 @@
         "lastName": "Lapuz",
         "bio": "<b>Carlin Lapuz</b> is currently studying a Master’s of Professional Engineering (Mechanical Engineering) at UWA. He has demonstrated excellence as a workshop facilitator/tutor for undergraduate dynamics and electronics. With his experience as a Research Engineer in robotics, sensor development, and vibration sensing technology, he is currently undertaking his thesis on accelerometer signal processing with SHL’s BlueBox. He also volunteered for Engineers Without Borders – School Outreach Team and had developed their renewable energy module."
     },
-
+    {
+        "firstName": "Charlie",
+        "lastName": "Schumacher",
+        "bio": "<b>Charlie Schumacher</b> is currently undertaking a Master of Professional Engineering with Mechanical specialisation. Charlie is completing his thesis in UV degradation of 3D printed materials under the supervision of Melinda Hodkiewicz and Tim Sercombe, as well as working for the System Health Lab on developing an extended monitoring system related to his thesis work. Charlie also works as part of the team at the Living Lab on accelerated life testing and has keen interest in everything from material science to space to computing."
+    },
     {
         "firstName": "James",
         "lastName": "Royer",

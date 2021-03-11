@@ -15,7 +15,7 @@ const images = TEAM.map(({ firstName, lastName, picture = `/img/team/${firstName
 const MainSetting = {
 	width: '100%',
 	height: ['100px', '100px', '100px', '100px'],
-	layout: [4, 5, 5, 5],
+	layout: [5, 5, 5, 5],
 	photos: images,
 	showNumOfRemainingPhotos: false,
 };
