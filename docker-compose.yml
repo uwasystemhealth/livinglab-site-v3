@@ -13,8 +13,9 @@ services:
         - .env
     volumes:
       # File syncing
-      - ./:/app_code
+      - ./:/usr/src/app
       # Barrier for OS node modules specific
-      - /app_code/node_modules
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
     stdin_open: true # docker run -i
     tty: true        # docker run -t
