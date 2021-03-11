@@ -11,3 +11,10 @@ services:
     - "3000"
     environment:
         - .env
+    volumes:
+      # File syncing
+      - ./server:/app_code
+      # Barrier for OS node modules specific
+      - /app_code/node_modules
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
