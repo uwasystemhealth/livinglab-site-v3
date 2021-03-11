@@ -1,7 +1,9 @@
 version: "3"
 services:
   livinglab-site-v3:
-    image: livinglab-site-v3
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
     - 10002:3000
     restart: always
@@ -9,3 +11,11 @@ services:
     - "3000"
     environment:
         - .env
+    volumes:
+      # File syncing
+      - ./:/usr/src/app
+      # Barrier for OS node modules specific
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
