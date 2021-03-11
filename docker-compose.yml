@@ -13,7 +13,7 @@ services:
         - .env
     volumes:
       # File syncing
-      - ./server:/app_code
+      - ./:/app_code
       # Barrier for OS node modules specific
       - /app_code/node_modules
     stdin_open: true # docker run -i
