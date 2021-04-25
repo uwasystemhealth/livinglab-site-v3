@@ -1,5 +1,7 @@
 site_name: Living Lab Website Documentation
-copyright: Copyright Frinze Erin Lapuz 2020
+copyright: Copyright System Health Lab 2020
+author: Frinze Erin Lapuz
+author_website: https://frinzelapuz.vercel.app
 repo_url: https://github.com/uwasystemhealth/livinglab-site-v3
 theme:
   name: material
