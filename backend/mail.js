@@ -3,9 +3,13 @@ import nodemailer from 'nodemailer';
 export const transporter = nodemailer.createTransport({
 	host: process.env.SMTP_HOST,
 	port: process.env.SMTP_PORT,
-	secure: false, // true for 465, false for other ports
+	secure: true, // true for 465, false for other ports
 	auth: {
-		user: process.env.SMTP_AUTH_USER, // generated ethereal user
-		pass: process.env.SMTP_AUTH_PASS, // generated ethereal password
+		type: 'OAuth2',
+		user: process.env.GOOGLE_USER,
+		clientId:process.env.GOOGLE_OAUTH_CLIENT_ID,
+		clientSecret: process.env.GOOGLE_OAUTH_CLIENT_SECRET,
+		refreshToken:process.env.GMAIL_REFRESH_TOKEN,
+		accessToken: process.env.GMAIL_ACCESS_TOKEN
 	},
 });
