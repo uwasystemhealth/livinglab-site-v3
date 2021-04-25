@@ -1,5 +1,4 @@
-import nodemailer from 'nodemailer';
-import { transporter } from 'middlewares/SMTP.js';
+import { transporter } from 'backend/mail.js';
 import { validateEmail, validatePhone, validateWebsite, notEmpty } from 'helpers/validation';
 
 export default async (req, res) => {
