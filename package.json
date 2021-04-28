@@ -74,7 +74,7 @@
   },
   "devDependencies": {
     "@frinzekt/cypress-allure-plugin": "^0.0.1-development",
-    "cypress": "^6.3.0",
+    "cypress": "^7.2.0",
     "cypress-image-snapshot": "^4.0.1",
     "del": "^6.0.0",
     "move-file": "^2.0.0",
