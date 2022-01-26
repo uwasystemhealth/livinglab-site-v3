@@ -4,7 +4,7 @@ const withSass = require('@zeit/next-sass');
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = withPlugins([[withSass], [optimizedImages, { handleImages: ['jpeg', 'png', 'svg', 'webp', 'ico'] }]], {
+module.exports = withPlugins([[withSass], [optimizedImages, { handleImages: ['png', 'svg', 'webp', 'ico'] }]], {
 	webpack(config, options) {
 		config.resolve.modules.push(path.resolve('./'));
 		return config;
