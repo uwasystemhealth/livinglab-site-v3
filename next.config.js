@@ -8,4 +8,8 @@ module.exports = withPlugins([[withImages]], {
 		config.resolve.modules.push(path.resolve('./'));
 		return config;
 	},
+	// https://stackoverflow.com/questions/68008498/nextjs-typeerror-unsupported-file-type-undefined-after-update-to-v-11
+	images: {
+		disableStaticImages: true
+	}
 });
