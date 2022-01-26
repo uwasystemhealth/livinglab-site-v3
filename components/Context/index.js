@@ -76,10 +76,11 @@ export const AppProvider = (props) => {
 				severity: 'info',
 			});
 
-			await axios({
+			await fetch('https://formspree.io/f/mdobarye', {
 				method: 'POST',
-				url: '/api/mail',
-				data: contactFormState,
+				headers: { 'Content-Type': 'application/json' },
+				mode: 'cors',
+				body: JSON.stringify(contactFormState),
 			});
 
 			// RESET STATE

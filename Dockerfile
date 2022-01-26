@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 
 # ENVIRONMENT VARIABLES PATH
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV NODE_ENV production
 
 COPY package*.json ./
 RUN npm install
