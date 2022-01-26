@@ -78,8 +78,9 @@ export const AppProvider = (props) => {
 
 			await axios({
 				method: 'POST',
-				url: '/api/mail',
-				data: contactFormState,
+				url: 'https://formspree.io/f/mdobarye',
+				mode: 'cors',
+				body: contactFormState
 			});
 
 			// RESET STATE
