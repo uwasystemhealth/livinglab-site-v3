@@ -31,12 +31,4 @@ jobs:
         run: |
           ls
           npm run ci:test
-      - name: Upload Results
-        if: ${{ always() }}
-        run: npm run allure:send
-        env:
-          ALLURE_USER: ${{secrets.ALLURE_USER}}
-          ALLURE_PASSWORD: ${{secrets.ALLURE_PASSWORD}}
-          ALLURE_API_SERVER: ${{secrets.ALLURE_API_SERVER}}
-
 
