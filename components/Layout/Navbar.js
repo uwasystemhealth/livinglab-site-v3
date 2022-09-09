@@ -109,7 +109,7 @@ const Navbar = () => {
 						</ListItem>
 						<ListItem className={classes.listItem}>
 							<Button className={classes.navLink} onClick={openContactFormModal} color='transparent'>
-								Express Interest
+								Contact for more Information
 							</Button>
 						</ListItem>
 						<ListItem className={classes.listItem}>

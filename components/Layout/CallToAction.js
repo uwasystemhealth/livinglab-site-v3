@@ -48,7 +48,7 @@ const CallToAction = (props) => {
 							<GridContainer>
 								<GridItem md={6}>
 									<Button color='primary' onClick={openContactFormModal}>
-										<MessageIcon></MessageIcon>Get Involved
+										<MessageIcon></MessageIcon>Contact for more Information
 									</Button>
 								</GridItem>
 								<GridItem md={6}>
