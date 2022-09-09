@@ -35,10 +35,9 @@ const index = () => {
 			<Parallax filter responsive image={require('assets/img/homepage.jpg')}>
 				<div className={classes.container}>
 					<h1 className={classes.title}>Living Lab</h1>
-					<h3>
-						We are a team of engineers ready to help innovators bridge the gap between development and deployment for MEMS-IoT products
-						through Accelerated Life Testing and Derisking Site Trials.
-					</h3>
+					<h4>
+					From 2020-2022 a team of engineers in the System Health Lab at UWA developed and executed Accelerated Life Tests for MEM-IoT products. This work was funded by METS Ignited and the BHP Fellowship and supported by the UWA Workshop and Facilities Management. This website captures information about the project as a record of what was done and the work-integrated learning opportunity provided to the students that participated. We hope this will inspire other universities to leverage their equipment, technical workshop staff and students for similar puporse to help other Australian innovators to de-risk their MEMS-IOT products.
+					</h4>
 					<br />
 					<Button href='#accelerated-life-testing' color='primary' size='lg'>
 						<Timer></Timer>
