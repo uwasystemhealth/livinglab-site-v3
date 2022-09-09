@@ -11,11 +11,5 @@ services:
     - "3000"
     environment:
         - .env
-    volumes:
-      # File syncing
-      - ./:/usr/src/app
-      # Barrier for OS node modules specific
-      - /usr/src/app/node_modules
-      - /usr/src/app/.next
     stdin_open: true # docker run -i
     tty: true        # docker run -t
